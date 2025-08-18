@@ -1,0 +1,549 @@
+/*
+============================================
+AI Solutions Portfolio - Stylesheet
+============================================
+
+=== TABLE OF CONTENTS ===
+1.  CSS Variables
+2.  Global Styles
+3.  Typography
+4.  Header & Navigation
+5.  Footer
+6.  Hero Section (Home Page)
+7.  Services Section
+8.  About Page
+9.  Contact Form
+10. Responsive Design
+============================================
+*/
+
+/* 1. CSS Variables */
+:root {
+    --primary-bg-color: #0d1117; /* Very dark blue, almost black */
+    --secondary-bg-color: #161b22; /* Dark grey for cards/containers */
+    --accent-color: #58a6ff; /* A bright, friendly blue */
+    --primary-text-color: #c9d1d9; /* Light grey for primary text */
+    --secondary-text-color: #8b949e; /* Medium grey for secondary text */
+    --border-color: #30363d;
+    --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    --header-height: 70px;
+}
+
+/* 2. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #79c0ff; /* Lighter blue on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* 3. Typography */
+h1, h2, h3, h4 {
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--secondary-text-color);
+}
+
+/* 4. Header & Navigation */
+.main-header {
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 5%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary-text-color);
+    border-bottom-color: var(--accent-color);
+}
+
+/* Mobile Nav */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-text-color);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-text-color);
+    left: 0;
+    transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+
+/* 6. Hero Section (Home Page) */
+main {
+    padding-top: var(--header-height);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    min-height: 350px;
+    padding: 0 1rem;
+    background-color: var(--primary-bg-color);
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* Responsive font size */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-tagline {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: var(--primary-text-color);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+/* 7. Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* 8. About & Services Page */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.service-item {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.service-content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
+}
+
+.service-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.service-content ul li {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-text-color);
+}
+
+#portfolio {
+    margin-top: 4rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #333; /* Placeholder bg */
+}
+
+.portfolio-info {
+    padding: 1.5rem;
+}
+
+.portfolio-info h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+#about-page .container section {
+    margin-bottom: 3rem;
+}
+
+.hardware-highlight {
+    background-color: #010409; /* Even darker shade for highlight */
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.hardware-highlight h3 {
+    color: var(--primary-text-color);
+}
+
+#usp ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#usp li {
+    background-color: var(--secondary-bg-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-left: 3px solid var(--accent-color);
+}
+
+#usp li strong {
+    color: var(--primary-text-color);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* 9. Contact Form */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+#contact-info {
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+#contact-info h2 {
+    font-size: 1.8rem;
+    border: none;
+}
+
+#contact-info p {
+    margin-bottom: 1rem;
+}
+
+.service-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* 10. Responsive Design */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-bg-color);
+        flex-direction: column;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle.is-active .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle.is-active .hamburger::before {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .nav-toggle.is-active .hamburger::after {
+        top: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* 5. Footer */
+.main-footer {
+    background-color: var(--secondary-bg-color);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-socials {
+    margin-bottom: 1rem;
+}
+
+.footer-socials a {
+    margin: 0 0.75rem;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+}
+
+/* Utility Classes */
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid var(--accent-color);
+}
+
+.btn:hover {
+    background-color: #79c0ff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
