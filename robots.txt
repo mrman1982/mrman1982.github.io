@@ -4,4 +4,4 @@ Allow: /
 # Disallow admin or temp paths (none currently)
 # Disallow: /admin/
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://gen-ai-solutions.ie/sitemap.xml
