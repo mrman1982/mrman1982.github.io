@@ -1,6 +1,6 @@
 /*
 ============================================
-Gen AI Solutions Portfolio - Stylesheet
+AI Solutions Portfolio - Stylesheet
 ============================================
 
 === TABLE OF CONTENTS ===
@@ -279,6 +279,24 @@ main {
     margin-bottom: 0.5rem;
     color: var(--secondary-text-color);
 }
+
+.offline-highlight {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.offline-highlight h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.offline-highlight p {
+    color: var(--secondary-text-color);
+    margin-bottom: 0;
+}
+
 
 #portfolio {
     margin-top: 4rem;
