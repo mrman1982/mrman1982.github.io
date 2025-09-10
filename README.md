@@ -1,6 +1,6 @@
 ## Gen AI Solutions Static Site
 
-This branch contains the static marketing/portfolio site with initial SEO & accessibility enhancements applied.
+This repository hosts the static marketing/portfolio site with SEO & accessibility enhancements.
 
 ### Implemented SEO Improvements
 1. Meta basics: unique `<title>` + meta description on all primary pages.
@@ -74,3 +74,4 @@ Currently the contact form is client-only (console + alert). Implement one of:
 
 ---
 Feel free to ask for automation scripts (e.g., build script to minify assets) if you take this beyond static hosting.
+
