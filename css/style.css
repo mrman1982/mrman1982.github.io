@@ -566,6 +566,11 @@ main {
         opacity: 0;
     }
 
+    /* Ensure content clears the fixed header on small screens incl. notches */
+    main {
+        padding-top: calc(env(safe-area-inset-top, 0px) + var(--header-height) + 12px);
+    }
+
     h1 {
         font-size: 2.5rem;
     }
