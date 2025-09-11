@@ -4,10 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const mainNav = document.querySelector('.main-nav');
 
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            navToggle.classList.toggle('is-active');
+    if (navToggle && mainNav) {
+        const toggleMenu = () => {
+            const open = !mainNav.classList.contains('active');
+            mainNav.classList.toggle('active', open);
+            navToggle.classList.toggle('is-active', open);
+            document.body.classList.toggle('no-scroll', open);
+        };
+
+        navToggle.addEventListener('click', toggleMenu);
+
+        // Close menu when a nav link is clicked (for single-page navigation)
+        mainNav.addEventListener('click', (e) => {
+            const link = e.target.closest('a');
+            if (link && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                navToggle.classList.remove('is-active');
+                document.body.classList.remove('no-scroll');
+            }
         });
     }
 
