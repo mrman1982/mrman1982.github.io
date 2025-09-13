@@ -191,6 +191,7 @@ p {
     height: 36px;
     max-height: calc(var(--header-height) - 24px);
     width: auto;
+    border-radius: 6px;
 }
 
 @media (max-width: 480px) {

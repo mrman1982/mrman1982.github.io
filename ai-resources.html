@@ -18,22 +18,23 @@
     <meta property="og:locale" content="en_IE">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Popular AI Tools",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Google Gemini", "url": "https://gemini.google.com/"},
-        {"@type": "ListItem", "position": 2, "name": "OpenAI ChatGPT", "url": "https://chat.openai.com/"},
-        {"@type": "ListItem", "position": 3, "name": "Microsoft Copilot", "url": "https://copilot.microsoft.com/"},
-        {"@type": "ListItem", "position": 4, "name": "Anthropic Claude", "url": "https://claude.ai/"},
-        {"@type": "ListItem", "position": 5, "name": "Perplexity", "url": "https://www.perplexity.ai/"},
-        {"@type": "ListItem", "position": 6, "name": "Adobe Firefly", "url": "https://www.adobe.com/products/firefly.html"},
-        {"@type": "ListItem", "position": 7, "name": "Midjourney", "url": "https://www.midjourney.com/"},
-        {"@type": "ListItem", "position": 8, "name": "Stable Diffusion", "url": "https://stability.ai/"},
-        {"@type": "ListItem", "position": 9, "name": "Local/Offline Tools", "url": "https://gen-ai-solutions.ie/services.html"}
-      ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Popular AI Tools",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Google Gemini", "url": "https://gemini.google.com/"},
+                {"@type": "ListItem", "position": 2, "name": "OpenAI ChatGPT", "url": "https://chat.openai.com/"},
+                {"@type": "ListItem", "position": 3, "name": "Microsoft Copilot", "url": "https://copilot.microsoft.com/"},
+                {"@type": "ListItem", "position": 4, "name": "Anthropic Claude", "url": "https://claude.ai/"},
+                {"@type": "ListItem", "position": 5, "name": "Perplexity", "url": "https://www.perplexity.ai/"},
+                {"@type": "ListItem", "position": 6, "name": "Adobe Firefly", "url": "https://www.adobe.com/products/firefly.html"},
+                {"@type": "ListItem", "position": 7, "name": "Midjourney", "url": "https://www.midjourney.com/"},
+                {"@type": "ListItem", "position": 8, "name": "Stable Diffusion", "url": "https://stability.ai/"},
+                {"@type": "ListItem", "position": 9, "name": "ComfyUI", "url": "https://github.com/comfyanonymous/ComfyUI"},
+                {"@type": "ListItem", "position": 10, "name": "Hugging Face", "url": "https://huggingface.co/"}
+            ]
+        }
     </script>
     <script type="application/ld+json">
     {
@@ -113,6 +114,16 @@
                 <h2>Image & Media Creation</h2>
                 <ul>
                     <li>
+                        <strong>Google Gemini (Images)</strong> — image generation and understanding.
+                        <a href="https://gemini.google.com/" target="_blank" rel="noopener">Visit</a>
+                        <p>Create images from prompts and understand images (availability varies by region/account).</p>
+                    </li>
+                    <li>
+                        <strong>OpenAI ChatGPT (Images)</strong> — image generation via integrated models.
+                        <a href="https://chat.openai.com/" target="_blank" rel="noopener">Visit</a>
+                        <p>Generate and iterate on images from natural language prompts alongside chat.</p>
+                    </li>
+                    <li>
                         <strong>Adobe Firefly</strong> — generative images/text effects, integrated with Creative Cloud.
                         <a href="https://www.adobe.com/products/firefly.html" target="_blank" rel="noopener">Visit</a>
                         <p>Great for marketing visuals and brand‑safe assets. Check licensing for commercial use.</p>
@@ -127,12 +138,22 @@
                         <a href="https://stability.ai/" target="_blank" rel="noopener">Visit</a>
                         <p>Flexible for custom styles and private setups. Good option for offline image workflows.</p>
                     </li>
+                    <li>
+                        <strong>ComfyUI</strong> — node‑based workflows for image pipelines.
+                        <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener">Visit</a>
+                        <p>Visual graph editor to build and automate image generation/fine‑tuning workflows.</p>
+                    </li>
                 </ul>
             </section>
 
             <section id="offline">
                 <h2>Local & Offline Options</h2>
                 <ul>
+                    <li>
+                        <strong>ComfyUI (Local)</strong> — build private, reproducible image pipelines.
+                        <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener">Visit</a>
+                        <p>Run locally or on‑prem; great for controlled, auditable workflows.</p>
+                    </li>
                     <li>
                         <strong>Ollama</strong> — run LLMs locally with simple commands.
                         <a href="https://ollama.com/" target="_blank" rel="noopener">Visit</a>
@@ -147,6 +168,16 @@
                         <strong>Stable Diffusion (Local)</strong> — image generation on‑prem.
                         <a href="https://automatic1111.com/" target="_blank" rel="noopener">Visit</a>
                         <p>Popular web UI options exist for private image pipelines and fine‑tuning.</p>
+                    </li>
+                    <li>
+                        <strong>FLUX (local models)</strong> — modern image model family.
+                        <a href="https://blackforestlabs.ai/" target="_blank" rel="noopener">Visit</a>
+                        <p>Variants like FLUX.1 can run locally with the right setup; check model cards and licenses.</p>
+                    </li>
+                    <li>
+                        <strong>WAN 2.2</strong> — community image model (niche use cases).
+                        <a href="https://huggingface.co/models?search=wan%202.2" target="_blank" rel="noopener">Browse</a>
+                        <p>Explore on Hugging Face; review license and requirements before use.</p>
                     </li>
                 </ul>
                 <p class="service-note">Need help choosing or deploying? We specialise in <a href="services.html#bespoke-offline-service">private & offline AI</a> so sensitive data never leaves your network.</p>
@@ -213,6 +244,24 @@
                                 <td>Local</td>
                                 <td>Great for sensitive data & trials.</td>
                             </tr>
+                            <tr>
+                                <td>ComfyUI</td>
+                                <td><span class="chip">Pipelines</span> <span class="chip">Automation</span></td>
+                                <td>Local</td>
+                                <td>Visual, node‑based workflows; great for reproducibility.</td>
+                            </tr>
+                            <tr>
+                                <td>FLUX</td>
+                                <td><span class="chip">High‑quality images</span></td>
+                                <td>Local/Cloud</td>
+                                <td>Modern model family; check variants & licenses.</td>
+                            </tr>
+                            <tr>
+                                <td>WAN 2.2</td>
+                                <td><span class="chip">Specialised styles</span></td>
+                                <td>Local/Cloud</td>
+                                <td>Community model; verify license and requirements.</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -224,9 +273,11 @@
                     <li><strong>Google AI Studio</strong> — try prompts and APIs in a sandbox. <a href="https://aistudio.google.com/" target="_blank" rel="noopener">Visit</a></li>
                     <li><strong>OpenAI Cookbook</strong> — practical examples and patterns. <a href="https://github.com/openai/openai-cookbook" target="_blank" rel="noopener">Visit</a></li>
                     <li><strong>Hugging Face</strong> — models, datasets, and Spaces demos. <a href="https://huggingface.co/" target="_blank" rel="noopener">Visit</a></li>
+                    <li><strong>Hugging Face Model Hub</strong> — discover models like FLUX and WAN. <a href="https://huggingface.co/models" target="_blank" rel="noopener">Browse</a></li>
                 </ul>
                 <p class="service-note">Prefer a hands‑on session? Check our <a href="index.html#workshops">workshops</a>—we tailor content for beginners to advanced teams.</p>
             </section>
+            <section id="tips">
                 <h2>Tips for Responsible Use</h2>
                 <ul>
                     <li>Never paste sensitive or regulated data into public tools; prefer offline or enterprise options.</li>
