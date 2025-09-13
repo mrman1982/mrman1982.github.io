@@ -185,6 +185,18 @@ p {
     color: var(--primary-text-color);
 }
 
+/* Constrain image logo in header */
+.logo img {
+    display: block;
+    height: 36px;
+    max-height: calc(var(--header-height) - 24px);
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    .logo img { height: 28px; }
+}
+
 .main-nav ul {
     display: flex;
     gap: 2rem;
