@@ -21,6 +21,11 @@
       <priority>0.6</priority>
     </url>
     <url>
+    <loc>https://gen-ai-solutions.ie/ai-resources.html</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+  </url>
+    <url>
     <loc>https://gen-ai-solutions.ie/kerry-generative-ai.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
