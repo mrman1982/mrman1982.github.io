@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Contact Form Submission
   const contactForm = document.querySelector("#contact-form");
   if (contactForm) {
+    // Set FormSubmit action at runtime so email is not exposed in page source
+    if (!contactForm.hasAttribute("action")) {
+      contactForm.setAttribute(
+        "action",
+        "https://formsubmit.co/david.mcelligott@hotmail.com"
+      );
+    }
     contactForm.addEventListener("submit", (e) => {
       // If the form has an action (handled by backend like FormSubmit), let it submit normally
       if (contactForm.hasAttribute("action")) {
