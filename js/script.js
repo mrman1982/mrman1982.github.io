@@ -60,6 +60,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // Register Service Worker for offline caching
   if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
     window.addEventListener("load", () => {
+      // Optional: allow disabling SW + clearing caches via ?no-sw=1
+      try {
+        const params = new URLSearchParams(location.search);
+        if (params.has("no-sw")) {
+          navigator.serviceWorker
+            .getRegistrations()
+            .then((regs) => Promise.all(regs.map((r) => r.unregister())))
+            .then(() => caches.keys())
+            .then((keys) => Promise.all(keys.map((k) => caches.delete(k))))
+            .finally(() => {
+              // Reload without query to avoid loops
+              const url = new URL(location.href);
+              url.searchParams.delete("no-sw");
+              location.replace(url.toString());
+            });
+          return; // skip normal registration when disabling
+        }
+      } catch (e) {
+        console.warn("No-SW toggle failed", e);
+      }
       navigator.serviceWorker
         .register("/sw.js")
         .catch((err) => console.warn("SW registration failed", err));
