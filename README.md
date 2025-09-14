@@ -3,6 +3,7 @@
 This repository hosts the static marketing/portfolio site with SEO & accessibility enhancements.
 
 ### Implemented SEO Improvements
+
 1. Meta basics: unique `<title>` + meta description on all primary pages.
 2. Canonical tags (placeholder domain) to prevent duplicate URL issues.
 3. Open Graph & Twitter Card tags for rich sharing.
@@ -19,14 +20,17 @@ This repository hosts the static marketing/portfolio site with SEO & accessibili
 10. Image `alt` attributes and `loading="lazy"` where appropriate.
 
 ### Replace Placeholders
+
 Search and replace the following with real values:
+
 - `[Your City]`, `[Region]`, `[Street Address]`, `[Postcode]`
 - Social profile URLs
 - `https://www.example.com/` (domain in meta, schema, sitemap, robots)
 - Telephone number
-Add a real `og-image.png` and optionally `favicon.png` in `assets/images/`.
+  Add a real `og-image.png` and optionally `favicon.png` in `assets/images/`.
 
 ### Recommended Next Actions
+
 1. Create a favicon set (ICO + PNG variants) and update `<link rel="icon">`.
 2. Add a compressed Open Graph preview image (1200x630) referencing real domain.
 3. Add HTTPS + redirect www/non-www consistently when hosting.
@@ -43,23 +47,28 @@ Add a real `og-image.png` and optionally `favicon.png` in `assets/images/`.
 10. Implement structured FAQ (FAQPage) for common buyer questions (can rank for People Also Ask).
 
 ### Performance Suggestions
+
 - Inline critical CSS for above-the-fold hero (optional refinement).
 - Add explicit image dimensions to prevent layout shift.
 - Use modern image formats (WebP/AVIF) for thumbnails.
 - Preload primary font weights if layout shift observed.
 
 ### Local SEO (When Ready)
+
 1. Set up and verify Google Business Profile (matching NAP: Name, Address, Phone).
 2. Ensure NAP consistency on any local directory citations.
 3. Embed a map (optional) on Contact page once real address is public.
 4. Add a dedicated "Areas Served" section or page.
 
 ### Contact Form Backend
+
 Currently the contact form is client-only (console + alert). Implement one of:
+
 - Form submission to serverless function (Netlify Functions, Cloudflare Workers, AWS Lambda) with spam protection (honeypot + rate limit).
 - Direct integration with an email API (Postmark / SES). Avoid exposing keys client side.
 
 ### Deployment Checklist
+
 1. Replace placeholders listed above.
 2. Run a link checker (e.g., `npx broken-link-checker`).
 3. Validate schema at https://validator.schema.org
@@ -67,11 +76,12 @@ Currently the contact form is client-only (console + alert). Implement one of:
 5. Submit `sitemap.xml` in Google Search Console & Bing Webmaster Tools.
 
 ### Future Enhancements (Optional)
+
 - Add `manifest.webmanifest` + basic PWA for offline viewing of marketing copy.
 - Add dark/light toggle if branding evolves.
 - Add microcopy for conversion trust (testimonials, security badges, compliance notes).
 - Integrate a simple pricing or engagement model page for higher commercial intent queries.
 
 ---
-Feel free to ask for automation scripts (e.g., build script to minify assets) if you take this beyond static hosting.
 
+Feel free to ask for automation scripts (e.g., build script to minify assets) if you take this beyond static hosting.

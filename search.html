@@ -2,7 +2,10 @@
 <html lang="en-IE">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
+    />
     <meta name="robots" content="noindex,follow" />
     <meta name="theme-color" content="#0d1117" />
     <title>Search the Site</title>
@@ -11,29 +14,121 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
     <link rel="preload" href="/css/style.css" as="style" />
     <style>
-      :root{--header-height:70px}
-      *{box-sizing:border-box}
-      body{margin:0;font-family:'Segoe UI','Roboto','Helvetica Neue',sans-serif;background:#0d1117;color:#c9d1d9;line-height:1.6}
-      .main-header{background:#161b22;border-bottom:1px solid #30363d;padding:0 5%;height:var(--header-height);display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;left:0;right:0;z-index:1000}
-      .logo img{display:block;height:36px;width:auto;border-radius:6px}
-      .main-nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
-      .main-nav a{color:#c9d1d9;text-decoration:none}
-      main{padding-top:var(--header-height)}
-      @media (max-width:768px){:root{--header-height:60px}.main-nav{display:none}}
-      .search-box{margin:2rem auto;max-width:680px}
-      .search-input{width:100%;padding:0.9rem 1.1rem;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#c9d1d9;font-size:1rem}
-      .results{margin:1rem auto;max-width:680px}
-      .result{padding:1rem;border:1px solid #30363d;border-radius:8px;background:#161b22;margin-bottom:0.75rem}
-      .result a{color:#58a6ff}
-      mark{background:rgba(88,166,255,0.15);color:#b9d9ff;padding:0 .2em;border-radius:3px}
+      :root {
+        --header-height: 70px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+        background: #0d1117;
+        color: #c9d1d9;
+        line-height: 1.6;
+      }
+      .main-header {
+        background: #161b22;
+        border-bottom: 1px solid #30363d;
+        padding: 0 5%;
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .logo img {
+        display: block;
+        height: 36px;
+        width: auto;
+        border-radius: 6px;
+      }
+      .main-nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .main-nav a {
+        color: #c9d1d9;
+        text-decoration: none;
+      }
+      main {
+        padding-top: var(--header-height);
+      }
+      @media (max-width: 768px) {
+        :root {
+          --header-height: 60px;
+        }
+        .main-nav {
+          display: none;
+        }
+      }
+      .search-box {
+        margin: 2rem auto;
+        max-width: 680px;
+      }
+      .search-input {
+        width: 100%;
+        padding: 0.9rem 1.1rem;
+        border-radius: 8px;
+        border: 1px solid #30363d;
+        background: #0d1117;
+        color: #c9d1d9;
+        font-size: 1rem;
+      }
+      .results {
+        margin: 1rem auto;
+        max-width: 680px;
+      }
+      .result {
+        padding: 1rem;
+        border: 1px solid #30363d;
+        border-radius: 8px;
+        background: #161b22;
+        margin-bottom: 0.75rem;
+      }
+      .result a {
+        color: #58a6ff;
+      }
+      mark {
+        background: rgba(88, 166, 255, 0.15);
+        color: #b9d9ff;
+        padding: 0 0.2em;
+        border-radius: 3px;
+      }
     </style>
-    <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'" />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="main-header">
       <a href="index.html" class="logo" aria-label="Gen AI Solutions home">
-        <img src="images/logo.png" alt="Gen AI Solutions" width="128" height="128" decoding="async" fetchpriority="high" />
+        <img
+          src="images/logo.png"
+          alt="Gen AI Solutions"
+          width="128"
+          height="128"
+          decoding="async"
+          fetchpriority="high"
+        />
       </a>
       <nav class="main-nav">
         <ul>
@@ -58,7 +153,12 @@
         </header>
         <div class="search-box">
           <label class="visually-hidden" for="q">Search query</label>
-          <input id="q" class="search-input" type="search" placeholder="Try: RAG, transcription, Kerry, resources" />
+          <input
+            id="q"
+            class="search-input"
+            type="search"
+            placeholder="Try: RAG, transcription, Kerry, resources"
+          />
         </div>
         <div id="results" class="results" aria-live="polite"></div>
       </div>
@@ -66,53 +166,134 @@
 
     <footer class="main-footer">
       <div class="footer-socials">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.linkedin.com/company/gen-ai-solutions/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61569264684790"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+          title="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/gen_ai_solutions/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          title="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@gen_ai_solutions"
+          target="_blank"
+          rel="noopener"
+          aria-label="TikTok"
+          title="TikTok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a
+          href="https://www.threads.net/@gen_ai_solutions"
+          target="_blank"
+          rel="noopener"
+          aria-label="Threads"
+          title="Threads"
+          ><i class="fa-brands fa-threads"></i
+        ></a>
       </div>
       <p>&copy; 2025 Gen AI Solutions. All Rights Reserved.</p>
     </footer>
 
     <script>
       const index = [
-        { title: 'Home', url: 'index.html', text: 'Offline & Private Gen AI, RAG assistants, transcription, Kerry, workshops, services, contact' },
-        { title: 'Services', url: 'services.html', text: 'RAG, transcription, fine-tuning, voice replication, ebook to audiobook, image creation, self-hosted media, bespoke offline AI' },
-        { title: 'Kerry Generative AI', url: 'kerry-generative-ai.html', text: 'Generative AI in County Kerry, Tralee, Killarney, Dingle, Listowel' },
-        { title: 'AI Resources', url: 'ai-resources.html', text: 'Gemini, ChatGPT, Copilot, Claude, Perplexity, Firefly, Midjourney, Stable Diffusion, ComfyUI, local offline options, comparison, learning' },
-        { title: 'About', url: 'about.html', text: 'Mission, experience, offline AI expertise, governance, data privacy' },
-        { title: 'Contact', url: 'contact.html', text: 'Get in touch about offline & private AI, RAG, transcription, bespoke deployments' }
+        {
+          title: "Home",
+          url: "index.html",
+          text: "Offline & Private Gen AI, RAG assistants, transcription, Kerry, workshops, services, contact",
+        },
+        {
+          title: "Services",
+          url: "services.html",
+          text: "RAG, transcription, fine-tuning, voice replication, ebook to audiobook, image creation, self-hosted media, bespoke offline AI",
+        },
+        {
+          title: "Kerry Generative AI",
+          url: "kerry-generative-ai.html",
+          text: "Generative AI in County Kerry, Tralee, Killarney, Dingle, Listowel",
+        },
+        {
+          title: "AI Resources",
+          url: "ai-resources.html",
+          text: "Gemini, ChatGPT, Copilot, Claude, Perplexity, Firefly, Midjourney, Stable Diffusion, ComfyUI, local offline options, comparison, learning",
+        },
+        {
+          title: "About",
+          url: "about.html",
+          text: "Mission, experience, offline AI expertise, governance, data privacy",
+        },
+        {
+          title: "Contact",
+          url: "contact.html",
+          text: "Get in touch about offline & private AI, RAG, transcription, bespoke deployments",
+        },
       ];
 
-      const qEl = document.getElementById('q');
-      const resultsEl = document.getElementById('results');
+      const qEl = document.getElementById("q");
+      const resultsEl = document.getElementById("results");
 
       function highlight(text, query) {
-        const re = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'ig');
-        return text.replace(re, '<mark>$1</mark>');
+        const re = new RegExp(
+          `(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`,
+          "ig"
+        );
+        return text.replace(re, "<mark>$1</mark>");
       }
 
       function search(query) {
         const q = query.trim();
-        if (!q) { resultsEl.innerHTML = ''; return; }
+        if (!q) {
+          resultsEl.innerHTML = "";
+          return;
+        }
         const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
-        const matches = index.map(item => {
-          const hay = (item.title + ' ' + item.text).toLowerCase();
-          const score = tokens.reduce((s,t) => s + (hay.includes(t) ? 1 : 0), 0);
-          return { ...item, score };
-        }).filter(x => x.score > 0).sort((a,b)=>b.score-a.score).slice(0,20);
+        const matches = index
+          .map((item) => {
+            const hay = (item.title + " " + item.text).toLowerCase();
+            const score = tokens.reduce(
+              (s, t) => s + (hay.includes(t) ? 1 : 0),
+              0
+            );
+            return { ...item, score };
+          })
+          .filter((x) => x.score > 0)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 20);
 
-        resultsEl.innerHTML = matches.map(m => {
-          const snippet = highlight(m.text.slice(0,180) + (m.text.length>180?'…':''), q);
-          return `<div class="result"><a href="${m.url}"><strong>${m.title}</strong></a><p class="muted">${snippet}</p></div>`;
-        }).join('') || '<p class="muted">No results. Try broader terms.</p>';
+        resultsEl.innerHTML =
+          matches
+            .map((m) => {
+              const snippet = highlight(
+                m.text.slice(0, 180) + (m.text.length > 180 ? "…" : ""),
+                q
+              );
+              return `<div class="result"><a href="${m.url}"><strong>${m.title}</strong></a><p class="muted">${snippet}</p></div>`;
+            })
+            .join("") || '<p class="muted">No results. Try broader terms.</p>';
       }
 
       // Populate from URL ?q= param if present
       const params = new URLSearchParams(location.search);
-      if (params.has('q')) {
-        qEl.value = params.get('q');
+      if (params.has("q")) {
+        qEl.value = params.get("q");
         search(qEl.value);
       }
-      qEl.addEventListener('input', (e)=> search(e.target.value));
+      qEl.addEventListener("input", (e) => search(e.target.value));
     </script>
     <script src="js/script.js"></script>
   </body>
