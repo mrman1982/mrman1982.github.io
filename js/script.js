@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('#contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
+            // If the form has an action (handled by backend like FormSubmit), let it submit normally
+            if (contactForm.hasAttribute('action')) {
+                return; // allow native submission
+            }
             e.preventDefault();
 
             // Get form data

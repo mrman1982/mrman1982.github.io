@@ -65,7 +65,12 @@
             <div class="contact-layout">
                 <section id="contact-form-section">
                     <h2>Send a Message</h2>
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formsubmit.co/you@example.com" method="POST">
+                        <!-- FormSubmit config -->
+                        <input type="hidden" name="_subject" value="New inquiry from gen-ai-solutions.ie">
+                        <input type="hidden" name="_next" value="https://gen-ai-solutions.ie/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
