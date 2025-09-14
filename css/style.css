@@ -45,6 +45,7 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   line-height: 1.6;
+  margin: 0;
 }
 
 /* Improve touch interactions */
@@ -214,6 +215,7 @@ p {
 .main-nav ul {
   display: flex;
   gap: 2rem;
+  list-style: none;
 }
 
 .main-nav a {
@@ -221,6 +223,8 @@ p {
   font-weight: 500;
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .main-nav a:hover,

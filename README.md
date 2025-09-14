@@ -74,10 +74,15 @@ Currently the contact form is client-only (console + alert). Implement one of:
 3. Validate schema at https://validator.schema.org
 4. Test Core Web Vitals via Lighthouse.
 5. Submit `sitemap.xml` in Google Search Console & Bing Webmaster Tools.
+6. Progressive Web App: Service worker `sw.js` is included to add offline caching for CSS/JS/images. Ensure it is served at the site root (it is, for GitHub Pages) and verify registration in the browser DevTools (Application > Service Workers).
+7. Caching headers: If you control CDN settings, set long cache lifetimes for immutable assets and short cache for HTML.
+   - HTML: Cache-Control: no-cache, must-revalidate
+   - CSS/JS/Images: Cache-Control: public, max-age=31536000, immutable (filenames are static; bump CACHE_VERSION in `sw.js` on changes)
+   - Ensure `sitemap.xml` and `robots.txt` are cacheable for a short period (e.g., max-age=3600).
 
 ### Future Enhancements (Optional)
 
-- Add `manifest.webmanifest` + basic PWA for offline viewing of marketing copy.
+- Add advanced PWA features (install prompt, offline page fallback) if desired.
 - Add dark/light toggle if branding evolves.
 - Add microcopy for conversion trust (testimonials, security badges, compliance notes).
 - Integrate a simple pricing or engagement model page for higher commercial intent queries.

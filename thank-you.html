@@ -13,49 +13,6 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
     <link rel="preload" href="/css/style.css" as="style" />
-    <style>
-      :root {
-        --header-height: 70px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-        background: #0d1117;
-        color: #c9d1d9;
-        line-height: 1.6;
-      }
-      .main-header {
-        background: #161b22;
-        border-bottom: 1px solid #30363d;
-        padding: 0 5%;
-        height: var(--header-height);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-      }
-      .logo img {
-        display: block;
-        height: 36px;
-        width: auto;
-        border-radius: 6px;
-      }
-      main {
-        padding-top: var(--header-height);
-      }
-      @media (max-width: 768px) {
-        :root {
-          --header-height: 60px;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="/css/style.css"
@@ -63,6 +20,7 @@
       onload="this.media='all'"
     />
     <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -70,13 +28,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="logo" aria-label="Gen AI Solutions home"
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
-          src="images/logo.png"
+          src="/images/logo.png"
           alt="Gen AI Solutions"
           width="128"
           height="128"
@@ -92,7 +50,7 @@
     >
       <h1>Thank you</h1>
       <p>Your message has been sent. I’ll get back to you shortly.</p>
-      <p><a class="btn" href="index.html">Back to Home</a></p>
+      <p><a class="btn" href="/index.html">Back to Home</a></p>
     </main>
     <footer class="main-footer">
       <div class="footer-socials">

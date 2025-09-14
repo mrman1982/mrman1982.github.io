@@ -12,11 +12,17 @@
       name="description"
       content="Contact us about private & offline AI, RAG, transcription, and bespoke deployments in Kerry."
     />
-  <link rel="canonical" href="https://gen-ai-solutions.ie/contact.html" />
-  <meta property="og:image" content="https://gen-ai-solutions.ie/images/og-image.png" />
-  <meta property="og:site_name" content="Gen AI Solutions" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://gen-ai-solutions.ie/images/og-image.png" />
+    <link rel="canonical" href="https://gen-ai-solutions.ie/contact.html" />
+    <meta
+      property="og:image"
+      content="https://gen-ai-solutions.ie/images/og-image.png"
+    />
+    <meta property="og:site_name" content="Gen AI Solutions" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://gen-ai-solutions.ie/images/og-image.png"
+    />
     <meta property="og:title" content="Contact Gen AI Solutions" />
     <meta
       property="og:description"
@@ -31,63 +37,6 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
     <link rel="preload" href="/css/style.css" as="style" />
-    <style>
-      :root {
-        --header-height: 70px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-        background: #0d1117;
-        color: #c9d1d9;
-        line-height: 1.6;
-      }
-      .main-header {
-        background: #161b22;
-        border-bottom: 1px solid #30363d;
-        padding: 0 5%;
-        height: var(--header-height);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-      }
-      .logo img {
-        display: block;
-        height: 36px;
-        width: auto;
-        border-radius: 6px;
-      }
-      .main-nav ul {
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .main-nav a {
-        color: #c9d1d9;
-        text-decoration: none;
-      }
-      main {
-        padding-top: var(--header-height);
-      }
-      @media (max-width: 768px) {
-        :root {
-          --header-height: 60px;
-        }
-        .main-nav {
-          display: none;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="/css/style.css"
@@ -95,7 +44,8 @@
       onload="this.media='all'"
     />
     <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -134,9 +84,9 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="logo" aria-label="Gen AI Solutions home"
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
-          src="images/logo.png"
+          src="/images/logo.png"
           alt="Gen AI Solutions"
           width="128"
           height="128"
@@ -145,12 +95,12 @@
       /></a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="ai-resources.html">Resources</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/ai-resources.html">Resources</a></li>
+          <li><a href="/search.html">Search</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
       <button class="nav-toggle" aria-label="toggle navigation">
@@ -230,11 +180,21 @@
             </p>
             <p>
               <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/company/gen-ai-solutions/" target="_blank" rel="noopener">linkedin.com/company/gen-ai-solutions</a>
+              <a
+                href="https://www.linkedin.com/company/gen-ai-solutions/"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/company/gen-ai-solutions</a
+              >
             </p>
             <p>
               <strong>Instagram:</strong>
-              <a href="https://www.instagram.com/gen_ai_solutions/" target="_blank" rel="noopener">instagram.com/gen_ai_solutions</a>
+              <a
+                href="https://www.instagram.com/gen_ai_solutions/"
+                target="_blank"
+                rel="noopener"
+                >instagram.com/gen_ai_solutions</a
+              >
             </p>
 
             <div class="service-note">
@@ -300,6 +260,6 @@
       </p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

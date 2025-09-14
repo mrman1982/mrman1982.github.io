@@ -21,11 +21,17 @@
       property="og:description"
       content="Private/offline AI for Kerry businesses: RAG, transcription, fine‑tuning and more."
     />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Gen AI Solutions" />
-  <meta property="og:image" content="https://gen-ai-solutions.ie/images/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://gen-ai-solutions.ie/images/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gen AI Solutions" />
+    <meta
+      property="og:image"
+      content="https://gen-ai-solutions.ie/images/og-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://gen-ai-solutions.ie/images/og-image.png"
+    />
     <meta property="og:locale" content="en_IE" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
@@ -34,63 +40,6 @@
       content="https://gen-ai-solutions.ie/kerry-generative-ai.html"
     />
     <link rel="preload" href="/css/style.css" as="style" />
-    <style>
-      :root {
-        --header-height: 70px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-        background: #0d1117;
-        color: #c9d1d9;
-        line-height: 1.6;
-      }
-      .main-header {
-        background: #161b22;
-        border-bottom: 1px solid #30363d;
-        padding: 0 5%;
-        height: var(--header-height);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-      }
-      .logo img {
-        display: block;
-        height: 36px;
-        width: auto;
-        border-radius: 6px;
-      }
-      .main-nav ul {
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .main-nav a {
-        color: #c9d1d9;
-        text-decoration: none;
-      }
-      main {
-        padding-top: var(--header-height);
-      }
-      @media (max-width: 768px) {
-        :root {
-          --header-height: 60px;
-        }
-        .main-nav {
-          display: none;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="/css/style.css"
@@ -98,6 +47,7 @@
       onload="this.media='all'"
     />
     <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -159,9 +109,9 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="logo" aria-label="Gen AI Solutions home"
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
-          src="images/logo.png"
+          src="/images/logo.png"
           alt="Gen AI Solutions"
           width="128"
           height="128"
@@ -170,12 +120,12 @@
       /></a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="ai-resources.html">Resources</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/ai-resources.html">Resources</a></li>
+          <li><a href="/search.html">Search</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
       <button class="nav-toggle" aria-label="toggle navigation">
@@ -294,6 +244,6 @@
       <p>&copy; 2025 Gen AI Solutions. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

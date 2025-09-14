@@ -56,4 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
       contactForm.reset();
     });
   }
+
+  // Register Service Worker for offline caching
+  if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .catch((err) => console.warn("SW registration failed", err));
+    });
+  }
+
+  // Update copyright year
+  const copyrightYear = document.querySelector(".copyright");
+  if (copyrightYear) {
+    copyrightYear.innerHTML = `&copy; ${new Date().getFullYear()} Gen AI Solutions. All Rights Reserved.`;
+  }
 });
