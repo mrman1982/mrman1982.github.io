@@ -1,302 +1,664 @@
 <!DOCTYPE html>
 <html lang="en-IE">
-<head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
-    <meta name="theme-color" content="#0d1117">
-        <title>Offline & Private AI Services (RAG, Transcription, Fine-Tuning) | Gen AI Solutions</title>
-    <meta name="description" content="Offline & private AI services: RAG, transcription, fine‑tuning, voice, image generation, and bespoke deployments in Kerry.">
-    <link rel="canonical" href="https://gen-ai-solutions.ie/services.html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <title>
+      Offline & Private AI Services (RAG, Transcription, Fine-Tuning) | Gen AI
+      Solutions
+    </title>
+    <meta
+      name="description"
+      content="Offline & private AI services: RAG, transcription, fine‑tuning, voice, image generation, and bespoke deployments in Kerry."
+    />
+    <link rel="canonical" href="https://gen-ai-solutions.ie/services.html" />
     <meta name="msvalidate.01" content="A273B5B2444610922C1F44FD17143719" />
-        <meta property="og:title" content="Offline & Private AI Services">
-        <meta property="og:description" content="RAG, transcription, fine-tuning, media generation and self-hosted AI infrastructure.">
-        <meta property="og:type" content="service">
-    <meta property="og:locale" content="en_IE">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
-    <meta property="og:url" content="https://gen-ai-solutions.ie/services.html">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Offline & Private AI Services",
-            "provider": {"@type": "Organization", "name": "Gen AI Solutions"},
-            "areaServed": {"@type": "AdministrativeArea", "name": "Kerry and surrounding areas"},
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Gen AI Solutions Catalog",
-                "itemListElement": [
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retrieval Augmented Generation (RAG)"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Voice Transcription & Analysis"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fine-Tuning & Model Adaptation"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Voice Replication"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ebook to Audiobook Conversion"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Image Generation"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Self-Hosted Photo & Video Management"}},
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bespoke Offline AI Deployment"}}
-                ]
+    <meta property="og:title" content="Offline & Private AI Services" />
+    <meta
+      property="og:description"
+      content="RAG, transcription, fine-tuning, media generation and self-hosted AI infrastructure."
+    />
+    <meta property="og:type" content="service" />
+    <meta property="og:locale" content="en_IE" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+    <meta
+      property="og:url"
+      content="https://gen-ai-solutions.ie/services.html"
+    />
+    <link rel="preload" href="/css/style.css" as="style" />
+    <style>
+      :root{--header-height:70px}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:'Segoe UI','Roboto','Helvetica Neue',sans-serif;background:#0d1117;color:#c9d1d9;line-height:1.6}
+      .main-header{background:#161b22;border-bottom:1px solid #30363d;padding:0 5%;height:var(--header-height);display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;left:0;right:0;z-index:1000}
+      .logo img{display:block;height:36px;width:auto;border-radius:6px}
+      .main-nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
+      .main-nav a{color:#c9d1d9;text-decoration:none}
+      main{padding-top:var(--header-height)}
+      @media (max-width:768px){:root{--header-height:60px}.main-nav{display:none}}
+    </style>
+    <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Offline & Private AI Services",
+        "provider": { "@type": "Organization", "name": "Gen AI Solutions" },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Kerry and surrounding areas"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Gen AI Solutions Catalog",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Retrieval Augmented Generation (RAG)"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Voice Transcription & Analysis"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Fine-Tuning & Model Adaptation"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "Voice Replication" }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ebook to Audiobook Conversion"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "Image Generation" }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Self-Hosted Photo & Video Management"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Bespoke Offline AI Deployment"
+              }
             }
+          ]
         }
-        </script>
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {"@type":"ListItem","position":1,"name":"Home","item":"https://gen-ai-solutions.ie/"},
-                {"@type":"ListItem","position":2,"name":"Services","item":"https://gen-ai-solutions.ie/services.html"}
-            ]
-        }
-        </script>
-</head>
-<body>
-
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://gen-ai-solutions.ie/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://gen-ai-solutions.ie/services.html"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
     <header class="main-header">
-        <a href="index.html" class="logo" aria-label="Gen AI Solutions home"><img src="images/logo.png" alt="Gen AI Solutions"></a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="ai-resources.html">Resources</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
+      <a href="index.html" class="logo" aria-label="Gen AI Solutions home"
+        ><img
+          src="images/logo.png"
+          alt="Gen AI Solutions"
+          width="128"
+          height="128"
+          decoding="async" fetchpriority="high"
+      /></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="ai-resources.html">Resources</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
     </header>
 
     <main id="main-content">
-        <div class="container">
-            <header class="page-header">
-                <h1>Offline & Private AI Services</h1>
-                <p>Privacy-focused, powerful, and tailored to regulated or sensitive environments in <strong>Kerry and surrounding areas</strong>.</p>
-            </header>
+      <div class="container">
+        <header class="page-header">
+          <h1>Offline & Private AI Services</h1>
+          <p>
+            Privacy-focused, powerful, and tailored to regulated or sensitive
+            environments in <strong>Kerry and surrounding areas</strong>.
+          </p>
+        </header>
 
-            <section id="core-services" aria-labelledby="core-services-heading">
-                <h2 id="core-services-heading" class="visually-hidden">Catalogue of AI Services</h2>
-                <article class="service-item">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16.5l-4-4-4 4"/><path d="M12 12.5v-6"/><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Intelligent Meeting Services</h3>
-                        <p>Transform your meeting recordings into actionable intelligence. By combining our high-accuracy voice-to-text transcription with RAG, we can analyse discussions, cross-reference them with your internal documents, and provide comprehensive insights.</p>
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Automated transcription of meeting audio and video.</li>
-                            <li>AI-powered summaries highlighting key decisions and outcomes.</li>
-                            <li>Automatic detection and listing of action items and deadlines.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>All meeting analysis is performed on your local hardware, ensuring confidential discussions remain private.</p>
-                        </div>
-                    </div>
-                </article>
+        <section id="core-services" aria-labelledby="core-services-heading">
+          <h2 id="core-services-heading" class="visually-hidden">
+            Catalogue of AI Services
+          </h2>
+          <article class="service-item">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 16.5l-4-4-4 4" />
+                <path d="M12 12.5v-6" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Intelligent Meeting Services</h3>
+              <p>
+                Transform your meeting recordings into actionable intelligence.
+                By combining our high-accuracy voice-to-text transcription with
+                RAG, we can analyse discussions, cross-reference them with your
+                internal documents, and provide comprehensive insights.
+              </p>
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Automated transcription of meeting audio and video.</li>
+                <li>
+                  AI-powered summaries highlighting key decisions and outcomes.
+                </li>
+                <li>
+                  Automatic detection and listing of action items and deadlines.
+                </li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  All meeting analysis is performed on your local hardware,
+                  ensuring confidential discussions remain private.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="rag-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>RAG for Business</h3>
-                        <p>Retrieval-Augmented Generation allows your AI to access and reference your internal company data, providing accurate, context-aware answers from your private knowledge base.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Leverages existing documentation and data.</li>
-                            <li>Reduces model "hallucinations" with factual grounding.</li>
-                            <li>Powers intelligent, internal-facing chatbots and search tools.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Your knowledge base is accessed locally, ensuring proprietary information never leaves your secure environment.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="rag-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>RAG for Business</h3>
+              <p>
+                Retrieval-Augmented Generation allows your AI to access and
+                reference your internal company data, providing accurate,
+                context-aware answers from your private knowledge base.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>Leverages existing documentation and data.</li>
+                <li>Reduces model "hallucinations" with factual grounding.</li>
+                <li>
+                  Powers intelligent, internal-facing chatbots and search tools.
+                </li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Your knowledge base is accessed locally, ensuring proprietary
+                  information never leaves your secure environment.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="fine-tuning-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Fine-Tuning</h3>
-                        <p>We customise and refine pre-trained AI models to understand the specific nuances, terminology, and requirements of your business, leading to higher performance on specialised tasks.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Adapts models to your industry's language.</li>
-                            <li>Improves accuracy for domain-specific applications.</li>
-                            <li>Creates a unique competitive advantage.</li>
-                        </ul>
-                         <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Fine-tuning is conducted on dedicated offline hardware, protecting your sensitive training data.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="fine-tuning-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                ></path>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Fine-Tuning</h3>
+              <p>
+                We customise and refine pre-trained AI models to understand the
+                specific nuances, terminology, and requirements of your
+                business, leading to higher performance on specialised tasks.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>Adapts models to your industry's language.</li>
+                <li>Improves accuracy for domain-specific applications.</li>
+                <li>Creates a unique competitive advantage.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Fine-tuning is conducted on dedicated offline hardware,
+                  protecting your sensitive training data.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="transcription-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Voice-to-Text Transcriptions</h3>
-                        <p>Our high-accuracy transcription services can process audio and video files, converting spoken language into clean, readable text suitable for analysis or record-keeping.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Achieves over 95% accuracy with clear audio.</li>
-                            <li>Supports various audio formats and languages.</li>
-                            <li>Enables searchable audio/video archives.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>All transcription processing happens on your local systems, safeguarding sensitive conversations.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="transcription-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                ></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Voice-to-Text Transcriptions</h3>
+              <p>
+                Our high-accuracy transcription services can process audio and
+                video files, converting spoken language into clean, readable
+                text suitable for analysis or record-keeping.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>Achieves over 95% accuracy with clear audio.</li>
+                <li>Supports various audio formats and languages.</li>
+                <li>Enables searchable audio/video archives.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  All transcription processing happens on your local systems,
+                  safeguarding sensitive conversations.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="voice-replication-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Voice Replication</h3>
-                        <p>Create a digital replica of a voice from a short audio sample. Ideal for personalised audio messages, consistent voiceovers for training materials, or preserving a voice for future applications.</p>
-                        <h4>Use Cases:</h4>
-                        <ul>
-                            <li>Generate audio for company-wide announcements.</li>
-                            <li>Create personalised customer outreach messages at scale.</li>
-                            <li>Archive the voice of key individuals for legacy purposes.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Voice data and replication models are managed entirely within your private infrastructure.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="voice-replication-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"
+                ></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Voice Replication</h3>
+              <p>
+                Create a digital replica of a voice from a short audio sample.
+                Ideal for personalised audio messages, consistent voiceovers for
+                training materials, or preserving a voice for future
+                applications.
+              </p>
+              <h4>Use Cases:</h4>
+              <ul>
+                <li>Generate audio for company-wide announcements.</li>
+                <li>
+                  Create personalised customer outreach messages at scale.
+                </li>
+                <li>
+                  Archive the voice of key individuals for legacy purposes.
+                </li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Voice data and replication models are managed entirely within
+                  your private infrastructure.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="ebook-audiobook-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Ebook to Audiobook</h3>
-                        <p>Transform written content into engaging audiobooks with a range of natural-sounding voices. A cost-effective way to make your content more accessible and reach a wider audience.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Choose from a library of high-quality, human-like voices.</li>
-                            <li>Create accessible content for visually impaired users.</li>
-                            <li>Repurpose existing content into a new format.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Convert your documents to audio without ever uploading them to a third-party service.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="ebook-audiobook-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Ebook to Audiobook</h3>
+              <p>
+                Transform written content into engaging audiobooks with a range
+                of natural-sounding voices. A cost-effective way to make your
+                content more accessible and reach a wider audience.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>
+                  Choose from a library of high-quality, human-like voices.
+                </li>
+                <li>Create accessible content for visually impaired users.</li>
+                <li>Repurpose existing content into a new format.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Convert your documents to audio without ever uploading them to
+                  a third-party service.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="image-creation-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Image Creation</h3>
-                        <p>Generate high-quality, custom images from text descriptions (prompts). Perfect for marketing content, product mockups, or creative brainstorming sessions.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Rapidly visualise ideas and concepts.</li>
-                            <li>Create unique, royalty-free assets.</li>
-                            <li>Fine-tune models for a specific artistic style.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Generate images on your own hardware, ensuring your creative concepts and prompts remain confidential.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="image-creation-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Image Creation</h3>
+              <p>
+                Generate high-quality, custom images from text descriptions
+                (prompts). Perfect for marketing content, product mockups, or
+                creative brainstorming sessions.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>Rapidly visualise ideas and concepts.</li>
+                <li>Create unique, royalty-free assets.</li>
+                <li>Fine-tune models for a specific artistic style.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Generate images on your own hardware, ensuring your creative
+                  concepts and prompts remain confidential.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="media-management-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Self-Hosted Photo & Video Management</h3>
-                        <p>A high-performance, self-hosted solution for managing your entire media library. Keep your assets secure and accessible across all your devices, without relying on third-party cloud services.</p>
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Complete control over your data with no subscriptions.</li>
-                            <li>Intelligent search, including object and face recognition.</li>
-                            <li>Multi-platform access and automated backups.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>This is a fully self-hosted solution. Your personal and professional media is never exposed to the public internet.</p>
-                        </div>
-                    </div>
-                </article>
+          <article class="service-item" id="media-management-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Self-Hosted Photo & Video Management</h3>
+              <p>
+                A high-performance, self-hosted solution for managing your
+                entire media library. Keep your assets secure and accessible
+                across all your devices, without relying on third-party cloud
+                services.
+              </p>
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Complete control over your data with no subscriptions.</li>
+                <li>
+                  Intelligent search, including object and face recognition.
+                </li>
+                <li>Multi-platform access and automated backups.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  This is a fully self-hosted solution. Your personal and
+                  professional media is never exposed to the public internet.
+                </p>
+              </div>
+            </div>
+          </article>
 
-                <article class="service-item" id="bespoke-offline-service">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Bespoke Gen AI Solutions & Offline System Setup</h3>
-                        <p>Have a unique challenge? We provide end-to-end AI development and can help you set up your own offline systems to run these models, ensuring complete data privacy and control.</p>
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>Solves problems that off-the-shelf solutions cannot.</li>
-                            <li>We provide guidance on setting up your own hardware.</li>
-                            <li>Integrates deeply with your existing workflows.</li>
-                        </ul>
-                        <div class="offline-highlight">
-                            <h4>Offline & Secure:</h4>
-                            <p>Our core speciality is building and deploying solutions that run entirely on your own private infrastructure.</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
+          <article class="service-item" id="bespoke-offline-service">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>Bespoke Gen AI Solutions & Offline System Setup</h3>
+              <p>
+                Have a unique challenge? We provide end-to-end AI development
+                and can help you set up your own offline systems to run these
+                models, ensuring complete data privacy and control.
+              </p>
+              <h4>Key Benefits:</h4>
+              <ul>
+                <li>Solves problems that off-the-shelf solutions cannot.</li>
+                <li>We provide guidance on setting up your own hardware.</li>
+                <li>Integrates deeply with your existing workflows.</li>
+              </ul>
+              <div class="offline-highlight">
+                <h4>Offline & Secure:</h4>
+                <p>
+                  Our core speciality is building and deploying solutions that
+                  run entirely on your own private infrastructure.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
 
-            <section id="portfolio" aria-labelledby="portfolio-heading">
-                <h2 id="portfolio-heading">Example Projects & Case Studies</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="images/internal-knowledge-base.png" alt="Internal RAG knowledge base project thumbnail" loading="lazy" decoding="async" width="400" height="250">
-                        <div class="portfolio-info">
-                            <h4>Internal Knowledge Base Chatbot</h4>
-                            <p>A RAG implementation for a financial services firm, running on their internal servers.</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="images/medical-transcription.png" alt="Medical transcription AI project thumbnail" loading="lazy" decoding="async" width="400" height="250">
-                        <div class="portfolio-info">
-                            <h4>Custom Voice Transcription for Medical Dictation</h4>
-                            <p>A fine-tuned voice model for medical dictation, ensuring patient privacy with offline processing.</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="images/self-hosted-media.png" alt="Self-hosted media library project thumbnail" loading="lazy" decoding="async" width="400" height="250">
-                        <div class="portfolio-info">
-                            <h4>Self-Hosted Media Library for a Design Studio</h4>
-                            <p>A secure, self-hosted media management system for a design studio with a large library of high-resolution assets.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <section id="portfolio" aria-labelledby="portfolio-heading">
+          <h2 id="portfolio-heading">Example Projects & Case Studies</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img
+                src="images/internal-knowledge-base.png"
+                alt="Internal RAG knowledge base project thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="250"
+              />
+              <div class="portfolio-info">
+                <h4>Internal Knowledge Base Chatbot</h4>
+                <p>
+                  A RAG implementation for a financial services firm, running on
+                  their internal servers.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="images/medical-transcription.png"
+                alt="Medical transcription AI project thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="250"
+              />
+              <div class="portfolio-info">
+                <h4>Custom Voice Transcription for Medical Dictation</h4>
+                <p>
+                  A fine-tuned voice model for medical dictation, ensuring
+                  patient privacy with offline processing.
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="images/self-hosted-media.png"
+                alt="Self-hosted media library project thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="250"
+              />
+              <div class="portfolio-info">
+                <h4>Self-Hosted Media Library for a Design Studio</h4>
+                <p>
+                  A secure, self-hosted media management system for a design
+                  studio with a large library of high-resolution assets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
-        <div class="footer-socials">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="copyright">&copy; 2024 Gen AI Solutions. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/yourprofile"
+          target="_blank"
+          aria-label="GitHub"
+          title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        &copy; 2024 Gen AI Solutions. All Rights Reserved.
+      </p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

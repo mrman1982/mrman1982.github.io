@@ -1,0 +1,66 @@
+name: IndexNow Submit
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Build URL list
+        id: urls
+        shell: bash
+        run: |
+          set -euo pipefail
+          DOMAIN="https://gen-ai-solutions.ie"
+          KEY="3b56e2d0c1a94f7ca49d18f4f6e60f1b"
+          KEY_URL="$DOMAIN/$KEY.txt"
+          # Get changed files for this push (if empty, fallback to all html)
+          if git rev-parse --verify HEAD^ >/dev/null 2>&1; then
+            CHANGED=$(git diff --name-only HEAD^ HEAD | grep -E '\\.(html|xml|txt)$' || true)
+          else
+            CHANGED=$(git ls-files | grep -E '\\.(html|xml|txt)$' || true)
+          fi
+          URLS=()
+          for f in $CHANGED; do
+            # Map file path to public URL
+            case "$f" in
+              index.html) URLS+=("$DOMAIN/") ;;
+              *.html) URLS+=("$DOMAIN/${f}") ;;
+              sitemap.xml) URLS+=("$DOMAIN/sitemap.xml") ;;
+              robots.txt) URLS+=("$DOMAIN/robots.txt") ;;
+              *.xml) URLS+=("$DOMAIN/${f}") ;;
+              *.txt) URLS+=("$DOMAIN/${f}") ;;
+            esac
+          done
+          # Always include homepage and sitemap as safe default
+          URLS+=("$DOMAIN/" "$DOMAIN/sitemap.xml")
+          printf '%s\n' "${URLS[@]}" | sort -u > urls.txt
+          echo "Built URL list:" && cat urls.txt
+          echo "key=$KEY" >> $GITHUB_OUTPUT
+          echo "key_url=$KEY_URL" >> $GITHUB_OUTPUT
+
+      - name: Submit to IndexNow
+        shell: bash
+        run: |
+          set -euo pipefail
+          DOMAIN="https://gen-ai-solutions.ie"
+          KEY="${{ steps.urls.outputs.key }}"
+          KEY_URL="${{ steps.urls.outputs.key_url }}"
+          API_ENDPOINT="https://api.indexnow.org/indexnow"
+          BODY=$(jq -n --arg host "gen-ai-solutions.ie" \
+                    --arg key "$KEY" \
+                    --arg keyLocation "$KEY_URL" \
+                    --argjson urlList "$(jq -Rsc 'split("\n") | map(select(length>0))' urls.txt)" \
+                    '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+          echo "$BODY" | jq .
+          curl -sS -X POST -H "Content-Type: application/json; charset=utf-8" \
+               --data "$BODY" "$API_ENDPOINT" | tee response.json
+          echo "IndexNow submission response:" && cat response.json
