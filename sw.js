@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -44,19 +44,27 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(request.url);
 
-  // For same-origin navigations and CSS/JS, use cache-first
-  if (
-    url.origin === location.origin &&
-    (request.mode === 'navigate' ||
-      request.destination === 'style' ||
-      request.destination === 'script')
-  ) {
+  // For same-origin navigations (HTML), use network-first to avoid stale pages
+  if (url.origin === location.origin && (request.mode === 'navigate' || request.destination === 'document')) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(RUNTIME).then((cache) => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // For CSS/JS, keep a cache-first strategy
+  if (url.origin === location.origin && (request.destination === 'style' || request.destination === 'script')) {
     event.respondWith(
       caches.match(request).then((cached) => {
         const fetchPromise = fetch(request)
           .then((response) => {
-            const copy = response.clone();
-            caches.open(RUNTIME).then((cache) => cache.put(request, copy));
+            caches.open(RUNTIME).then((cache) => cache.put(request, response.clone()));
             return response;
           })
           .catch(() => cached);
