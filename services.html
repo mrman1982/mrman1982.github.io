@@ -143,30 +143,47 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
       <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
           src="/images/logo.png"
-          alt="Gen AI Solutions"
+          alt="Gen AI Solutions logo"
           width="128"
           height="128"
           decoding="async"
           fetchpriority="high"
       /></a>
-      <nav class="main-nav">
+      <nav class="main-nav" id="primary-navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/services.html" class="active">Services</a></li>
+          <li>
+            <a href="/services.html" class="active" aria-current="page"
+              >Services</a
+            >
+          </li>
           <li><a href="/ai-resources.html">Resources</a></li>
           <li><a href="/search.html">Search</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
+      <button
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
         <span class="hamburger"></span>
       </button>
     </header>
+
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="/index.html">Home</a></li>
+        <li><span aria-current="page">Services</span></li>
+      </ol>
+    </nav>
 
     <main id="main-content">
       <div class="container">
@@ -585,7 +602,7 @@
           <div class="portfolio-grid">
             <div class="portfolio-item">
               <img
-                src="images/internal-knowledge-base.png"
+                src="/images/internal-knowledge-base.png"
                 alt="Internal RAG knowledge base project thumbnail"
                 loading="lazy"
                 decoding="async"
@@ -602,7 +619,7 @@
             </div>
             <div class="portfolio-item">
               <img
-                src="images/medical-transcription.png"
+                src="/images/medical-transcription.png"
                 alt="Medical transcription AI project thumbnail"
                 loading="lazy"
                 decoding="async"
@@ -619,7 +636,7 @@
             </div>
             <div class="portfolio-item">
               <img
-                src="images/self-hosted-media.png"
+                src="/images/self-hosted-media.png"
                 alt="Self-hosted media library project thumbnail"
                 loading="lazy"
                 decoding="async"
@@ -639,46 +656,47 @@
       </div>
     </main>
 
+    <p style="margin: 1.5rem" class="container">
+      Looking for local support? Explore our
+      <a href="/kerry-generative-ai.html">Generative AI Solutions in Kerry</a>
+      for private/offline deployments tailored to businesses in Tralee, Killarney, Dingle and Listowel.
+    </p>
+
     <footer class="main-footer">
       <div class="footer-socials">
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
-          title="LinkedIn"
           ><i class="fab fa-linkedin"></i
         ></a>
         <a
           href="https://www.facebook.com/profile.php?id=61569264684790"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Facebook"
-          title="Facebook"
           ><i class="fab fa-facebook"></i
         ></a>
         <a
           href="https://www.instagram.com/gen_ai_solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Instagram"
-          title="Instagram"
           ><i class="fab fa-instagram"></i
         ></a>
         <a
           href="https://www.tiktok.com/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="TikTok"
-          title="TikTok"
           ><i class="fab fa-tiktok"></i
         ></a>
         <a
           href="https://www.threads.net/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Threads"
-          title="Threads"
           ><i class="fa-brands fa-threads"></i
         ></a>
       </div>
@@ -687,6 +705,6 @@
       </p>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>

@@ -36,7 +36,7 @@
       name="twitter:image"
       content="https://gen-ai-solutions.ie/images/og-image.png"
     />
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
     <meta property="og:locale" content="en_IE" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
@@ -148,27 +148,37 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
       <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
           src="/images/logo.png"
-          alt="Gen AI Solutions"
+          alt="Gen AI Solutions logo"
           width="128"
           height="128"
           decoding="async"
           fetchpriority="high"
       /></a>
-      <nav class="main-nav">
+      <nav class="main-nav" id="primary-navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/ai-resources.html" class="active">Resources</a></li>
+          <li>
+            <a href="/ai-resources.html" class="active" aria-current="page"
+              >Resources</a
+            >
+          </li>
           <li><a href="/search.html">Search</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
+      <button
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
         <span class="hamburger"></span>
       </button>
     </header>
@@ -610,7 +620,10 @@
         </section>
 
         <p class="muted">Last updated: September 2025</p>
-        <p><a class="btn" href="contact.html">Ask Us for a Private Setup</a></p>
+        <p>
+          <a class="btn" href="/kerry-generative-ai.html">Generative AI Solutions in Kerry</a>
+          <a class="btn" href="contact.html">Ask Us for a Private Setup</a>
+        </p>
       </div>
     </main>
 
@@ -619,47 +632,42 @@
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
-          title="LinkedIn"
           ><i class="fab fa-linkedin"></i
         ></a>
         <a
           href="https://www.facebook.com/profile.php?id=61569264684790"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Facebook"
-          title="Facebook"
           ><i class="fab fa-facebook"></i
         ></a>
         <a
           href="https://www.instagram.com/gen_ai_solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Instagram"
-          title="Instagram"
           ><i class="fab fa-instagram"></i
         ></a>
         <a
           href="https://www.tiktok.com/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="TikTok"
-          title="TikTok"
           ><i class="fab fa-tiktok"></i
         ></a>
         <a
           href="https://www.threads.net/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Threads"
-          title="Threads"
           ><i class="fa-brands fa-threads"></i
         ></a>
       </div>
       <p>&copy; 2025 Gen AI Solutions. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>
