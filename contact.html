@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-IE">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7W0E1GDX0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-L7W0E1GDX0');
+    </script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -83,27 +92,37 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
       <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
         ><img
           src="/images/logo.png"
-          alt="Gen AI Solutions"
+          alt="Gen AI Solutions logo"
           width="128"
           height="128"
           decoding="async"
           fetchpriority="high"
       /></a>
-      <nav class="main-nav">
+      <nav class="main-nav" id="primary-navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/ai-resources.html">Resources</a></li>
           <li><a href="/search.html">Search</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html" class="active">Contact</a></li>
+          <li>
+            <a href="/contact.html" class="active" aria-current="page"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
-      <button class="nav-toggle" aria-label="toggle navigation">
+      <button
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
         <span class="hamburger"></span>
       </button>
     </header>
@@ -121,10 +140,7 @@
         <div class="contact-layout">
           <section id="contact-form-section">
             <h2>Send a Message</h2>
-            <form
-              id="contact-form"
-              method="POST"
-            >
+            <form id="contact-form" method="POST">
               <!-- FormSubmit config -->
               <input
                 type="hidden"
@@ -171,14 +187,13 @@
           <aside id="contact-info" aria-labelledby="contact-info-heading">
             <h2 id="contact-info-heading">Get in Touch</h2>
             <p>
-              Have a question or a project in mind? Send a message and I’ll reply
-              within one business day.
+              Have a question or a project in mind? Send a message and I’ll
+              reply within one business day.
             </p>
             <p class="muted">
               You can also reach me via the social links in the footer.
             </p>
           </aside>
-          
         </div>
       </div>
     </main>
@@ -188,41 +203,36 @@
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
-          title="LinkedIn"
           ><i class="fab fa-linkedin"></i
         ></a>
         <a
           href="https://www.facebook.com/profile.php?id=61569264684790"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Facebook"
-          title="Facebook"
           ><i class="fab fa-facebook"></i
         ></a>
         <a
           href="https://www.instagram.com/gen_ai_solutions/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Instagram"
-          title="Instagram"
           ><i class="fab fa-instagram"></i
         ></a>
         <a
           href="https://www.tiktok.com/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="TikTok"
-          title="TikTok"
           ><i class="fab fa-tiktok"></i
         ></a>
         <a
           href="https://www.threads.net/@gen_ai_solutions"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Threads"
-          title="Threads"
           ><i class="fa-brands fa-threads"></i
         ></a>
       </div>
@@ -231,6 +241,6 @@
       </p>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>
