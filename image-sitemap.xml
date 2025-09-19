@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://gen-ai-solutions.ie/</loc>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/og-image.png</image:loc>
+      <image:title>Gen AI Solutions Open Graph Image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/logo.png</image:loc>
+      <image:title>Gen AI Solutions Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gen-ai-solutions.ie/services.html</loc>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/internal-knowledge-base.png</image:loc>
+      <image:title>Internal Knowledge Base</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/medical-transcription.png</image:loc>
+      <image:title>Medical Transcription</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/self-hosted-media.png</image:loc>
+      <image:title>Self Hosted Media</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gen-ai-solutions.ie/kerry-generative-ai.html</loc>
+    <image:image>
+      <image:loc>https://gen-ai-solutions.ie/images/logo.png</image:loc>
+      <image:title>Gen AI Solutions Logo</image:title>
+    </image:image>
+  </url>
+</urlset>

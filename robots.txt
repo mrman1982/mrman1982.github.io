@@ -5,3 +5,6 @@ Allow: /
 # Disallow: /admin/
 
 Sitemap: https://gen-ai-solutions.ie/sitemap.xml
+Sitemap: https://gen-ai-solutions.ie/image-sitemap.xml
+
+# Note: Image sitemap helps index portfolio/media images

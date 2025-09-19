@@ -17,6 +17,8 @@ AI Solutions Portfolio - Stylesheet
 ============================================
 */
 
+/* Removed custom @font-face to avoid 404s when assets/fonts are missing; using system stack */
+
 /* 1. CSS Variables */
 :root {
   --primary-bg-color: #0d1117; /* Very dark blue, almost black */

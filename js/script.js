@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
       mainNav.classList.toggle("active", open);
       navToggle.classList.toggle("is-active", open);
       document.body.classList.toggle("no-scroll", open);
+      // A11y: update aria-expanded and label
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     };
 
     navToggle.addEventListener("click", toggleMenu);
