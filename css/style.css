@@ -27,4 +27,55 @@ AI Solutions Portfolio - Stylesheet
   --primary-text-color: #c9d1d9; /* Light grey for primary text */
   --secondary-text-color: #8b949e; /* Medium grey for secondary text */
   --border-color: #30363d;
-  --font-family: "Segoe UI", "Robot
+  --font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+/* 2. Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* 8. About & Services Page */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+/* Keep inner content aligned to container width */
+.breadcrumb,
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Service sections should span full container width but be centered */
+.container .service-item,
+.container #portfolio,
+.container #core-services {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.service-item {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--secondary-bg-color);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* ...existing code... */
