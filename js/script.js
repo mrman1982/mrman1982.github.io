@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
       navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     };
 
+    // Ensure menu is closed when page loads
+    mainNav.classList.remove("active");
+    navToggle.classList.remove("is-active");
+    document.body.classList.remove("no-scroll");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open menu");
+
     navToggle.addEventListener("click", toggleMenu);
 
     // Close menu when a nav link is clicked (for single-page navigation)
@@ -23,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
         mainNav.classList.remove("active");
         navToggle.classList.remove("is-active");
         document.body.classList.remove("no-scroll");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open menu");
       }
     });
   }

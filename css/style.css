@@ -588,6 +588,7 @@ main {
     border-bottom: 1px solid var(--border-color);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    z-index: 999;
   }
 
   .main-nav.active {
@@ -657,6 +658,17 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+/* Ensure desktop navigation is always visible above 768px */
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex !important;
+  }
+  
+  .nav-toggle {
+    display: none !important;
   }
 }
 
