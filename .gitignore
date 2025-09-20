@@ -1,0 +1,12 @@
+# Ignore IDE and local cache files
+.vs/
+.vscode/
+*.vsidx
+*.db
+.DS_Store
+Thumbs.db
+
+# Node or tooling caches (if any)
+node_modules/
+.dist/
+.cache/
