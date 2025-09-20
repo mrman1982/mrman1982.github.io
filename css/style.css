@@ -214,6 +214,12 @@ p {
   }
 }
 
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
 .main-nav ul {
   display: flex;
   gap: 2rem;
@@ -592,7 +598,7 @@ main {
   }
 
   .main-nav.active {
-    display: flex;
+    display: flex !important;
   }
 
   .main-nav ul {
@@ -618,7 +624,7 @@ main {
   }
 
   .nav-toggle {
-    display: block;
+    display: block !important;
     padding: 0.5rem;
   }
 
@@ -661,7 +667,7 @@ main {
   }
 }
 
-/* Ensure desktop navigation is always visible above 768px */
+/* FORCE desktop navigation to be visible */
 @media (min-width: 769px) {
   .main-nav {
     display: flex !important;
@@ -669,6 +675,15 @@ main {
   
   .nav-toggle {
     display: none !important;
+  }
+  
+  /* Reset any mobile classes that might be stuck */
+  .main-nav.active {
+    display: flex !important;
+    position: static !important;
+    height: auto !important;
+    background: transparent !important;
+    flex-direction: row !important;
   }
 }
 
