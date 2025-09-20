@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3"; // <-- IMPORTANT: Cache version bumped
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -10,6 +10,12 @@ const PRECACHE_URLS = [
   "/css/style.css",
   "/js/script.js",
   "/images/logo.png",
+  "/services.html",
+  "/rag-fine-tuning-explained.html",
+  "/ai-resources.html",
+  "/about.html",
+  "/contact.html",
+  "/kerry-generative-ai.html"
 ];
 
 self.addEventListener("install", (event) => {
@@ -52,47 +58,38 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(RUNTIME).then((cache) => cache.put(request, copy));
+          // If response is good, cache it
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(RUNTIME).then((cache) => cache.put(request, copy));
+          }
           return response;
         })
-        .catch(() => caches.match(request))
+        .catch(() => caches.match(request)) // On network failure, serve from cache
     );
     return;
   }
 
-  // For CSS/JS, keep a cache-first strategy
+  // For CSS, JS, and images, use a stale-while-revalidate strategy
   if (
     url.origin === location.origin &&
-    (request.destination === "style" || request.destination === "script")
+    (request.destination === "style" || 
+     request.destination === "script" || 
+     request.destination === "image")
   ) {
-    event.respondWith(
-      caches.match(request).then((cached) => {
-        const fetchPromise = fetch(request)
-          .then((response) => {
-            caches
-              .open(RUNTIME)
-              .then((cache) => cache.put(request, response.clone()));
-            return response;
-          })
-          .catch(() => cached);
-        return cached || fetchPromise;
-      })
-    );
-    return;
-  }
-
-  // For images, use a stale-while-revalidate strategy
-  if (request.destination === "image") {
     event.respondWith(
       caches.open(RUNTIME).then((cache) =>
         cache.match(request).then((cachedResponse) => {
           const networkFetch = fetch(request)
             .then((response) => {
-              cache.put(request, response.clone());
+              if (response.ok) {
+                cache.put(request, response.clone());
+              }
               return response;
             })
-            .catch(() => cachedResponse);
+            .catch(() => cachedResponse); // On network failure, serve from cache
+
+          // Return cached response immediately, while fetching update in background
           return cachedResponse || networkFetch;
         })
       )
@@ -100,5 +97,5 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Default: pass-through
+  // Default: pass-through for cross-origin requests etc.
 });
