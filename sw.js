@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v4"; // <-- IMPORTANT: Cache version bumped
+const CACHE_VERSION = "v5"; // <-- IMPORTANT: Cache version bumped
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 

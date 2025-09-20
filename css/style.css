@@ -345,6 +345,11 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Add consistent top margin to main sections */
+main > .container > section {
+  margin-top: 4rem;
+}
+
 /* 8. About & Services Page */
 .page-header {
   text-align: center;
