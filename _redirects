@@ -1,0 +1,17 @@
+# Redirect HTTP to HTTPS (handled by Cloudflare/host)
+
+# Redirect old/incorrect URL to correct one
+/rag-and-fine-tuning-explained.html /rag-fine-tuning-explained.html 301
+
+# Redirect index.html to clean URLs
+/index.html / 301
+
+# Ensure clean URLs work
+/ /index.html 200
+/services /services.html 200
+/rag-fine-tuning-explained /rag-fine-tuning-explained.html 200
+/about /about.html 200
+/contact /contact.html 200
+/ai-resources /ai-resources.html 200
+/search /search.html 200
+/kerry-generative-ai /kerry-generative-ai.html 200
