@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Local Hands - Ireland's artisan marketplace connecting talented craftspeople from all 32 counties. Coming Soon!">
+  <meta property="og:title" content="From Local Hands - Ireland's Artisan Marketplace">
+  <meta property="og:description" content="A magical place where Irish craftsmanship meets the world. Register your interest today!">
+  <meta property="og:type" content="website">
+  <title>From Local Hands - Coming Soon</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("sowPbHx_oXZ7HnVeq");
+    })();
+  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%);
+      color: white;
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      filter: blur(80px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (min-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1.4fr 1fr;
+      }
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      width: fit-content;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 900px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 900px) {
+      .subtitle {
+        font-size: 1.5rem;
+      }
+    }
+
+    .tags {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: white;
+      color: #2E7D32;
+      padding: 8px 16px;
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    .form-card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .heart-icon {
+      font-size: 50px;
+      color: #E91E63;
+      margin-bottom: 16px;
+    }
+
+    .form-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2E7D32;
+      margin-bottom: 8px;
+    }
+
+    .form-subtitle {
+      color: #666;
+      font-size: 0.875rem;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: #2E7D32;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 16px;
+      background: #2E7D32;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .submit-btn:hover {
+      background: #1B5E20;
+    }
+
+    .submit-btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .privacy-text {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 16px;
+    }
+
+    .success-message {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .success-icon {
+      font-size: 80px;
+      color: #E91E63;
+      margin-bottom: 24px;
+    }
+
+    .success-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2E7D32;
+      margin-bottom: 16px;
+    }
+
+    .success-text {
+      color: #666;
+    }
+
+    .alert {
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      background: #ffebee;
+      color: #c62828;
+      border: 1px solid #ef9a9a;
+    }
+
+    .features {
+      padding: 80px 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2E7D32;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 900px) {
+      .section-title {
+        font-size: 3rem;
+      }
+    }
+
+    .section-subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 600px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 8px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 50px;
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .feature-description {
+      color: #666;
+      font-size: 0.875rem;
+    }
+
+    .story {
+      background: white;
+      padding: 80px 20px;
+    }
+
+    .story-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .story-paragraph {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      color: #555;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .cta-subtitle {
+      font-size: 1.25rem;
+      opacity: 0.95;
+      margin-bottom: 24px;
+    }
+
+    .cta-message {
+      opacity: 0.9;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div>
+          <div class="chip">
+            🔔 Coming Soon
+          </div>
+          
+          <h1>From Local Hands - Ireland's Artisan Marketplace</h1>
+          
+          <p class="subtitle">
+            A magical place where Irish craftsmanship meets the world. We're bringing together talented artisans from all 32 counties to share their passion with you.
+          </p>
+
+          <div class="tags">
+            <span class="tag">All 32 Counties</span>
+            <span class="tag">3 Languages</span>
+            <span class="tag">100% Handmade</span>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form id="interestForm">
+            <div class="form-header">
+              <h2 class="form-title">Be the First to Know!</h2>
+              <p class="form-subtitle">Register your interest and we'll keep you updated on our launch</p>
+            </div>
+
+            <div id="formFields">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="interest">I'm interested as... *</label>
+                <select id="interest" name="interest" required>
+                  <option value="customer">A Customer - I love handmade crafts</option>
+                  <option value="artisan">An Artisan - I want to sell my crafts</option>
+                  <option value="both">Both - I'm a maker and a buyer</option>
+                </select>
+              </div>
+
+              <div id="errorMessage" class="alert hidden"></div>
+
+              <button type="submit" class="submit-btn" id="submitBtn">Count Me In!</button>
+
+              <p class="privacy-text">
+                We respect your privacy. No spam, just updates about our launch.
+              </p>
+            </div>
+
+            <div id="successMessage" class="success-message hidden">
+              <h3 class="success-title">You're On The List!</h3>
+              <p class="success-text">Thank you for your interest! We'll be in touch soon with exciting updates about our launch.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Makes Us Special?</h2>
+        <p class="section-subtitle">We're not just another marketplace - we're a celebration of Irish heritage, craftsmanship, and community.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="color: #2E7D32;">🤝</div>
+          <h3 class="feature-title">Authentic Irish Crafts</h3>
+          <p class="feature-description">Every product tells a story. Meet the makers behind each unique piece.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="color: #1976D2;">🎨</div>
+          <h3 class="feature-title">Support Local Artisans</h3>
+          <p class="feature-description">Your purchase directly supports talented craftspeople across Ireland.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="color: #ED6C02;">🌍</div>
+          <h3 class="feature-title">Trilingual Platform</h3>
+          <p class="feature-description">Browse in English, Irish (Gaeilge), or Ukrainian - celebrating our diverse community.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="color: #9C27B0;">🚚</div>
+          <h3 class="feature-title">Island-Wide Delivery</h3>
+          <p class="feature-description">From Donegal to Cork, we deliver beautiful crafts to your door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story">
+    <div class="container">
+      <div class="story-content">
+        <h2 class="section-title">Our Story</h2>
+        <p class="story-paragraph">
+          From Local Hands was born from a simple idea: what if we could connect every talented artisan in Ireland with customers who truly appreciate handmade quality?
+        </p>
+        <p class="story-paragraph">
+          We believe that every piece of pottery, every hand-knitted jumper, every carved treasure has a story to tell. And we believe the people who make them deserve to be celebrated.
+        </p>
+        <p class="story-paragraph">
+          Join us as we build something special - a marketplace where tradition meets innovation, where local meets global, and where every purchase makes a difference.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title">Something Beautiful Is Coming</h2>
+      <p class="cta-subtitle">We're putting the finishing touches on a platform you'll love</p>
+      <p class="cta-message">Register your interest above and be part of our story from day one!</p>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('interestForm');
+    const formFields = document.getElementById('formFields');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Hide any previous errors
+      errorMessage.classList.add('hidden');
+      
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Registering...';
+
+      // Get form data
+      const templateParams = {
+        to_name: document.getElementById('name').value,
+        from_name: document.getElementById('name').value,
+        user_email: document.getElementById('email').value,
+        interest_type: document.getElementById('interest').value,
+        submission_date: new Date().toLocaleDateString('en-IE', { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        })
+      };
+
+      try {
+        const SERVICE_ID = 'service_xkds4pm';
+        const TEMPLATE_ID = 'template_fq0fqh1';
+        
+        // NOTE: In EmailJS template settings, set "From Email" to: info@fromlocallamha.ie
+        // This will make all emails appear to come from your custom domain
+        
+        // Send email via EmailJS
+        const response = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
+        
+        console.log('Email sent successfully!', response.status, response.text);
+
+        // Show success message
+        formFields.classList.add('hidden');
+        successMessage.classList.remove('hidden');
+
+        // Optional: Also log to console for backup
+        console.log('Registration:', templateParams);
+
+      } catch (error) {
+        console.error('EmailJS Error:', error);
+        
+        // Show error message
+        errorMessage.textContent = 'Failed to register. Please try again or contact us directly.';
+        errorMessage.classList.remove('hidden');
+        
+        // Re-enable button
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Count Me In!';
+      }
+    });
+  </script>
+</body>
+</html>
