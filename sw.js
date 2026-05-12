@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v9"; // bump to force clients to fetch latest CSS/HTML
+const CACHE_VERSION = "v10"; // bump to force clients to fetch latest CSS/HTML
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -11,6 +11,7 @@ const PRECACHE_URLS = [
   "/js/script.js",
   "/images/logo.png",
   "/services.html",
+  "/ai-privacy-readiness-audit.html",
   "/rag-fine-tuning-explained.html",
   "/ai-resources.html",
   "/about.html",

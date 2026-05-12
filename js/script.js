@@ -119,6 +119,36 @@ document.addEventListener("DOMContentLoaded", () => {
         "https://formsubmit.co/david.mcelligott@hotmail.com"
       );
     }
+
+    try {
+      const serviceLabels = {
+        "ai-privacy-readiness-audit": "AI Privacy and Readiness Audit",
+        "offline-ai-starter-setup": "Offline AI Starter Setup",
+        "private-document-assistant": "Private Document Assistant",
+        "offline-meeting-intelligence": "Offline Meeting Intelligence",
+        "ai-safety-training": "AI Safety and Staff Training",
+        "open-source-ai-setup": "Open-Source AI Setup",
+        "kerry-ai-consultant": "AI Consultant Kerry",
+      };
+      const params = new URLSearchParams(window.location.search);
+      const selectedService = serviceLabels[params.get("service")];
+      if (selectedService) {
+        const existingServiceInput = contactForm.querySelector(
+          'input[name="Selected service"]'
+        );
+        const serviceInput =
+          existingServiceInput || document.createElement("input");
+        serviceInput.type = "hidden";
+        serviceInput.name = "Selected service";
+        serviceInput.value = selectedService;
+        if (!existingServiceInput) {
+          contactForm.appendChild(serviceInput);
+        }
+      }
+    } catch (e) {
+      console.warn("Service context could not be applied", e);
+    }
+
     contactForm.addEventListener("submit", () => {
       trackConversion("form_submit", {
         form_id: contactForm.id,
