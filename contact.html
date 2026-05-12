@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-IE">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7W0E1GDX0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'G-L7W0E1GDX0');
-    </script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#0d1117" />
-  <title>Contact Gen AI Solutions Kerry: Offline ChatGPT Deployment, Consultation & Custom AI Integrations</title>
+    <meta name="theme-color" content="#f7f4ed" />
+    <title>Book a Private AI Assessment | Gen AI Solutions Ireland</title>
     <meta
       name="description"
-      content="Contact us about private & offline AI, RAG, transcription, and bespoke deployments in Kerry."
+      content="Book a private AI assessment with Gen AI Solutions in Tralee, Co. Kerry. Discuss offline AI, local AI, private document search, transcription or staff training."
     />
     <link rel="canonical" href="https://gen-ai-solutions.ie/contact.html" />
     <meta
@@ -32,10 +23,10 @@
       name="twitter:image"
       content="https://gen-ai-solutions.ie/images/og-image.png"
     />
-    <meta property="og:title" content="Contact Gen AI Solutions" />
+    <meta property="og:title" content="Book a Private AI Assessment" />
     <meta
       property="og:description"
-      content="Discuss offline & private AI for your organisation."
+      content="Identify one practical AI use case that can be done privately, offline or with open-source tools."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_IE" />
@@ -66,8 +57,20 @@
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contact Gen AI Solutions",
-        "description": "Get in touch about offline & private AI services in Kerry and surrounding areas"
+        "name": "Book a Private AI Assessment",
+        "description": "Contact Gen AI Solutions about private, offline and open-source AI for Irish businesses.",
+        "mainEntity": {
+          "@type": "LocalBusiness",
+          "name": "Gen AI Solutions",
+          "email": "david.mcelligott@hotmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tralee",
+            "addressRegion": "Co. Kerry",
+            "addressCountry": "IE"
+          },
+          "areaServed": { "@type": "Country", "name": "Ireland" }
+        }
       }
     </script>
     <script type="application/ld+json">
@@ -94,26 +97,31 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
-      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
-        ><img
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home">
+        <img
           src="/images/logo.png"
           alt="Gen AI Solutions logo"
           width="128"
           height="128"
           decoding="async"
           fetchpriority="high"
-      /></a>
+        />
+      </a>
       <nav class="main-nav" id="primary-navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/rag-fine-tuning-explained.html">RAG & Fine-Tuning</a></li>
+          <li><a href="/services.html#private-document-search">Document Assistant</a></li>
+          <li><a href="/services.html#offline-transcription">Offline Transcription</a></li>
+          <li><a href="/services.html#training-governance">AI Training</a></li>
           <li><a href="/ai-resources.html">Resources</a></li>
-          <li><a href="/search.html">Search</a></li>
-          <li><a href="/about.html">About</a></li>
           <li>
-            <a href="/contact.html" class="active" aria-current="page"
-              >Contact</a
+            <a
+              href="/contact.html"
+              class="active nav-cta"
+              aria-current="page"
+              data-track="booking_click"
+              >Book Assessment</a
             >
           </li>
         </ul>
@@ -131,22 +139,32 @@
     <main id="main-content">
       <div class="container">
         <header class="page-header">
-          <h1>Contact Gen AI Solutions Kerry: Offline ChatGPT Deployment, Consultation and Custom Integrations</h1>
+          <p class="eyebrow">Book a private AI assessment</p>
+          <h1>Book a private AI assessment</h1>
           <p>
-            I'm currently accepting new projects. Let's talk about how AI can
-            help your business.
+            Not sure whether your business can safely use AI? Send a short
+            message or book a 20-minute call. I'll help you identify one
+            practical AI use case that can be done privately, offline or with
+            open-source tools.
           </p>
         </header>
 
         <div class="contact-layout">
-          <section id="contact-form-section">
-            <h2>Send a Message</h2>
-            <form id="contact-form" method="POST">
-              <!-- FormSubmit config -->
+          <section id="contact-form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading">Tell me what you are trying to improve</h2>
+            <p class="privacy-warning">
+              Please do not send sensitive files through this form. We can
+              arrange a secure review process.
+            </p>
+            <form
+              id="contact-form"
+              method="POST"
+              action="https://formsubmit.co/david.mcelligott@hotmail.com"
+            >
               <input
                 type="hidden"
                 name="_subject"
-                value="New inquiry from gen-ai-solutions.ie"
+                value="Private AI assessment enquiry from gen-ai-solutions.ie"
               />
               <input
                 type="hidden"
@@ -161,45 +179,214 @@
                 tabindex="-1"
                 autocomplete="off"
               />
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required />
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="business-name">Business name</label>
+                  <input
+                    type="text"
+                    id="business-name"
+                    name="business_name"
+                    autocomplete="organization"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone / WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone_or_whatsapp"
+                    autocomplete="tel"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="sector">Sector</label>
+                  <select id="sector" name="sector">
+                    <option value="">Select one</option>
+                    <option>Accountancy / bookkeeping</option>
+                    <option>Legal / solicitors</option>
+                    <option>Medical, dental or care</option>
+                    <option>Education or training</option>
+                    <option>Engineering / construction / manufacturing</option>
+                    <option>Charity / community organisation</option>
+                    <option>Local business / SME</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sensitive-data">Do you handle sensitive data?</label>
+                  <select id="sensitive-data" name="handles_sensitive_data">
+                    <option value="">Select one</option>
+                    <option>Yes, regularly</option>
+                    <option>Sometimes</option>
+                    <option>Not sure</option>
+                    <option>No</option>
+                  </select>
+                </div>
               </div>
+
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                <label for="improve">What are you trying to improve?</label>
+                <textarea
+                  id="improve"
+                  name="what_are_you_trying_to_improve"
+                  rows="4"
+                  placeholder="For example: document search, meeting notes, staff AI training, policy review, internal procedures..."
+                  required
+                ></textarea>
               </div>
+
+              <fieldset class="form-group checkbox-group">
+                <legend>
+                  Are you interested in offline/local AI, training,
+                  transcription, document search, or something else?
+                </legend>
+                <label>
+                  <input type="checkbox" name="interest_offline_local_ai" value="yes" />
+                  Offline / local AI
+                </label>
+                <label>
+                  <input type="checkbox" name="interest_training" value="yes" />
+                  Staff AI training
+                </label>
+                <label>
+                  <input type="checkbox" name="interest_transcription" value="yes" />
+                  Offline transcription
+                </label>
+                <label>
+                  <input type="checkbox" name="interest_document_search" value="yes" />
+                  Private document search
+                </label>
+                <label>
+                  <input type="checkbox" name="interest_other" value="yes" />
+                  Something else
+                </label>
+              </fieldset>
+
               <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required />
+                <label for="budget">Budget range</label>
+                <select id="budget" name="budget_range">
+                  <option value="">Select one</option>
+                  <option>Under &euro;1k</option>
+                  <option>&euro;1k-&euro;5k</option>
+                  <option>&euro;5k-&euro;15k</option>
+                  <option>Not sure yet</option>
+                </select>
               </div>
+
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
                   rows="6"
+                  placeholder="Keep this high-level. Do not paste client files, medical information, legal documents or confidential records."
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn">Submit</button>
+              <button type="submit" class="btn">
+                Book a private AI assessment
+              </button>
             </form>
           </section>
+
           <aside id="contact-info" aria-labelledby="contact-info-heading">
-            <h2 id="contact-info-heading">Get in Touch</h2>
-            <p>
-              Have a question or a project in mind? Send a message and I’ll
-              reply within one business day.
-            </p>
-            <p class="muted">
-              You can also reach me via the social links in the footer.
-            </p>
+            <h2 id="contact-info-heading">Contact details</h2>
+            <dl class="contact-list">
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <a
+                    href="mailto:david.mcelligott@hotmail.com?subject=Private%20AI%20assessment"
+                    data-track="email_click"
+                    >david.mcelligott@hotmail.com</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Phone / WhatsApp</dt>
+                <dd>
+                  Add your number in the form and I can call or message you.
+                </dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Tralee, Co. Kerry</dd>
+              </div>
+              <div>
+                <dt>Service area</dt>
+                <dd>Ireland</dd>
+              </div>
+            </dl>
+
+            <div class="booking-box">
+              <h3>Book a 20-minute call</h3>
+              <p>
+                Use the email button or form to request a time. The first call
+                is for choosing one practical, privacy-safe AI use case.
+              </p>
+              <a
+                class="btn-secondary"
+                href="mailto:david.mcelligott@hotmail.com?subject=Private%20AI%20assessment"
+                data-track="booking_click"
+                >Request a 20-minute call</a
+              >
+            </div>
+
+            <div class="privacy-note">
+              <h3>Before sending anything</h3>
+              <p>
+                Keep the first message general. If we need to review sensitive
+                material, we will agree a safer review process first.
+              </p>
+            </div>
           </aside>
         </div>
       </div>
     </main>
 
     <footer class="main-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Gen AI Solutions</h2>
+          <p>
+            Private AI for Irish businesses that need privacy, local control,
+            offline capability and open-source options.
+          </p>
+          <p>Based in Tralee, Co. Kerry. Service area: Ireland.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            <a
+              href="mailto:david.mcelligott@hotmail.com"
+              data-track="email_click"
+              >david.mcelligott@hotmail.com</a
+            >
+          </p>
+          <p><a href="/contact.html" data-track="booking_click">Book a private AI assessment</a></p>
+        </div>
+        <div>
+          <h3>Useful links</h3>
+          <p><a href="/services.html">Services</a></p>
+          <p><a href="/privacy-policy.html">Privacy policy</a></p>
+          <p><a href="/terms.html">Terms &amp; engagement</a></p>
+        </div>
+      </div>
       <div class="footer-socials">
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
@@ -238,7 +425,7 @@
         ></a>
       </div>
       <p class="copyright">
-        &copy; 2025 Gen AI Solutions. All Rights Reserved.
+        &copy; 2026 Gen AI Solutions. All Rights Reserved.
       </p>
     </footer>
 

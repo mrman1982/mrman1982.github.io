@@ -25,6 +25,16 @@
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
+  <url>
+    <loc>https://gen-ai-solutions.ie/privacy-policy.html</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gen-ai-solutions.ie/terms.html</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+  </url>
     <url>
     <loc>https://gen-ai-solutions.ie/ai-resources.html</loc>
       <changefreq>monthly</changefreq>

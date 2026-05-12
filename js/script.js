@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // FORCE RESET mobile navigation on every page load
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");
 
-  // Immediately reset everything - no conditions
   if (mainNav) {
     mainNav.classList.remove("active");
-    mainNav.style.display = ""; // Reset inline styles
+    mainNav.style.display = "";
   }
   if (navToggle) {
     navToggle.classList.remove("is-active");
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   document.body.classList.remove("no-scroll");
 
-  // Mobile Navigation Toggle
   if (navToggle && mainNav) {
     const toggleMenu = () => {
       const open = !mainNav.classList.contains("active");
@@ -28,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navToggle.addEventListener("click", toggleMenu);
 
-    // Close menu when a nav link is clicked
     mainNav.addEventListener("click", (e) => {
       const link = e.target.closest("a");
       if (link && mainNav.classList.contains("active")) {
@@ -41,7 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Contact Form Submission
+  const trackConversion = (eventName, details = {}) => {
+    if (!eventName) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: eventName,
+      ...details,
+    });
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, details);
+    }
+  };
+
+  document.querySelectorAll("[data-track]").forEach((element) => {
+    element.addEventListener("click", () => {
+      trackConversion(element.dataset.track, {
+        link_text: element.textContent.trim(),
+        link_url: element.href || "",
+      });
+    });
+  });
+
   const contactForm = document.querySelector("#contact-form");
   if (contactForm) {
     if (!contactForm.hasAttribute("action")) {
@@ -50,30 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "https://formsubmit.co/david.mcelligott@hotmail.com"
       );
     }
-    contactForm.addEventListener("submit", (e) => {
-      if (contactForm.hasAttribute("action")) {
-        return;
-      }
-      e.preventDefault();
-
-      const formData = new FormData(contactForm);
-      const name = formData.get("name");
-      const email = formData.get("email");
-      const subject = formData.get("subject");
-      const message = formData.get("message");
-
-      console.log("Form Submitted!");
-      console.log(`Name: ${name}`);
-      console.log(`Email: ${email}`);
-      console.log(`Subject: ${subject}`);
-      console.log(`Message: ${message}`);
-
-      alert("Thank you for your message! I will get back to you soon.");
-      contactForm.reset();
+    contactForm.addEventListener("submit", () => {
+      trackConversion("form_submit", {
+        form_id: contactForm.id,
+        form_name: "Private AI assessment",
+      });
     });
   }
 
-  // Register Service Worker
   if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       try {
@@ -100,7 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Update copyright year
   const copyrightYear = document.querySelector(".copyright");
   if (copyrightYear) {
     copyrightYear.innerHTML = `&copy; ${new Date().getFullYear()} Gen AI Solutions. All Rights Reserved.`;
