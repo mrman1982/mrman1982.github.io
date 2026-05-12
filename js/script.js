@@ -1,6 +1,58 @@
+(() => {
+  try {
+    const savedTheme = localStorage.getItem("genai-theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  } catch (e) {
+    console.warn("Theme preference unavailable", e);
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");
+  const header = document.querySelector(".main-header");
+
+  const getActiveTheme = () => {
+    const explicitTheme = document.documentElement.dataset.theme;
+    if (explicitTheme === "light" || explicitTheme === "dark") {
+      return explicitTheme;
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+
+  const setTheme = (theme) => {
+    document.documentElement.dataset.theme = theme;
+    try {
+      localStorage.setItem("genai-theme", theme);
+    } catch (e) {
+      console.warn("Theme preference could not be saved", e);
+    }
+  };
+
+  const updateThemeButton = (button) => {
+    const activeTheme = getActiveTheme();
+    const nextTheme = activeTheme === "dark" ? "light" : "dark";
+    button.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+    button.setAttribute("title", `Switch to ${nextTheme} mode`);
+    button.textContent = activeTheme === "dark" ? "Light" : "Dark";
+  };
+
+  if (header && !header.querySelector(".theme-toggle")) {
+    const themeToggle = document.createElement("button");
+    themeToggle.type = "button";
+    themeToggle.className = "theme-toggle";
+    updateThemeButton(themeToggle);
+    themeToggle.addEventListener("click", () => {
+      setTheme(getActiveTheme() === "dark" ? "light" : "dark");
+      updateThemeButton(themeToggle);
+    });
+    header.insertBefore(themeToggle, navToggle || null);
+  }
 
   if (mainNav) {
     mainNav.classList.remove("active");
