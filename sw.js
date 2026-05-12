@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v8"; // bump to force clients to fetch latest CSS/HTML
+const CACHE_VERSION = "v9"; // bump to force clients to fetch latest CSS/HTML
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -15,6 +15,7 @@ const PRECACHE_URLS = [
   "/ai-resources.html",
   "/about.html",
   "/contact.html",
+  "/thank-you.html",
   "/privacy-policy.html",
   "/terms.html",
   "/kerry-generative-ai.html"

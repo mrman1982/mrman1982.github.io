@@ -17,7 +17,7 @@
     />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="theme-color" content="#1b1938" />
-    <title>Thanks — Message Received</title>
+    <title>Thank You | Gen AI Solutions</title>
     <link rel="canonical" href="https://gen-ai-solutions.ie/thank-you.html" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
@@ -42,24 +42,32 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
-      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home"
-        ><img
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home">
+        <img
           src="/images/logo.png"
           alt="Gen AI Solutions logo"
           width="128"
           height="128"
           decoding="async"
           fetchpriority="high"
-      /></a>
+        />
+      </a>
       <nav class="main-nav" id="primary-navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/rag-fine-tuning-explained.html">RAG & Fine-Tuning</a></li>
+          <li><a href="/services.html#private-document-search">Document Assistant</a></li>
+          <li><a href="/services.html#offline-transcription">Offline Transcription</a></li>
+          <li><a href="/services.html#training-governance">AI Training</a></li>
           <li><a href="/ai-resources.html">Resources</a></li>
-          <li><a href="/search.html">Search</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <a
+              href="/contact.html"
+              class="nav-cta"
+              data-track="booking_click"
+              >Book Assessment</a
+            >
+          </li>
         </ul>
       </nav>
       <button
@@ -71,16 +79,68 @@
         <span class="hamburger"></span>
       </button>
     </header>
-    <main
-      id="main-content"
-      class="container"
-      style="padding-top: calc(var(--header-height) + 1rem)"
-    >
-      <h1>Thank you</h1>
-      <p>Your message has been sent. I’ll get back to you shortly.</p>
-      <p><a class="btn" href="/index.html">Back to Home</a></p>
+    <main id="main-content">
+      <div class="container">
+        <header class="page-header">
+          <p class="eyebrow">Message sent</p>
+          <h1>Thank you</h1>
+          <p>
+            Your message has been sent. I’ll get back to you by email as soon
+            as I can.
+          </p>
+        </header>
+
+        <section class="booking-box notice-card" aria-labelledby="spam-heading">
+          <h2 id="spam-heading">Please check Junk or Spam</h2>
+          <p>
+            If you are waiting for my reply and nothing appears in your inbox,
+            please check your Junk or Spam folder. Email filters can
+            occasionally catch replies from contact forms.
+          </p>
+          <p>
+            If you need to follow up directly, email
+            <a
+              href="mailto:david.mcelligott@hotmail.com?subject=Private%20AI%20assessment%20follow-up"
+              data-track="email_click"
+              >david.mcelligott@hotmail.com</a
+            >.
+          </p>
+        </section>
+
+        <div class="hero-actions">
+          <a class="btn" href="/index.html">Back to Home</a>
+          <a class="btn-secondary" href="/contact.html">Send another message</a>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Gen AI Solutions</h2>
+          <p>
+            Private AI for Irish businesses that need privacy, local control,
+            offline capability and open-source options.
+          </p>
+          <p>Based in Tralee, Co. Kerry. Service area: Ireland.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            <a
+              href="mailto:david.mcelligott@hotmail.com"
+              data-track="email_click"
+              >david.mcelligott@hotmail.com</a
+            >
+          </p>
+          <p><a href="/contact.html" data-track="booking_click">Book a private AI assessment</a></p>
+        </div>
+        <div>
+          <h3>Useful links</h3>
+          <p><a href="/services.html">Services</a></p>
+          <p><a href="/privacy-policy.html">Privacy policy</a></p>
+          <p><a href="/terms.html">Terms &amp; engagement</a></p>
+        </div>
+      </div>
       <div class="footer-socials">
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
@@ -118,7 +178,9 @@
           ><i class="fa-brands fa-threads"></i
         ></a>
       </div>
-      <p>&copy; 2025 Gen AI Solutions. All Rights Reserved.</p>
+      <p class="copyright">
+        &copy; 2026 Gen AI Solutions. All Rights Reserved.
+      </p>
     </footer>
     <script src="/js/script.js" defer></script>
   </body>
