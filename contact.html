@@ -164,13 +164,14 @@
               <input
                 type="hidden"
                 name="_subject"
-                value="Private AI assessment enquiry from gen-ai-solutions.ie"
+                value="Private AI assessment enquiry - Gen AI Solutions"
               />
               <input
                 type="hidden"
                 name="_next"
                 value="https://gen-ai-solutions.ie/thank-you.html"
               />
+              <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
               <input
                 type="text"
@@ -183,14 +184,14 @@
               <div class="form-grid">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required />
+                  <input type="text" id="name" name="Name" required />
                 </div>
                 <div class="form-group">
                   <label for="business-name">Business name</label>
                   <input
                     type="text"
                     id="business-name"
-                    name="business_name"
+                    name="Business name"
                     autocomplete="organization"
                   />
                 </div>
@@ -209,13 +210,13 @@
                   <input
                     type="tel"
                     id="phone"
-                    name="phone_or_whatsapp"
+                    name="Phone or WhatsApp"
                     autocomplete="tel"
                   />
                 </div>
                 <div class="form-group">
                   <label for="sector">Sector</label>
-                  <select id="sector" name="sector">
+                  <select id="sector" name="Sector">
                     <option value="">Select one</option>
                     <option>Accountancy / bookkeeping</option>
                     <option>Legal / solicitors</option>
@@ -229,7 +230,7 @@
                 </div>
                 <div class="form-group">
                   <label for="sensitive-data">Do you handle sensitive data?</label>
-                  <select id="sensitive-data" name="handles_sensitive_data">
+                  <select id="sensitive-data" name="Handles sensitive data">
                     <option value="">Select one</option>
                     <option>Yes, regularly</option>
                     <option>Sometimes</option>
@@ -243,7 +244,7 @@
                 <label for="improve">What are you trying to improve?</label>
                 <textarea
                   id="improve"
-                  name="what_are_you_trying_to_improve"
+                  name="What are you trying to improve"
                   rows="4"
                   placeholder="For example: document search, meeting notes, staff AI training, policy review, internal procedures..."
                   required
@@ -256,30 +257,50 @@
                   transcription, document search, or something else?
                 </legend>
                 <label>
-                  <input type="checkbox" name="interest_offline_local_ai" value="yes" />
+                  <input
+                    type="checkbox"
+                    name="Interested in offline or local AI"
+                    value="Yes"
+                  />
                   Offline / local AI
                 </label>
                 <label>
-                  <input type="checkbox" name="interest_training" value="yes" />
+                  <input
+                    type="checkbox"
+                    name="Interested in staff AI training"
+                    value="Yes"
+                  />
                   Staff AI training
                 </label>
                 <label>
-                  <input type="checkbox" name="interest_transcription" value="yes" />
+                  <input
+                    type="checkbox"
+                    name="Interested in offline transcription"
+                    value="Yes"
+                  />
                   Offline transcription
                 </label>
                 <label>
-                  <input type="checkbox" name="interest_document_search" value="yes" />
+                  <input
+                    type="checkbox"
+                    name="Interested in private document search"
+                    value="Yes"
+                  />
                   Private document search
                 </label>
                 <label>
-                  <input type="checkbox" name="interest_other" value="yes" />
+                  <input
+                    type="checkbox"
+                    name="Interested in something else"
+                    value="Yes"
+                  />
                   Something else
                 </label>
               </fieldset>
 
               <div class="form-group">
                 <label for="budget">Budget range</label>
-                <select id="budget" name="budget_range">
+                <select id="budget" name="Budget range">
                   <option value="">Select one</option>
                   <option>Under &euro;1k</option>
                   <option>&euro;1k-&euro;5k</option>
@@ -292,7 +313,7 @@
                 <label for="message">Message</label>
                 <textarea
                   id="message"
-                  name="message"
+                  name="Message"
                   rows="6"
                   placeholder="Keep this high-level. Do not paste client files, medical information, legal documents or confidential records."
                   required
