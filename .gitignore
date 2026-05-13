@@ -10,3 +10,11 @@ Thumbs.db
 node_modules/
 .dist/
 .cache/
+.gitnexus/
+
+# Local agent / code-intelligence helper output
+.claude/
+CLAUDE.md
+docs/gitnexus-installation-guide.md
+package.json
+package-lock.json
