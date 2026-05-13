@@ -31,6 +31,7 @@ Static marketing/portfolio site with SEO, accessibility, and offline/PWA enhance
 - `css/style.css`, `js/script.js` (UI + behavior)
 - `llms.txt`, `pricing.md` (machine-readable AI assistant context)
 - `tools/check-seo.ps1` (repeatable local SEO audit)
+- `tools/check-pagespeed.ps1` (repeatable PageSpeed Insights check)
 
 ### Implemented SEO & UX Improvements
 
@@ -199,7 +200,8 @@ Use this as a starting point for new pages. Replace placeholders in ALL CAPS.
    - CSS/JS/Images: `Cache-Control: public, max-age=31536000, immutable`
    - Sitemaps/robots: shorter cache (e.g., `max-age=3600`)
 6. Run `powershell -ExecutionPolicy Bypass -File tools/check-seo.ps1`.
-7. Run a link checker locally (e.g., `npx broken-link-checker`).
+7. Run `powershell -ExecutionPolicy Bypass -File tools/check-pagespeed.ps1`.
+8. Run a link checker locally (e.g., `npx broken-link-checker`).
 
 ### Notes for Contributors
 
