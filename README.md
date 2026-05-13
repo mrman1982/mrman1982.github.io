@@ -29,6 +29,8 @@ Static marketing/portfolio site with SEO, accessibility, and offline/PWA enhance
 - `robots.txt`, `sitemap.xml`, `image-sitemap.xml` (SEO infrastructure)
 - `site.webmanifest`, `sw.js` (PWA)
 - `css/style.css`, `js/script.js` (UI + behavior)
+- `llms.txt`, `pricing.md` (machine-readable AI assistant context)
+- `tools/check-seo.ps1` (repeatable local SEO audit)
 
 ### Implemented SEO & UX Improvements
 
@@ -57,8 +59,8 @@ Static marketing/portfolio site with SEO, accessibility, and offline/PWA enhance
   - Google Search Console: submit `sitemap.xml` and `image-sitemap.xml`.
   - Bing Webmaster Tools: submit the same sitemaps.
 - Site Verification
-  - Google: add `<meta name="google-site-verification" content="YOUR_TOKEN" />` to `index.html` (or verify via DNS/HTML file).
-  - Bing: `<meta name="msvalidate.01" content="YOUR_TOKEN" />` — already present on `index.html` (update token as needed).
+  - Google: `<meta name="google-site-verification" content="3b56e2d0c1a94f7ca49d18f4f6e60f1b" />` is present on `index.html`; confirm it inside Google Search Console.
+  - Bing: `<meta name="msvalidate.01" content="A273B5B2444610922C1F44FD17143719" />` is present on `index.html`, and `BingSiteAuth.xml` is also present.
 - Sitemaps & Robots
   - `robots.txt` includes both sitemap URLs and allows crawl.
   - Keep canonical URLs absolute and on the preferred host.
@@ -70,8 +72,10 @@ Static marketing/portfolio site with SEO, accessibility, and offline/PWA enhance
   - Use page‑appropriate schema (see Pages & Features above) and validate via https://validator.schema.org
 - Social Previews
   - Provide `og:title`, `og:description`, `og:image`, `og:url`, `og:site_name`, and `twitter:card`/`twitter:image` on new pages.
-- Analytics (optional)
-  - Google Analytics `gtag.js` is included on `contact.html`, `search.html`, `thank-you.html`. Add to more pages if you want full‑site coverage.
+- Analytics
+  - Google Analytics 4 loads centrally from `js/script.js` with measurement ID `G-L7W0E1GDX0`.
+  - Event hooks use `data-track` attributes for assessment request clicks, email clicks and form submissions.
+  - Do Not Track is respected; ad storage, ad user data and ad personalisation signals are denied.
 
 ### PWA & Caching
 
@@ -168,7 +172,7 @@ Use this as a starting point for new pages. Replace placeholders in ALL CAPS.
 - Images have `alt`, explicit width/height, and `loading="lazy"` where appropriate.
 - Add the page to `sitemap.xml` if it’s part of the core nav.
 - If adding new key images, extend `image-sitemap.xml`.
-- If analytics should track this page, add your GA snippet.
+- Add `data-track` attributes to important calls to action so the shared analytics code can capture conversion events without duplicating GA snippets.
 
 ### Recommended Next Actions
 
@@ -181,9 +185,8 @@ Use this as a starting point for new pages. Replace placeholders in ALL CAPS.
    - GitHub Pages doesn’t support custom headers; Netlify/Cloudflare can via `_headers`.
 4. Extend `image-sitemap.xml` as you add portfolio images.
 5. Optional: Add `humans.txt` or `security.txt`.
-6. Track conversions: add an event for contact form submissions if using analytics.
-7. Consider a blog or more case studies for fresh content and long‑tail queries.
-8. Add a dedicated "Areas Served" section or expand local pages if targeting more regions.
+6. Consider a blog or more case studies for fresh content and long‑tail queries.
+7. Add a dedicated "Areas Served" section or expand local pages if targeting more regions.
 
 ### Deployment Checklist
 
@@ -195,7 +198,8 @@ Use this as a starting point for new pages. Replace placeholders in ALL CAPS.
    - HTML: `Cache-Control: no-cache, must-revalidate`
    - CSS/JS/Images: `Cache-Control: public, max-age=31536000, immutable`
    - Sitemaps/robots: shorter cache (e.g., `max-age=3600`)
-6. Run a link checker locally (e.g., `npx broken-link-checker`).
+6. Run `powershell -ExecutionPolicy Bypass -File tools/check-seo.ps1`.
+7. Run a link checker locally (e.g., `npx broken-link-checker`).
 
 ### Notes for Contributors
 

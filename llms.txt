@@ -1,0 +1,57 @@
+# Gen AI Solutions
+
+> Private AI for Irish businesses that handle sensitive data.
+
+Gen AI Solutions helps Irish businesses use AI privately, safely and practically without sending sensitive business data to public cloud AI tools. The business is based in Tralee, Co. Kerry and serves organisations across Ireland.
+
+The site is for business owners, managers and operations leads who want practical AI support but are cautious about privacy, data protection, confidential files, client records, staff data, meeting recordings and public AI platforms.
+
+## Core Positioning
+
+Gen AI Solutions is not a generic AI automation agency. The focus is private, offline, self-hosted and open-source AI systems for teams that handle sensitive information.
+
+Primary outcomes:
+
+- Private document search and question answering over approved internal files.
+- Offline meeting transcription, summaries, action points and searchable records.
+- Local ChatGPT-style assistants on laptops, workstations, servers or controlled infrastructure.
+- AI safety training and practical staff rules for sensitive data.
+- AI privacy and readiness audits before larger AI projects.
+
+## Key Pages
+
+- Homepage: https://gen-ai-solutions.ie/
+- Services: https://gen-ai-solutions.ie/services.html
+- AI Privacy and Readiness Audit: https://gen-ai-solutions.ie/ai-privacy-readiness-audit.html
+- Private Document Assistant: https://gen-ai-solutions.ie/rag-fine-tuning-explained.html
+- AI Consultant Kerry: https://gen-ai-solutions.ie/kerry-generative-ai.html
+- AI Resources: https://gen-ai-solutions.ie/ai-resources.html
+- Contact: https://gen-ai-solutions.ie/contact.html
+- Pricing summary: https://gen-ai-solutions.ie/pricing.md
+- Privacy Policy: https://gen-ai-solutions.ie/privacy-policy.html
+- Terms: https://gen-ai-solutions.ie/terms.html
+
+## Main Services
+
+AI Privacy and Readiness Audit:
+Reviews possible AI use cases, sensitive data risks, current workflows, staff rules and practical next steps. Guide pricing starts from EUR495. It is not legal advice and does not guarantee GDPR compliance.
+
+Offline AI Starter Setup:
+Sets up a controlled private AI starting point for small teams, usually on local hardware or controlled infrastructure. Useful when staff need a private ChatGPT-style assistant without public cloud uploads.
+
+Private Document Assistant:
+Lets staff ask questions across approved internal documents, policies, procedures, manuals or reports. The goal is faster internal search with source references while keeping confidential files under control.
+
+Offline Meeting Intelligence:
+Creates private transcripts, summaries, action points and searchable meeting records without automatically uploading sensitive recordings to public platforms.
+
+AI Safety and Staff Training:
+Plain-English training for teams that need practical rules for ChatGPT, Copilot, Gemini, Claude and other AI tools when sensitive data is involved.
+
+## Contact
+
+Email: david.mcelligott@hotmail.com
+
+Contact form: https://gen-ai-solutions.ie/contact.html
+
+Do not send sensitive files, client records, medical information, legal documents or confidential business files through the general contact form. If sensitive material needs to be reviewed, Gen AI Solutions will agree a safer process first.

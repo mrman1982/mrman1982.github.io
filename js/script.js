@@ -9,6 +9,45 @@
   }
 })();
 
+(() => {
+  const GA_MEASUREMENT_ID = "G-L7W0E1GDX0";
+
+  const doNotTrack =
+    navigator.doNotTrack ||
+    window.doNotTrack ||
+    navigator.msDoNotTrack ||
+    "0";
+
+  if (!GA_MEASUREMENT_ID || doNotTrack === "1" || doNotTrack === "yes") {
+    return;
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag =
+    window.gtag ||
+    function gtag() {
+      window.dataLayer.push(arguments);
+    };
+
+  window.gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "granted",
+  });
+  window.gtag("js", new Date());
+  window.gtag("config", GA_MEASUREMENT_ID, {
+    anonymize_ip: true,
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false,
+  });
+
+  const analyticsScript = document.createElement("script");
+  analyticsScript.async = true;
+  analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(analyticsScript);
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");

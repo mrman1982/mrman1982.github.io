@@ -1,15 +1,17 @@
 # Tracking Notes
 
-No new analytics provider, pixel, retargeting script or external tracking tool
-was added in this sprint.
+Google Analytics 4 is loaded centrally from `js/script.js` using measurement ID
+`G-L7W0E1GDX0`.
 
-The site currently has lightweight `data-track` attributes and JavaScript that
-can push events to `dataLayer` or `gtag` if an analytics provider is loaded.
-No analytics provider is currently loaded by these changes, so the next
-tracking decision should be made deliberately rather than patched in page by
-page.
+The site keeps lightweight `data-track` attributes and JavaScript that pushes
+conversion events to `dataLayer` and `gtag`. The analytics loader respects
+browser Do Not Track signals and does not load GA4 when Do Not Track is enabled.
 
-Recommended future events:
+Advertising storage, ad user data and ad personalisation signals are denied in
+the GA4 consent defaults. Do not add retargeting or advertising pixels without a
+separate privacy review.
+
+Tracked or recommended events:
 
 - Contact form submit.
 - Assessment request click.
@@ -23,5 +25,5 @@ Do not capture sensitive form content in analytics. Event payloads should avoid
 message text, document names, client names, medical details, legal details,
 financial records, staff data or any other confidential business information.
 
-If analytics is added later, prefer a simple privacy-friendly setup with clear
-conversion events and no retargeting by default.
+If more analytics is added later, prefer a simple privacy-friendly setup with
+clear conversion events and no retargeting by default.

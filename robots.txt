@@ -7,4 +7,7 @@ Allow: /
 Sitemap: https://gen-ai-solutions.ie/sitemap.xml
 Sitemap: https://gen-ai-solutions.ie/image-sitemap.xml
 
+# AI assistant context
+# llms.txt: https://gen-ai-solutions.ie/llms.txt
+
 # Note: Image sitemap helps index portfolio/media images
