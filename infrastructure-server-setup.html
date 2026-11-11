@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1b1938" />
+    <title>Server Setup &amp; IT Infrastructure Ireland | Gen AI Solutions</title>
+    <meta
+      name="description"
+      content="Practical server setup, shared storage, backups and self-hosted systems for Irish businesses. Clear scope and handover from Tralee, Co. Kerry."
+    />
+    <link rel="canonical" href="https://gen-ai-solutions.com/infrastructure-server-setup.html" />
+    <meta
+      property="og:image"
+      content="https://gen-ai-solutions.com/images/og-image.png"
+    />
+    <meta property="og:site_name" content="Gen AI Solutions" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://gen-ai-solutions.com/images/og-image.png"
+    />
+    <meta property="og:title" content="Infrastructure and server setup for Irish businesses" />
+    <meta
+      property="og:description"
+      content="Practical server setup, shared storage, backups and self-hosted systems for Irish businesses. Clear scope and handover from Tralee, Co. Kerry."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IE" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+    <meta
+      property="og:url"
+      content="https://gen-ai-solutions.com/infrastructure-server-setup.html"
+    />
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Infrastructure and server setup for Irish businesses",
+      "description": "Practical server setup, shared storage, backups and self-hosted systems for Irish businesses. Clear scope and handover from Tralee, Co. Kerry.",
+      "url": "https://gen-ai-solutions.com/infrastructure-server-setup.html",
+      "provider": {
+            "@type": "LocalBusiness",
+            "name": "Gen AI Solutions",
+            "url": "https://gen-ai-solutions.com/",
+            "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Tralee",
+                  "addressRegion": "Co. Kerry",
+                  "addressCountry": "IE"
+            }
+      },
+      "areaServed": {
+            "@type": "Country",
+            "name": "Ireland"
+      }
+}
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://gen-ai-solutions.com/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://gen-ai-solutions.com/services.html"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Infrastructure and servers",
+                  "item": "https://gen-ai-solutions.com/infrastructure-server-setup.html"
+            }
+      ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+            {
+                  "@type": "Question",
+                  "name": "Can you work with our existing equipment?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Existing equipment is reviewed first. Reuse may be sensible when it meets the workload, support and reliability needs. Any recommended replacement is explained before you approve a purchase."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Do we need an on-site server?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not necessarily. A workstation, shared storage device, hosted service or a combination may fit better. The choice depends on your applications, data sensitivity, connectivity, budget and ability to maintain it."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Does a backup guarantee that we can recover everything?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Coverage depends on what is included, how often copies are made and whether they can be restored. The scope should state the data covered, retention, recovery checks and who is responsible for ongoing review."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Can infrastructure work support a private AI system?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, where the hardware and access controls suit the workload. A review can cover a local assistant or private document pilot alongside storage and server planning. AI answers still need human review."
+                  }
+            }
+      ]
+}
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="main-header">
+      <a href="/index.html" class="logo" aria-label="Gen AI Solutions home">
+        <img
+          src="/images/logo.png"
+          alt="Gen AI Solutions logo"
+          width="128"
+          height="128"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </a>
+      <nav class="main-nav" id="primary-navigation">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html" class="active">Services</a></li>
+          <li><a href="/services.html#private-ai">Private AI</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/ai-resources.html">Resources</a></li>
+          <li>
+            <a
+              href="/contact.html"
+              class="nav-cta"
+              data-track="assessment_request_click"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="hamburger"></span>
+      </button>
+    </header>
+
+    <nav aria-label="Breadcrumb" class="breadcrumb container">
+      <ol><li><a href="/index.html">Home</a></li><li><a href="/services.html">Services</a></li><li><span aria-current="page">Infrastructure and servers</span></li></ol>
+    </nav>
+    <main id="main-content">
+      <div class="container">
+        <header class="page-header">
+          <p class="eyebrow">Practical IT for Irish businesses</p>
+          <h1>Infrastructure and server setup for Irish businesses</h1>
+          <p>Make the systems behind your business easier to use, maintain and understand. Get practical help with local servers, workstations, shared storage, backups, virtual machines and suitable self-hosted services.</p>
+          <p>Whether you are replacing an ageing server or setting up a small office, start with a review of the equipment, software and data you already depend on. Based in Tralee, Co. Kerry, serving businesses across Ireland.</p>
+          <p><a href="/contact.html?service=infrastructure-server-setup#contact-form-section" class="btn" data-track="assessment_request_click">Request a 20-minute consultation</a></p>
+          <p>We arrange a suitable time by reply.</p>
+        </header>
+        <section aria-labelledby="problem-heading">
+          <div class="section-intro"><h2 id="problem-heading">A clearer plan for the systems your team relies on</h2><p>Files spread across individual computers, unclear access permissions and backups that nobody has tried to restore can make ordinary work difficult. Buying a new server on its own will not resolve those questions. The first step is to understand who needs access, what must keep running and how you would recover if equipment failed.</p></div>
+          <div class="services-grid">
+            <article class="service-card"><h3>Shared files and controlled access</h3><p>Set up or reorganise shared storage so staff can find approved business files and access only what their role needs. Agree folder ownership, permission changes and what happens when someone joins or leaves.</p></article>
+            <article class="service-card"><h3>Servers and suitable self-hosted services</h3><p>Plan a local server or virtual machine for an agreed business workload. Review compatibility, storage, licensing and remote access before installation. Self-hosting brings control, but it also needs updates, backups and a named owner.</p></article>
+            <article class="service-card"><h3>Backups and recovery checks</h3><p>Review which data and settings need protection, where backup copies are kept and how recovery would work. An agreed restore check can help establish what a backup actually contains and what remains to be covered.</p></article>
+          </div>
+        </section>
+        <section aria-labelledby="delivered-heading">
+          <div class="section-intro"><h2 id="delivered-heading">What a scoped infrastructure project can include</h2></div>
+          <div class="services-grid">
+            <article class="service-card"><h3>A review before equipment is chosen</h3><p>We identify the users, applications, storage needs, existing hardware and external dependencies. You receive a proposed scope covering the intended result, access requirements, expected disruption and any equipment or licence costs for approval.</p></article>
+            <article class="service-card"><h3>Installation with an agreed change window</h3><p>The agreed work can cover server or workstation configuration, shared storage, virtual machines, user permissions and a suitable backup approach. Existing data is reviewed before changes, with a recovery route agreed where migration or replacement is involved.</p></article>
+            <article class="service-card"><h3>Documented checks and handover</h3><p>The handover records what was installed, who owns the accounts, where key settings are documented and how routine tasks are handled. Checks are matched to the work, such as accessing shared files with the right permissions or restoring an agreed sample from backup.</p></article>
+          </div>
+        </section>
+        <section aria-labelledby="privacy-heading">
+          <div class="privacy-note">
+            <h2 id="privacy-heading">Keep sensitive information under clear control</h2>
+            <p>An on-site server does not automatically make every connected service private. We review remote access, backup destinations, support tools and any cloud dependencies so you know where data may go. Access is limited to the agreed task and credentials are handled through an appropriate process rather than a general enquiry form.</p>
+            <p>If you also need a local AI assistant or private document search, the hardware and access design can be reviewed together. AI workloads have different memory and processing requirements, so suitability is assessed before equipment is recommended.</p>
+            <p><a href="/services.html#private-ai">Explore private AI and staff training</a></p>
+          </div>
+        </section>
+        <section aria-labelledby="process-heading">
+          <div class="section-intro"><h2 id="process-heading">From first conversation to handover</h2></div>
+          <ol class="process-list">
+            <li><span aria-hidden="true">1</span><h3>Review</h3><p>Describe the problem, existing equipment and systems that cannot be interrupted.</p></li>
+            <li><span aria-hidden="true">2</span><h3>Agree</h3><p>Confirm the work, hardware, licences, access and change window before starting.</p></li>
+            <li><span aria-hidden="true">3</span><h3>Prepare</h3><p>Agree backup and recovery arrangements for the changes being made.</p></li>
+            <li><span aria-hidden="true">4</span><h3>Configure</h3><p>Carry out the scoped setup and check the agreed user and recovery tasks.</p></li>
+            <li><span aria-hidden="true">5</span><h3>Handover</h3><p>Receive practical notes and decide whether further maintenance is needed.</p></li>
+          </ol>
+        </section>
+        <section aria-labelledby="scope-heading">
+          <div class="section-intro">
+            <h2 id="scope-heading">Agree ownership and ongoing support</h2>
+            <p>A setup project is different from ongoing managed support. Maintenance, monitoring, backup review and future changes are included only where agreed. Hardware, subscriptions and third-party licences are quoted or approved separately. There is no automatic 24-hour cover or uptime guarantee.</p><p>Complex networks, specialist applications and regulated environments may need input from your existing supplier or another specialist. We establish those dependencies during the review. If the proposed work is unsuitable, we explain that before committing to a build.</p>
+            <p>New work is quoted after a short review. Start with one defined improvement rather than an open-ended project.</p>
+          </div>
+        </section>
+        <section aria-labelledby="faq-heading">
+          <div class="section-intro"><h2 id="faq-heading">Common questions</h2></div>
+          <div class="faq-list">
+            <details><summary>Can you work with our existing equipment?</summary><p>Existing equipment is reviewed first. Reuse may be sensible when it meets the workload, support and reliability needs. Any recommended replacement is explained before you approve a purchase.</p></details>
+            <details><summary>Do we need an on-site server?</summary><p>Not necessarily. A workstation, shared storage device, hosted service or a combination may fit better. The choice depends on your applications, data sensitivity, connectivity, budget and ability to maintain it.</p></details>
+            <details><summary>Does a backup guarantee that we can recover everything?</summary><p>No. Coverage depends on what is included, how often copies are made and whether they can be restored. The scope should state the data covered, retention, recovery checks and who is responsible for ongoing review.</p></details>
+            <details><summary>Can infrastructure work support a private AI system?</summary><p>Yes, where the hardware and access controls suit the workload. A review can cover a local assistant or private document pilot alongside storage and server planning. AI answers still need human review.</p></details>
+          </div>
+        </section>
+      </div>
+    </main>
+    <section class="final-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Start with the system that needs attention</h2><p>Tell us about the server, storage or workstation problem. We will arrange a 20-minute consultation by reply and agree a sensible next step.</p>
+        <a href="/contact.html?service=infrastructure-server-setup#contact-form-section" class="btn" data-track="assessment_request_click">Request a 20-minute consultation</a>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Gen AI Solutions</h2>
+          <p>
+            Practical IT services and private AI for Irish businesses, with
+            privacy, clear scope and local support at the centre.
+          </p>
+          <p>Based in Tralee, Co. Kerry. Serving businesses across Ireland.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            <a
+              href="mailto:support@gen-ai-solutions.com"
+              data-track="email_click"
+              >support@gen-ai-solutions.com</a
+            >
+          </p>
+          <p><a href="/contact.html" data-track="assessment_request_click">Request a consultation</a></p>
+        </div>
+        <div>
+          <h3>Useful links</h3>
+          <p><a href="/infrastructure-server-setup.html">Infrastructure and servers</a></p>
+          <p><a href="/website-maintenance.html">Website maintenance</a></p>
+          <p><a href="/business-email-it-support.html">Business email and IT</a></p>
+          <p><a href="/services.html#private-ai">Private AI services</a></p>
+          <p><a href="/ai-privacy-readiness-audit.html">AI Privacy Audit</a></p>
+          <p><a href="/privacy-policy.html">Privacy policy</a></p>
+          <p><a href="/terms.html">Terms &amp; engagement</a></p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/company/gen-ai-solutions/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61569264684790"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/gen_ai_solutions/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@gen_ai_solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a
+          href="https://www.threads.net/@gen_ai_solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Threads"
+          ><i class="fa-brands fa-threads"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        &copy; 2026 Gen AI Solutions. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+  </body>
+</html>

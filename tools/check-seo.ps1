@@ -61,7 +61,7 @@ if (-not (Test-Path -LiteralPath $robotsPath)) {
   Add-Failure "robots.txt: missing"
 } else {
   $robots = Read-Text $robotsPath
-  foreach ($expected in @("https://gen-ai-solutions.ie/sitemap.xml", "https://gen-ai-solutions.ie/image-sitemap.xml")) {
+  foreach ($expected in @("https://gen-ai-solutions.com/sitemap.xml", "https://gen-ai-solutions.com/image-sitemap.xml")) {
     if ($robots -notmatch [regex]::Escape($expected)) {
       Add-Failure "robots.txt: missing sitemap reference $expected"
     }

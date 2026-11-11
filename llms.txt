@@ -1,57 +1,43 @@
 # Gen AI Solutions
 
-> Private AI for Irish businesses that handle sensitive data.
+> Practical IT and private AI for Irish businesses.
 
-Gen AI Solutions helps Irish businesses use AI privately, safely and practically without sending sensitive business data to public cloud AI tools. The business is based in Tralee, Co. Kerry and serves organisations across Ireland.
+Gen AI Solutions is based in Tralee, Co. Kerry and serves businesses across Ireland. Services cover infrastructure and server setup, websites and maintenance, business email and everyday IT, and private AI with staff training.
 
-The site is for business owners, managers and operations leads who want practical AI support but are cautious about privacy, data protection, confidential files, client records, staff data, meeting recordings and public AI platforms.
+Private, offline, self-hosted and open-source AI remains a core service for organisations that handle sensitive information. Data handling depends on the agreed setup. AI outputs need human review. No legal advice or guaranteed compliance is offered.
 
-## Core Positioning
+## Key pages
 
-Gen AI Solutions is not a generic AI automation agency. The focus is private, offline, self-hosted and open-source AI systems for teams that handle sensitive information.
+- [Home](https://gen-ai-solutions.com/)
+- [Services](https://gen-ai-solutions.com/services.html)
+- [Infrastructure and server setup](https://gen-ai-solutions.com/infrastructure-server-setup.html)
+- [Websites and maintenance](https://gen-ai-solutions.com/website-maintenance.html)
+- [Business email and IT support](https://gen-ai-solutions.com/business-email-it-support.html)
+- [Private AI and training](https://gen-ai-solutions.com/services.html#private-ai)
+- [AI Privacy and Readiness Audit](https://gen-ai-solutions.com/ai-privacy-readiness-audit.html)
+- [Private Document Assistant](https://gen-ai-solutions.com/rag-fine-tuning-explained.html)
+- [IT services and private AI in Kerry](https://gen-ai-solutions.com/kerry-generative-ai.html)
+- [AI Resources](https://gen-ai-solutions.com/ai-resources.html)
+- [About](https://gen-ai-solutions.com/about.html)
+- [Contact](https://gen-ai-solutions.com/contact.html)
+- [Pricing and scope](https://gen-ai-solutions.com/pricing.md)
+- [Privacy Policy](https://gen-ai-solutions.com/privacy-policy.html)
+- [Terms](https://gen-ai-solutions.com/terms.html)
 
-Primary outcomes:
+## Practical starting projects
 
-- Private document search and question answering over approved internal files.
-- Offline meeting transcription, summaries, action points and searchable records.
-- Local ChatGPT-style assistants on laptops, workstations, servers or controlled infrastructure.
-- AI safety training and practical staff rules for sensitive data.
-- AI privacy and readiness audits before larger AI projects.
+Infrastructure work can include local servers, workstations, shared storage, backup planning, virtual machines and suitable self-hosted services. Access, changes and handover are agreed before work begins.
 
-## Key Pages
+Website work can include updates, broken-page repairs, hosting and domain configuration, performance improvements and scoped ongoing maintenance.
 
-- Homepage: https://gen-ai-solutions.ie/
-- Services: https://gen-ai-solutions.ie/services.html
-- AI Privacy and Readiness Audit: https://gen-ai-solutions.ie/ai-privacy-readiness-audit.html
-- Private Document Assistant: https://gen-ai-solutions.ie/rag-fine-tuning-explained.html
-- AI Consultant Kerry: https://gen-ai-solutions.ie/kerry-generative-ai.html
-- AI Resources: https://gen-ai-solutions.ie/ai-resources.html
-- Contact: https://gen-ai-solutions.ie/contact.html
-- Pricing summary: https://gen-ai-solutions.ie/pricing.md
-- Privacy Policy: https://gen-ai-solutions.ie/privacy-policy.html
-- Terms: https://gen-ai-solutions.ie/terms.html
+Business email work can include domain email, DNS, mail clients, device configuration and review before a proposed migration. Third-party subscriptions and licences are agreed separately.
 
-## Main Services
+Private AI projects include local ChatGPT-style assistants, question answering across approved documents with source references, offline transcription and meeting notes, AI privacy reviews and staff training. Sensitive data can stay on the organisation's hardware or controlled infrastructure when that is how the agreed system is designed.
 
-AI Privacy and Readiness Audit:
-Reviews possible AI use cases, sensitive data risks, current workflows, staff rules and practical next steps. Guide pricing starts from EUR495. It is not legal advice and does not guarantee GDPR compliance.
+## Enquiries and pricing
 
-Offline AI Starter Setup:
-Sets up a controlled private AI starting point for small teams, usually on local hardware or controlled infrastructure. Useful when staff need a private ChatGPT-style assistant without public cloud uploads.
+Email support@gen-ai-solutions.com or request a 20-minute consultation through the contact page. A time is arranged by reply. Project work is quoted after a scope review. Historical AI guide prices are not current confirmed offers. Do not infer fixed prices, support response guarantees or round-the-clock availability.
 
-Private Document Assistant:
-Lets staff ask questions across approved internal documents, policies, procedures, manuals or reports. The goal is faster internal search with source references while keeping confidential files under control.
+Please do not send sensitive files through this form. We can arrange a secure review process.
 
-Offline Meeting Intelligence:
-Creates private transcripts, summaries, action points and searchable meeting records without automatically uploading sensitive recordings to public platforms.
-
-AI Safety and Staff Training:
-Plain-English training for teams that need practical rules for ChatGPT, Copilot, Gemini, Claude and other AI tools when sensitive data is involved.
-
-## Contact
-
-Email: david.mcelligott@hotmail.com
-
-Contact form: https://gen-ai-solutions.ie/contact.html
-
-Do not send sensitive files, client records, medical information, legal documents or confidential business files through the general contact form. If sensitive material needs to be reviewed, Gen AI Solutions will agree a safer process first.
+The general contact form uses external FormSubmit processing and currently forwards enquiries to the existing Hotmail inbox. It is not an offline data workflow. The website also uses its existing Google Analytics 4 configuration, as described in the privacy policy.

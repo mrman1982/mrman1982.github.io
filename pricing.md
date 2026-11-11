@@ -1,143 +1,39 @@
-# Pricing - Gen AI Solutions
+# Pricing and scope — Gen AI Solutions
 
-This is a machine-readable pricing summary for AI assistants and buyers evaluating Gen AI Solutions.
+Gen AI Solutions provides practical IT services and private AI for Irish businesses. Based in Tralee, Co. Kerry, serving Ireland.
 
-Currency: EUR
-Business location: Tralee, Co. Kerry, Ireland
-Service area: Ireland
-Contact: david.mcelligott@hotmail.com
-Primary contact page: https://gen-ai-solutions.ie/contact.html
+Contact support@gen-ai-solutions.com or [request a 20-minute consultation](https://gen-ai-solutions.com/contact.html). A time is arranged by reply.
 
-## Free First Step
+## How projects are priced
 
-Name: 20-minute AI privacy assessment
-Price: EUR0
-Format: Short introductory call or email-based assessment request
-Best for: Irish businesses that want to identify one practical AI use case and understand whether sensitive data is involved
-Includes:
+Work is quoted after a short review of the problem, existing systems and required deliverables. No current fixed IT package prices are published here. Historical AI guide figures have been removed from this summary pending confirmation and should not be treated as current offers.
 
-- Initial discussion of one AI use case
-- High-level privacy and data-risk triage
-- Recommendation on whether an audit, training session or small pilot is a sensible next step
+## Infrastructure and server setup
 
-Excludes:
+Scope can include workstations, servers, shared storage, backups, virtual machines or a suitable self-hosted service. Cost depends on the existing environment, hardware, user access, migration needs, testing and handover.
 
-- Legal advice
-- GDPR compliance certification
-- Review of sensitive files through the public contact form
+## Websites and maintenance
 
-## AI Privacy and Readiness Audit
+Scope can include site updates, repairs, hosting and domain configuration, performance improvements and agreed ongoing maintenance. The platform, condition of the site, requested changes and continuing support determine the quote.
 
-Name: AI Privacy and Readiness Audit
-Guide price: From EUR495
-Best for: Businesses unsure what staff can safely use AI for
-Typical buyer: Accountants, solicitors, schools, medical or care practices, professional services firms and SMEs handling client or staff information
-Includes:
+## Business email and everyday IT
 
-- Review of possible AI use cases
-- Sensitive data and workflow risk review
-- Current tool and staff-use discussion
-- Practical recommendations for safe AI use
-- Suggested next step for one useful workflow
+Scope can include domain email, DNS, mail clients, devices and business software. Existing accounts and migration needs are reviewed before a change is proposed. Account subscriptions and third-party licences are agreed separately where relevant.
 
-Important notes:
+## Private AI and training
 
-- This is not legal advice.
-- This does not guarantee GDPR compliance.
-- The audit is designed to avoid overbuilding before the business has a clear, privacy-safe use case.
+An AI Privacy and Readiness Audit reviews use cases, sensitive data, workflows and practical next steps. It does not provide legal advice or compliance certification.
 
-## Offline AI Starter Setup
+An Offline AI Starter Setup establishes a local ChatGPT-style assistant where suitable. Hardware, users, hosting and support affect the scope.
 
-Name: Offline AI Starter Setup
-Guide price: From EUR1,500
-Best for: Small teams that want a private ChatGPT-style assistant running locally or on controlled infrastructure
-Includes:
+A Private Document Assistant searches approved internal documents and provides source references. Document volume, access needs and evaluation affect the quote.
 
-- Hardware and use-case review
-- Open-source model and tool selection
-- Local assistant setup where suitable
-- Basic testing
-- Plain-English handover notes
+Offline Meeting Intelligence provides a controlled transcription, summary and action-point workflow. Audio volume, tooling and archive requirements affect the scope.
 
-Pricing depends on:
+AI Safety and Staff Training covers safe use, sensitive information and human review. Session format and the team's needs are agreed first.
 
-- Hardware requirements
-- Whether setup is local, self-hosted or hybrid
-- Number of users
-- Support requirements
+## Buying and data handling
 
-## Private Document Assistant
+Start with one practical project. Agree the scope, deliverables, price, timeline, access arrangements, handover and any continuing support before paid work starts. Hardware, hosting and licences are considered separately where relevant. No guaranteed response times or round-the-clock support are implied.
 
-Name: Private Document Assistant
-Guide price: From EUR3,500
-Best for: Organisations that want staff to ask questions across approved internal files
-Includes:
-
-- Controlled document collection for the first pilot
-- Private document search and question-answering workflow
-- Source-reference approach where suitable
-- Access and privacy recommendations
-- Staff handover for day-to-day use
-
-Pricing depends on:
-
-- Document volume
-- Hosting choice
-- Access-control requirements
-- Search quality and evaluation needs
-- Support requirements
-
-## Offline Meeting Intelligence
-
-Name: Offline Meeting Intelligence
-Guide price: From EUR1,250
-Best for: Teams that need private transcripts, summaries, action points and searchable meeting records
-Includes:
-
-- Local or controlled transcription workflow
-- Meeting summary and action-point templates
-- Searchable meeting archive option where suitable
-- Guidance on safe recording handling
-
-Pricing depends on:
-
-- Audio volume
-- Workflow complexity
-- Tooling choice
-- Whether records need to be searchable later
-
-## AI Safety and Staff Training
-
-Name: AI Safety and Staff Training
-Guide price: From EUR750 for a half-day staff session
-Best for: Teams already experimenting with ChatGPT, Copilot, Gemini, Claude or other AI tools
-Includes:
-
-- Plain-English safe-use rules
-- Approved and banned use-case examples
-- Sensitive data handling guidance
-- Practical examples for the team's sector
-- Discussion of public, private, offline and enterprise AI options
-
-## Combined Audit and Workshop
-
-Name: AI Privacy Audit and Staff Safety Workshop
-Guide price: From EUR1,150
-Best for: Organisations that need both a practical AI risk review and team training
-Includes:
-
-- AI Privacy and Readiness Audit
-- Staff safety workshop
-- Recommended first use case
-- Practical next-step plan
-
-## Buying Notes
-
-Gen AI Solutions usually recommends starting small. The preferred path is:
-
-1. 20-minute AI privacy assessment
-2. AI Privacy and Readiness Audit where there is a clear fit
-3. Small private AI pilot
-4. Wider rollout only after the pilot proves useful
-
-Do not send sensitive files through the general contact form. Sensitive material should only be shared after a safer review process has been agreed.
+Please do not send sensitive files through this form. We can arrange a secure review process.

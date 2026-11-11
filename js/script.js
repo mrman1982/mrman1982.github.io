@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-enabled");
+
 (() => {
   try {
     const savedTheme = localStorage.getItem("genai-theme");
@@ -155,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!contactForm.hasAttribute("action")) {
       contactForm.setAttribute(
         "action",
-        "https://formsubmit.co/david.mcelligott@hotmail.com"
+        "https://formsubmit.co/support@gen-ai-solutions.com"
       );
     }
 
@@ -171,6 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const serviceLabels = {
+        "infrastructure-server-setup": "Infrastructure and server setup",
+        "website-maintenance": "Website work and maintenance",
+        "business-email-it-support": "Business email and everyday IT",
         "ai-privacy-readiness-audit": "AI Privacy and Readiness Audit",
         "offline-ai-starter-setup": "Offline AI Starter Setup",
         "private-document-assistant": "Private Document Assistant",
@@ -179,9 +184,27 @@ document.addEventListener("DOMContentLoaded", () => {
         "open-source-ai-setup": "Open-Source AI Setup",
         "kerry-ai-consultant": "AI Consultant Kerry",
       };
+      const serviceFields = {
+        "infrastructure-server-setup": "service-infrastructure",
+        "website-maintenance": "service-website",
+        "business-email-it-support": "service-business-email",
+        "ai-privacy-readiness-audit": "service-ai-audit",
+        "offline-ai-starter-setup": "service-local-ai",
+        "private-document-assistant": "service-document-search",
+        "offline-meeting-intelligence": "service-transcription",
+        "ai-safety-training": "service-ai-training",
+        "open-source-ai-setup": "service-open-source",
+      };
       const params = new URLSearchParams(window.location.search);
-      const selectedService = serviceLabels[params.get("service")];
-      if (selectedService) {
+      const serviceKey = params.get("service");
+      if (Object.prototype.hasOwnProperty.call(serviceLabels, serviceKey)) {
+        const selectedService = serviceLabels[serviceKey];
+        const serviceField = serviceFields[serviceKey]
+          ? contactForm.querySelector(`#${serviceFields[serviceKey]}`)
+          : null;
+        if (serviceField) {
+          serviceField.checked = true;
+        }
         const existingServiceInput = contactForm.querySelector(
           'input[name="Selected service"]'
         );
@@ -201,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contactForm.addEventListener("submit", () => {
       trackConversion("form_submit", {
         form_id: contactForm.id,
-        form_name: "Private AI assessment",
+        form_name: "IT and private AI enquiry",
       });
     });
   }

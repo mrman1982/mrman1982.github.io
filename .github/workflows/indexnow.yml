@@ -19,14 +19,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          DOMAIN="https://gen-ai-solutions.ie"
+          DOMAIN="https://gen-ai-solutions.com"
           KEY="3b56e2d0c1a94f7ca49d18f4f6e60f1b"
           KEY_URL="$DOMAIN/$KEY.txt"
           # Get changed files for this push (if empty, fallback to all html)
           if git rev-parse --verify HEAD^ >/dev/null 2>&1; then
-            CHANGED=$(git diff --name-only HEAD^ HEAD | grep -E '\\.(html|xml|txt)$' || true)
+            CHANGED=$(git diff --name-only HEAD^ HEAD | grep -E '\.(html|xml|txt)$' || true)
           else
-            CHANGED=$(git ls-files | grep -E '\\.(html|xml|txt)$' || true)
+            CHANGED=$(git ls-files | grep -E '\.(html|xml|txt)$' || true)
           fi
           URLS=()
           for f in $CHANGED; do
@@ -51,11 +51,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          DOMAIN="https://gen-ai-solutions.ie"
+          DOMAIN="https://gen-ai-solutions.com"
           KEY="${{ steps.urls.outputs.key }}"
           KEY_URL="${{ steps.urls.outputs.key_url }}"
           API_ENDPOINT="https://api.indexnow.org/indexnow"
-          BODY=$(jq -n --arg host "gen-ai-solutions.ie" \
+          BODY=$(jq -n --arg host "gen-ai-solutions.com" \
                     --arg key "$KEY" \
                     --arg keyLocation "$KEY_URL" \
                     --argjson urlList "$(jq -Rsc 'split("\n") | map(select(length>0))' urls.txt)" \

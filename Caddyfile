@@ -21,6 +21,9 @@
 
 	respond /health "ok" 200
 
+	@www host www.gen-ai-solutions.com
+	redir @www https://gen-ai-solutions.com{uri} permanent
+
 	# Preserve the existing redirects and extensionless page links.
 	redir /index.html / 301
 	redir /rag-and-fine-tuning-explained.html /rag-fine-tuning-explained.html 301

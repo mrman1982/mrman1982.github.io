@@ -4,10 +4,10 @@ Allow: /
 # Disallow admin or temp paths (none currently)
 # Disallow: /admin/
 
-Sitemap: https://gen-ai-solutions.ie/sitemap.xml
-Sitemap: https://gen-ai-solutions.ie/image-sitemap.xml
+Sitemap: https://gen-ai-solutions.com/sitemap.xml
+Sitemap: https://gen-ai-solutions.com/image-sitemap.xml
 
 # AI assistant context
-# llms.txt: https://gen-ai-solutions.ie/llms.txt
+# llms.txt: https://gen-ai-solutions.com/llms.txt
 
 # Note: Image sitemap helps index portfolio/media images

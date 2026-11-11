@@ -44,12 +44,24 @@ Verify the same routes and 404 boundaries on that public URL. Add the selected
 custom domain only after ownership is established, then use the exact DNS values
 returned by Railway. Keep Zoho's mail DNS records independent of the web records.
 
-The contact form keeps its existing delivery recipient. JavaScript sets its
+The contact form delivers to `support@gen-ai-solutions.com` in Zoho Mail through
+FormSubmit. Activate the recipient when FormSubmit requests confirmation, then
+verify a labelled enquiry arrives before declaring form delivery ready.
+JavaScript sets its
 FormSubmit thank-you URL to the current website origin, so the Railway URL and
 a new custom domain return visitors to a working confirmation page. Without
 JavaScript, FormSubmit supplies its default confirmation page. The service-worker
-cache version is `v11` for this HTML/JavaScript change.
+cache version is `v12` for the website refresh and new service pages.
 
-The hosting move does not change public copy, email delivery or canonical URLs.
-Update those separately when the final domain and website refresh are approved.
-Until then, a Railway preview still contains the original `.ie` metadata.
+The production origin is `https://gen-ai-solutions.com/`, with `www` redirected
+to the apex by Caddy. Cloudflare manages registration and DNS, Railway hosts
+the static website, and Zoho Mail handles `support@gen-ai-solutions.com` as an
+additional send-and-receive address in the existing Zoho mailbox.
+
+The generated Railway URL is
+`https://website-production-90779735.up.railway.app/`. Production follows
+`main` in `mrman1982/mrman1982.github.io`. Prepare and review website changes on
+a separate branch, then integrate the intended files into `main` for Railway
+to build. If temporarily pinning a service to a commit, pushing alone will not
+deploy until that pin is removed or replaced. Verify the resulting deployment
+and public HTTPS after each release.

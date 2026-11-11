@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex,follow" />
     <meta name="theme-color" content="#1b1938" />
     <title>Site Search | Gen AI Solutions</title>
-    <link rel="canonical" href="https://gen-ai-solutions.ie/search.html" />
+    <link rel="canonical" href="https://gen-ai-solutions.com/search.html" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
     <link rel="preload" href="/css/style.css" as="style" />
@@ -47,11 +47,10 @@
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/rag-fine-tuning-explained.html">Private Document Assistant</a></li>
-          <li><a href="/services.html#offline-transcription">Offline Transcription</a></li>
-          <li><a href="/services.html#training-governance">AI Training</a></li>
+          <li><a href="/services.html#private-ai">Private AI</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="/ai-resources.html">Resources</a></li>
-          <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+          <li><a href="/contact.html" class="nav-cta" data-track="assessment_request_click">Contact</a></li>
         </ul>
       </nav>
       <button
@@ -76,7 +75,7 @@
             id="q"
             class="search-input"
             type="search"
-            placeholder="Try: audit, document assistant, transcription, Kerry"
+            placeholder="Try: server setup, website, business email, private AI, Kerry"
           />
         </div>
         <div id="results" class="results" aria-live="polite"></div>
@@ -84,6 +83,28 @@
     </main>
 
     <footer class="main-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Gen AI Solutions</h2>
+          <p>Practical IT and private AI for Irish businesses. Servers, websites, business email and AI systems with privacy and control in mind.</p>
+          <p>Based in Tralee, Co. Kerry. Serving Ireland.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="mailto:support@gen-ai-solutions.com" data-track="email_click">support@gen-ai-solutions.com</a></p>
+          <p><a href="/contact.html" data-track="assessment_request_click">Request a 20-minute consultation</a></p>
+          <p>Send a short enquiry and we will arrange a time by reply.</p>
+        </div>
+        <div>
+          <h3>Services and information</h3>
+          <p><a href="/infrastructure-server-setup.html">Infrastructure and server setup</a></p>
+          <p><a href="/website-maintenance.html">Websites and maintenance</a></p>
+          <p><a href="/business-email-it-support.html">Business email and IT support</a></p>
+          <p><a href="/services.html#private-ai">Private AI and training</a></p>
+          <p><a href="/privacy-policy.html">Privacy policy</a></p>
+          <p><a href="/terms.html">Terms and engagement</a></p>
+        </div>
+      </div>
       <div class="footer-socials">
         <a
           href="https://www.linkedin.com/company/gen-ai-solutions/"
@@ -121,20 +142,23 @@
           ><i class="fa-brands fa-threads"></i
         ></a>
       </div>
-      <p>&copy; 2025 Gen AI Solutions. All Rights Reserved.</p>
+      <p>&copy; 2026 Gen AI Solutions. All Rights Reserved.</p>
     </footer>
 
     <script>
       const index = [
+        {title: "Infrastructure and server setup", url: "infrastructure-server-setup.html", text: "Business servers, workstations, shared storage, backup planning, virtual machines, self-hosted systems, infrastructure Ireland Kerry"},
+        {title: "Websites and ongoing maintenance", url: "website-maintenance.html", text: "Business website updates, broken page repairs, hosting, domains, performance, website maintenance Ireland Kerry"},
+        {title: "Business email and IT support", url: "business-email-it-support.html", text: "Domain email, DNS, mail clients, device setup, business software, email migration review, everyday IT support Ireland Kerry"},
         {
           title: "Home",
           url: "index.html",
-          text: "Private AI for Irish businesses, offline AI, self-hosted AI, document assistants, transcription, training, services, contact",
+          text: "IT services and private AI for Irish businesses, servers, websites, business email, offline AI, self-hosted AI, document assistants, transcription, training, contact",
         },
         {
           title: "Services",
           url: "services.html",
-          text: "Private AI services, offline AI setup, private document assistant, offline transcription, open-source AI, staff AI training",
+          text: "IT support, infrastructure, server setup, website maintenance, business email, private AI services, offline AI setup, private document assistant, offline transcription, open-source AI, staff AI training",
         },
         {
           title: "Private Document Assistant Explained",
@@ -147,9 +171,9 @@
           text: "AI privacy audit, readiness audit, sensitive data, private AI assessment, safe AI use for Irish businesses",
         },
         {
-          title: "AI Consultant Kerry",
+          title: "IT Services and Private AI in Kerry",
           url: "kerry-generative-ai.html",
-          text: "AI consultant Kerry, private AI consultant Kerry, offline AI solutions Kerry, Tralee, Ireland",
+          text: "IT support Kerry, servers, websites, email, AI consultant Kerry, private AI consultant Kerry, offline AI solutions Kerry, Tralee, Ireland",
         },
         {
           title: "AI Resources",
@@ -164,7 +188,7 @@
         {
           title: "Contact",
           url: "contact.html",
-          text: "Request a 20-minute AI privacy assessment, private AI enquiry, offline AI setup, document assistant, training",
+          text: "Request a 20-minute consultation, IT project enquiry, private AI enquiry, offline AI setup, document assistant, training",
         },
       ];
 
