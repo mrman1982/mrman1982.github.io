@@ -50,14 +50,14 @@
       name="twitter:description"
       content="Practical IT, websites, email and private or online AI for Irish businesses. Based in Tralee, Co. Kerry, serving Ireland."
     />
-    <link rel="preload" href="/css/style.css?v=15" as="style" />
+    <link rel="preload" href="/css/style.css?v=16" as="style" />
     <link
       rel="stylesheet"
-      href="/css/style.css?v=15"
+      href="/css/style.css?v=16"
       media="print"
       onload="this.media='all'"
     />
-    <noscript><link rel="stylesheet" href="/css/style.css?v=15" /></noscript>
+    <noscript><link rel="stylesheet" href="/css/style.css?v=16" /></noscript>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -191,13 +191,31 @@
               <span class="map-symbol" aria-hidden="true">&#9638;</span>
               <p id="systems-map-title">Your business, connected</p>
             </div>
-            <div class="systems-map-grid">
-              <div class="system-node"><span class="node-mark" aria-hidden="true">01</span><h2>Infrastructure</h2><p>Servers, storage &amp; backups</p></div>
-              <div class="system-node"><span class="node-mark" aria-hidden="true">02</span><h2>Your website</h2><p>Pages, hosting &amp; maintenance</p></div>
-              <div class="system-node"><span class="node-mark" aria-hidden="true">03</span><h2>Business email</h2><p>Domains, accounts &amp; devices</p></div>
-              <div class="system-node system-node-private"><span class="node-mark" aria-hidden="true">04</span><h2>Private &amp; online AI</h2><p>Tools, workflows &amp; training</p></div>
+            <div class="business-flow">
+              <div class="flow-origin">
+                <span class="flow-label">The starting point</span>
+                <h2>Your business</h2>
+                <p>Your people, information and everyday work.</p>
+              </div>
+              <div class="flow-paths">
+                <div class="flow-path">
+                  <span class="flow-label">A dependable foundation</span>
+                  <h3>Reliable IT</h3>
+                  <p>Servers and backups<br />Websites and business email</p>
+                </div>
+                <div class="flow-path">
+                  <span class="flow-label">A practical next step</span>
+                  <h3>Useful AI</h3>
+                  <p>Private or online tools<br />Integrations and staff training</p>
+                </div>
+              </div>
+              <div class="flow-outcome">
+                <span class="flow-label">The aim</span>
+                <h3>Your team, in control</h3>
+                <p>Clear access, useful workflows and people reviewing the results.</p>
+              </div>
             </div>
-            <p class="systems-map-note">Practical systems. Clear ownership. Privacy considered from the start.</p>
+            <p class="systems-map-note">An illustrative approach to a connected business. Each setup starts with your needs and a privacy review.</p>
           </div>
         </div>
       </section>
@@ -207,29 +225,37 @@
           <div><p class="eyebrow">How we can help</p><h2 id="services-heading">Good technology should make<br class="desktop-break" /> the working day simpler.</h2></div>
           <p>Help with the systems you rely on today, and a sensible way to explore what comes next. Start with the part of your business that needs attention.</p>
         </div>
-        <div class="home-services-grid">
+        <div class="home-services-grid service-index">
           <article class="service-card home-service-card">
             <span class="home-card-number" aria-hidden="true">01 / INFRASTRUCTURE</span>
-            <h3>Servers, shared files and backups</h3>
-            <p>Give staff a clearer way to store files and access business applications. Get help with a server, shared storage, access controls or a workable backup plan.</p>
+            <div class="service-index-copy">
+              <h3>Servers, shared files and backups</h3>
+              <p>Give staff a clearer way to store files and access business applications. Get help with a server, shared storage, access controls or a workable backup plan.</p>
+            </div>
             <a href="/infrastructure-server-setup.html" class="home-text-link">Plan your infrastructure <span aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="service-card home-service-card">
             <span class="home-card-number" aria-hidden="true">02 / WEBSITES</span>
-            <h3>Websites and ongoing maintenance</h3>
-            <p>Repair broken pages, update your content and make it easier for visitors to enquire. Get help with hosting, domain settings and ongoing maintenance.</p>
+            <div class="service-index-copy">
+              <h3>Websites and ongoing maintenance</h3>
+              <p>Repair broken pages, update your content and make it easier for visitors to enquire. Get help with hosting, domain settings and ongoing maintenance.</p>
+            </div>
             <a href="/website-maintenance.html" class="home-text-link">Improve your website <span aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="service-card home-service-card">
             <span class="home-card-number" aria-hidden="true">03 / EVERYDAY IT</span>
-            <h3>Business email and IT support</h3>
-            <p>Use email on your own business domain and help staff connect their devices. Resolve setup problems and understand which accounts and subscriptions the business controls.</p>
+            <div class="service-index-copy">
+              <h3>Business email and IT support</h3>
+              <p>Use email on your own business domain and help staff connect their devices. Resolve setup problems and understand which accounts and subscriptions the business controls.</p>
+            </div>
             <a href="/business-email-it-support.html" class="home-text-link">Sort out your business IT <span aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="service-card home-service-card home-service-private">
             <span class="home-card-number" aria-hidden="true">04 / AI SERVICES</span>
-            <h3>Private and online AI</h3>
-            <p>Choose local assistants or online tools, connect useful workflows and give staff practical training. Agree what data can be shared and where people review the result.</p>
+            <div class="service-index-copy">
+              <h3>Private and online AI</h3>
+              <p>Choose local assistants or online tools, connect useful workflows and give staff practical training. Agree what data can be shared and where people review the result.</p>
+            </div>
             <a href="/services.html#private-ai" class="home-text-link">Explore AI services <span aria-hidden="true">&#8599;</span></a>
           </article>
         </div>
@@ -279,7 +305,25 @@
           <p>Possible projects to help explain the work. These are illustrative scenarios, rather than completed builds or client case studies.</p>
         </div>
         <div class="home-demo-grid">
-          <article class="home-demo-card"><p class="home-demo-label">Example / Document search</p><h3>Find an answer in your own files</h3><p>A private assistant searches approved policies and manuals, then points staff back to the source passages for review.</p><a href="/rag-fine-tuning-explained.html" class="home-text-link">See how document search works <span aria-hidden="true">&#8599;</span></a></article>
+          <article class="home-demo-card home-demo-featured">
+            <p class="home-demo-label">Illustrative walkthrough / Document search</p>
+            <h3>Find an answer in your own files</h3>
+            <p>A private assistant searches approved policies and manuals, then points staff back to the source passages for review.</p>
+            <div class="demo-question">
+              <p class="flow-label">Fictional question</p>
+              <p>How do I request annual leave?</p>
+            </div>
+            <div class="demo-answer">
+              <p class="flow-label">Illustrative answer</p>
+              <p>Send your proposed dates to your manager at least two weeks in advance. Wait for approval before making arrangements.</p>
+            </div>
+            <div class="demo-source">
+              <p class="flow-label">Fictional source</p>
+              <p>Sample staff handbook, section 4.2, Annual leave requests.</p>
+            </div>
+            <p>This fictional example explains the workflow. Staff should check the source and confirm the answer with the appropriate person before acting.</p>
+            <a href="/rag-fine-tuning-explained.html" class="home-text-link">See how document search works <span aria-hidden="true">&#8599;</span></a>
+          </article>
           <article class="home-demo-card"><p class="home-demo-label">Example / Business IT</p><h3>Give an office one shared filing place</h3><p>A small office replaces scattered copies with shared project folders, named staff access and a documented backup and recovery check.</p><a href="/infrastructure-server-setup.html" class="home-text-link">Explore shared storage projects <span aria-hidden="true">&#8599;</span></a></article>
           <article class="home-demo-card"><p class="home-demo-label">Example / Online AI integration</p><h3>Prepare a response for approval</h3><p>An enquiry containing approved information becomes a structured summary and draft response in a connected workflow. A person checks it before sending.</p><a href="/services.html#online-ai" class="home-text-link">Explore online AI setup <span aria-hidden="true">&#8599;</span></a></article>
         </div>
@@ -351,6 +395,6 @@
       <p class="copyright">&copy; 2026 Gen AI Solutions. All rights reserved.</p>
     </footer>
 
-    <script src="/js/script.js?v=15" defer></script>
+    <script src="/js/script.js?v=16" defer></script>
   </body>
 </html>
