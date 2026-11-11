@@ -37,8 +37,8 @@ AI projects include online tool setup, integrations and workflow automation, loc
 
 ## Enquiries and pricing
 
-Email support@gen-ai-solutions.com or request a 20-minute consultation through the contact page. A time is arranged by reply. Project work is quoted after a scope review. Historical AI guide prices are not current confirmed offers. Do not infer fixed prices, support response guarantees or round-the-clock availability.
+Email support@gen-ai-solutions.com, send a short enquiry or request a 20-minute introductory discussion through the contact page. A time is arranged by reply. Projects are scoped and quoted before work begins. The quote sets out the agreed work, one-off costs and any continuing charges. An AI Privacy and Readiness Audit is separate from the introductory discussion and produces a written action plan. Support scope and availability are agreed for the project.
 
-Please do not send sensitive files through this form. We can arrange a secure review process.
+Please keep your first enquiry general and do not include sensitive files. A suitable review process can be agreed if needed.
 
-The general contact form uses external FormSubmit processing and forwards enquiries to support@gen-ai-solutions.com in Zoho Mail. It is not an offline data workflow. The website does not load Google Analytics or send visitor analytics events. It stores a light/dark theme preference locally in the visitor's browser, as described in the privacy policy.
+The general contact form uses external FormSubmit processing and forwards enquiries to support@gen-ai-solutions.com in Zoho Mail. It is not an offline data workflow. The website does not load Google Analytics or send visitor analytics events. It stores a light/dark theme preference locally and may cache public pages and assets on the visitor's device for repeat or offline visits. The service worker does not cache form submissions. Privacy questions and requests about enquiry information can be sent to support@gen-ai-solutions.com, as described in the privacy policy.

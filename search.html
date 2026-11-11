@@ -11,19 +11,20 @@
     <title>Site Search | Gen AI Solutions</title>
     <link rel="canonical" href="https://gen-ai-solutions.com/search.html" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
-    <link rel="preload" href="/css/style.css?v=14" as="style" />
+    <link rel="icon" type="image/svg+xml" href="/images/brand/mark.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/apple-touch-icon180.png" />
+    <link rel="preload" href="/css/style.css?v=15" as="style" />
     <link
       rel="stylesheet"
-      href="/css/style.css?v=14"
+      href="/css/style.css?v=15"
       media="print"
       onload="this.media='all'"
     />
-    <noscript><link rel="stylesheet" href="/css/style.css?v=14" /></noscript>
-    <link rel="icon" type="image/png" href="/images/logo.png" />
-    <meta property="og:image" content="https://gen-ai-solutions.com/images/social-preview.png" />
+    <noscript><link rel="stylesheet" href="/css/style.css?v=15" /></noscript>
+    <meta property="og:image" content="https://gen-ai-solutions.com/images/social-preview-v2.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://gen-ai-solutions.com/images/social-preview.png" />
+    <meta name="twitter:image" content="https://gen-ai-solutions.com/images/social-preview-v2.png" />
     <meta property="og:title" content="Site Search | Gen AI Solutions" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -33,9 +34,8 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
       <a href="/index.html" class="logo" aria-label="Gen AI Solutions home">
-        <span class="brand-symbol" aria-hidden="true">
-          <img src="/images/logo.png" alt="" width="1024" height="1024" decoding="async" />
-        </span>
+        <img class="brand-for-light" src="/images/brand/logo.svg" alt="Gen AI Solutions" width="1307" height="256" decoding="async" />
+        <img class="brand-for-dark" src="/images/brand/logo-dark.svg" alt="" aria-hidden="true" width="1307" height="256" decoding="async" />
       </a>
       <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
         <ul>
@@ -60,26 +60,60 @@
     <main id="main-content">
       <div class="container">
         <header class="page-header">
+          <p class="eyebrow">Find a service or guide</p>
           <h1>Search Gen AI Solutions</h1>
-          <p>Find services, local pages, and resources by keyword.</p>
+          <p>Search for a task, such as business email, online AI or private document search. You can also find pricing guidance, the privacy policy and engagement information.</p>
         </header>
-        <div class="search-box">
-          <label class="visually-hidden" for="q">Search query</label>
+        <form id="site-search" class="search-box" role="search" action="/search.html" method="get">
+          <label for="q">What are you looking for?</label>
           <input
             id="q"
+            name="q"
             class="search-input"
             type="search"
-            placeholder="Try: server setup, website, business email, private AI, Kerry"
+            placeholder="Try server setup, online AI or privacy policy"
+            aria-describedby="search-help"
           />
-        </div>
-        <div id="results" class="results" aria-live="polite"></div>
+          <p id="search-help" class="muted">Use a few words about what you need. Search runs in your browser and covers the pages listed below.</p>
+          <button type="submit" class="btn">Search the site</button>
+        </form>
+        <div id="results" class="results" aria-live="polite" aria-atomic="true"></div>
+        <noscript><p>Live search needs JavaScript. Use these direct links to browse the site.</p></noscript>
+        <section aria-labelledby="browse-heading">
+          <h2 id="browse-heading">Browse the site</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Practical IT</h3>
+              <p><a href="/infrastructure-server-setup.html">Infrastructure and server setup</a></p>
+              <p><a href="/website-maintenance.html">Websites and maintenance</a></p>
+              <p><a href="/business-email-it-support.html">Business email and IT support</a></p>
+            </article>
+            <article class="service-card">
+              <h3>AI services and guides</h3>
+              <p><a href="/services.html">All services, including private and online AI</a></p>
+              <p><a href="/rag-fine-tuning-explained.html">Private document assistants and fine-tuning explained</a></p>
+              <p><a href="/ai-privacy-readiness-audit.html">AI Privacy and Readiness Audit</a></p>
+              <p><a href="/ai-resources.html">AI tools and resources</a></p>
+            </article>
+            <article class="service-card">
+              <h3>About and enquiries</h3>
+              <p><a href="/index.html">Home</a></p>
+              <p><a href="/about.html">About Gen AI Solutions</a></p>
+              <p><a href="/kerry-generative-ai.html">IT services and AI in Kerry</a></p>
+              <p><a href="/contact.html">Send an IT or AI enquiry</a></p>
+              <p><a href="/pricing.md">Pricing and project scope guide</a></p>
+              <p><a href="/privacy-policy.html">Privacy policy</a></p>
+              <p><a href="/terms.html">Terms and engagement</a></p>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer class="main-footer">
       <div class="footer-grid">
         <div>
-          <h2>Gen AI Solutions</h2>
+          <h2><img class="footer-logo" src="/images/brand/logo-dark.svg" alt="Gen AI Solutions" width="1307" height="256" loading="lazy" decoding="async" /></h2>
           <p>Practical IT services and AI for Irish businesses. Servers, websites, business email, private and online AI.</p>
           <p>Based in Tralee, Co. Kerry. Working across Ireland.</p>
         </div>
@@ -96,6 +130,7 @@
           <p><a href="/business-email-it-support.html">Business email and IT</a></p>
           <p><a href="/services.html#private-ai">Private and online AI</a></p>
           <p><a href="/ai-resources.html">AI resources</a></p>
+          <p><a href="/search.html">Search the site</a></p>
           <p><a href="/privacy-policy.html">Privacy policy</a></p>
           <p><a href="/terms.html">Terms and engagement</a></p>
         </div>
@@ -110,104 +145,6 @@
       <p class="copyright">&copy; 2026 Gen AI Solutions. All rights reserved.</p>
     </footer>
 
-    <script>
-      const index = [
-        {title: "Infrastructure and server setup", url: "infrastructure-server-setup.html", text: "Business servers, workstations, shared storage, backup planning, virtual machines, self-hosted systems, infrastructure Ireland Kerry"},
-        {title: "Websites and ongoing maintenance", url: "website-maintenance.html", text: "Business website updates, broken page repairs, hosting, domains, performance, website maintenance Ireland Kerry"},
-        {title: "Business email and IT support", url: "business-email-it-support.html", text: "Domain email, DNS, mail clients, device setup, business software, email migration review, everyday IT support Ireland Kerry"},
-        {
-          title: "Home",
-          url: "index.html",
-          text: "IT services and AI for Irish businesses, servers, websites, business email, private and online AI, integrations, automation, document assistants, transcription, training, contact",
-        },
-        {
-          title: "Services",
-          url: "services.html",
-          text: "IT support, infrastructure, server setup, website maintenance, business email, private and online AI, integrations, automation, offline AI setup, private document assistant, transcription, open-source AI, staff AI training",
-        },
-        {
-          title: "Private Document Assistant Explained",
-          url: "rag-fine-tuning-explained.html",
-          text: "Private document assistant, approved documents, source references, RAG explained in plain English, private document search",
-        },
-        {
-          title: "AI Privacy and Readiness Audit",
-          url: "ai-privacy-readiness-audit.html",
-          text: "AI privacy audit, readiness audit, sensitive data, private AI assessment, safe AI use for Irish businesses",
-        },
-        {
-          title: "IT Services and AI in Kerry",
-          url: "kerry-generative-ai.html",
-          text: "IT support Kerry, servers, websites, email, AI consultant Kerry, private AI consultant Kerry, offline AI solutions Kerry, Tralee, Ireland",
-        },
-        {
-          title: "AI Resources",
-          url: "ai-resources.html",
-          text: "Gemini, ChatGPT, Copilot, Claude, Perplexity, Firefly, Midjourney, Stable Diffusion, ComfyUI, local offline options, comparison, learning",
-        },
-        {
-          title: "About",
-          url: "about.html",
-          text: "Mission, experience, offline AI expertise, governance, data privacy",
-        },
-        {
-          title: "Contact",
-          url: "contact.html",
-          text: "Request a 20-minute consultation, IT project enquiry, private AI enquiry, offline AI setup, document assistant, training",
-        },
-      ];
-
-      const qEl = document.getElementById("q");
-      const resultsEl = document.getElementById("results");
-
-      function highlight(text, query) {
-        const re = new RegExp(
-          `(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`,
-          "ig"
-        );
-        return text.replace(re, "<mark>$1</mark>");
-      }
-
-      function search(query) {
-        const q = query.trim();
-        if (!q) {
-          resultsEl.innerHTML = "";
-          return;
-        }
-        const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
-        const matches = index
-          .map((item) => {
-            const hay = (item.title + " " + item.text).toLowerCase();
-            const score = tokens.reduce(
-              (s, t) => s + (hay.includes(t) ? 1 : 0),
-              0
-            );
-            return { ...item, score };
-          })
-          .filter((x) => x.score > 0)
-          .sort((a, b) => b.score - a.score)
-          .slice(0, 20);
-
-        resultsEl.innerHTML =
-          matches
-            .map((m) => {
-              const snippet = highlight(
-                m.text.slice(0, 180) + (m.text.length > 180 ? "…" : ""),
-                q
-              );
-              return `<div class="result"><a href="${m.url}"><strong>${m.title}</strong></a><p class="muted">${snippet}</p></div>`;
-            })
-            .join("") || '<p class="muted">No results. Try broader terms.</p>';
-      }
-
-      // Populate from URL ?q= param if present
-      const params = new URLSearchParams(location.search);
-      if (params.has("q")) {
-        qEl.value = params.get("q");
-        search(qEl.value);
-      }
-      qEl.addEventListener("input", (e) => search(e.target.value));
-    </script>
-    <script src="/js/script.js?v=14" defer></script>
+    <script src="/js/script.js?v=15" defer></script>
   </body>
 </html>

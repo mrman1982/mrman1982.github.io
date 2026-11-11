@@ -6,7 +6,7 @@ Contact support@gen-ai-solutions.com or [request a 20-minute consultation](https
 
 ## How projects are priced
 
-Work is quoted after a short review of the problem, existing systems and required deliverables. No current fixed IT package prices are published here. Historical AI guide figures have been removed from this summary pending confirmation and should not be treated as current offers.
+Projects are scoped and quoted before work begins. The quote sets out the agreed work, one-off costs and any continuing charges. The problem, existing systems, required deliverables and support needs determine the scope.
 
 ## Infrastructure and server setup
 
@@ -24,7 +24,7 @@ Scope can include domain email, DNS, mail clients, devices and business software
 
 Online AI work can include tool selection, account setup, integrations, workflow automation and staff training. Provider subscriptions, usage charges, access requirements and data handling are reviewed as part of the scope.
 
-An AI Privacy and Readiness Audit reviews use cases, sensitive data, workflows and practical next steps. It does not provide legal advice or compliance certification.
+An AI Privacy and Readiness Audit reviews use cases, sensitive data, workflows and practical next steps, with a written action plan. The introductory 20-minute discussion is separate from this scoped and quoted audit work. The audit does not provide legal advice or compliance certification.
 
 An Offline AI Starter Setup establishes a local ChatGPT-style assistant where suitable. Hardware, users, hosting and support affect the scope.
 
@@ -38,4 +38,4 @@ AI Safety and Staff Training covers safe use, sensitive information and human re
 
 Start with one practical project. Agree the scope, deliverables, price, timeline, access arrangements, handover and any continuing support before paid work starts. Hardware, hosting and licences are considered separately where relevant. No guaranteed response times or round-the-clock support are implied.
 
-Please do not send sensitive files through this form. We can arrange a secure review process.
+Please keep your first enquiry general and do not include sensitive files. A suitable review process can be agreed if needed. The [privacy policy](https://gen-ai-solutions.com/privacy-policy.html) explains how enquiries are handled.

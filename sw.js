@@ -1,6 +1,6 @@
 // Basic service worker for offline caching and faster repeat visits
 // Keep the CSS/JS URL versions in HTML and PRECACHE_URLS aligned with releases.
-const CACHE_VERSION = "v14";
+const CACHE_VERSION = "v15";
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -8,9 +8,15 @@ const RUNTIME = `runtime-${CACHE_VERSION}`;
 const PRECACHE_URLS = [
   "/",
   "/index.html",
-  "/css/style.css?v=14",
-  "/js/script.js?v=14",
-  "/images/logo.png",
+  "/css/style.css?v=15",
+  "/js/script.js?v=15",
+  "/images/brand/logo.svg",
+  "/images/brand/logo-dark.svg",
+  "/images/brand/mark.svg",
+  "/images/brand/favicon32.png",
+  "/images/brand/icon192.png",
+  "/images/brand/icon512.png",
+  "/images/brand/apple-touch-icon180.png",
   "/services.html",
   "/infrastructure-server-setup.html",
   "/website-maintenance.html",

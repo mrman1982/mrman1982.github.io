@@ -10,7 +10,7 @@
     <title>Private Document Assistant Explained | Gen AI Solutions Ireland</title>
     <meta
       name="description"
-      content="Plain-English guide to private document assistants for Irish businesses. Ask questions across approved documents without sending sensitive files to public AI tools."
+      content="See how a private document assistant answers from approved files, with a fictional source example, human review, pilot scope and plain-English notes on RAG and fine-tuning."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link
@@ -26,7 +26,7 @@
     />
     <meta
       property="og:description"
-      content="A private document assistant helps staff ask questions from approved business documents while keeping sensitive information under control."
+      content="A practical guide to document questions, source references and private deployment choices, with a fictional example and a clear route to a scoped pilot."
     />
     <meta
       property="og:url"
@@ -34,24 +34,25 @@
     />
     <meta
       property="og:image"
-      content="https://gen-ai-solutions.com/images/social-preview.png"
+      content="https://gen-ai-solutions.com/images/social-preview-v2.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://gen-ai-solutions.com/images/social-preview.png"
+      content="https://gen-ai-solutions.com/images/social-preview-v2.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
-    <link rel="icon" type="image/png" href="/images/logo.png" />
-    <link rel="preload" href="/css/style.css?v=14" as="style" />
+    <link rel="icon" type="image/svg+xml" href="/images/brand/mark.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/apple-touch-icon180.png" />
+    <link rel="preload" href="/css/style.css?v=15" as="style" />
     <link
       rel="stylesheet"
-      href="/css/style.css?v=14"
+      href="/css/style.css?v=15"
       media="print"
       onload="this.media='all'"
     />
-    <noscript><link rel="stylesheet" href="/css/style.css?v=14" /></noscript>
+    <noscript><link rel="stylesheet" href="/css/style.css?v=15" /></noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -91,7 +92,7 @@
             "name": "What is a private document assistant?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A private document assistant lets staff ask questions from approved business documents, policies, procedures or manuals. It can be designed so sensitive files stay on your own hardware or controlled infrastructure."
+              "text": "It is a ChatGPT-style assistant that answers from approved business documents, policies, procedures or manuals. It can be designed so sensitive files stay on your own hardware or controlled infrastructure."
             }
           },
           {
@@ -99,7 +100,7 @@
             "name": "Is this the same as RAG?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "RAG is the technical method often used behind a private document assistant. It retrieves relevant passages from approved documents before the AI writes an answer."
+              "text": "RAG is the technical method often used behind the assistant. It retrieves relevant passages from your approved documents before the AI drafts an answer."
             }
           },
           {
@@ -107,7 +108,23 @@
             "name": "Do we need fine-tuning?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Often no. Many document assistant projects start with retrieval over approved files. Fine-tuning is considered only when there is a clear reason, such as a specialised repeated task or domain language that retrieval alone cannot handle."
+              "text": "Often no. Many projects start with retrieval over approved files. Fine-tuning is considered only when there is a clear reason, such as a specialised repeated task or domain language that retrieval alone cannot handle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it run offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depending on the workflow, hardware and model choice, a private document assistant can be designed for local, offline or self-hosted use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can staff trust every answer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No AI system should be treated as automatically correct. Staff should review important answers, check sources and use human judgement for client, legal, medical, financial or operational decisions."
             }
           }
         ]
@@ -121,9 +138,8 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
       <a href="/index.html" class="logo" aria-label="Gen AI Solutions home">
-        <span class="brand-symbol" aria-hidden="true">
-          <img src="/images/logo.png" alt="" width="1024" height="1024" decoding="async" />
-        </span>
+        <img class="brand-for-light" src="/images/brand/logo.svg" alt="Gen AI Solutions" width="1307" height="256" decoding="async" />
+        <img class="brand-for-dark" src="/images/brand/logo-dark.svg" alt="" aria-hidden="true" width="1307" height="256" decoding="async" />
       </a>
       <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
         <ul>
@@ -156,7 +172,7 @@
       <div class="container">
         <header class="page-header">
           <p class="eyebrow">Private document assistant</p>
-          <h1>Ask questions from your own documents without uploading them to public AI tools</h1>
+          <h1>How a private document assistant answers from your own files</h1>
           <p>
             A private document assistant helps staff search policies,
             procedures, manuals, reports and internal knowledge using a familiar
@@ -165,9 +181,10 @@
             answer came from.
           </p>
           <p>
-            Gen AI Solutions builds private, offline, self-hosted and
-            open-source options for Irish businesses that handle sensitive
-            information.
+            This guide explains what that looks like and what to check before
+            a pilot. Gen AI Solutions builds local, offline and self-hosted
+            options for Irish businesses, with processing and access agreed
+            around the information involved.
           </p>
           <p>
             <a
@@ -182,7 +199,7 @@
         <section id="what-it-is" aria-labelledby="what-it-is-heading">
           <div class="section-intro">
             <p class="eyebrow">What it is</p>
-            <h2 id="what-it-is-heading">A safer way to search internal knowledge</h2>
+            <h2 id="what-it-is-heading">Find the policy and see the source</h2>
             <p>
               Instead of staff pasting confidential files into a public AI tool,
               a private document assistant works from a controlled set of files.
@@ -217,6 +234,50 @@
           </div>
         </section>
 
+        <section id="example" aria-labelledby="example-heading">
+          <div class="section-intro">
+            <p class="eyebrow">Fictional worked example</p>
+            <h2 id="example-heading">A question about booking a meeting room</h2>
+            <p>
+              This made-up office policy shows the intended workflow. It is an
+              illustration, not a client result or a live product demonstration.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>The approved source</h3>
+              <p>Fictional Office Handbook, version 1, section 3, Meeting rooms.</p>
+              <blockquote>
+                <p>Book a room in the shared calendar before inviting attendees.
+                  For meetings with visitors, notify reception the working day before.</p>
+              </blockquote>
+            </article>
+            <article class="service-card">
+              <h3>The staff question</h3>
+              <p>What do I need to do before a meeting with visitors?</p>
+              <h3>A source-based draft answer</h3>
+              <p>
+                Book the room in the shared calendar before inviting attendees,
+                and notify reception the working day before the meeting.
+              </p>
+              <p>Source reference &mdash; Fictional Office Handbook, version 1, section 3.</p>
+            </article>
+            <article class="service-card">
+              <h3>The human check</h3>
+              <p>
+                Open the cited section, check that it is the current policy and
+                confirm it applies to the meeting. A reference helps someone
+                check the answer. It does not prove that the answer is complete or correct.
+              </p>
+            </article>
+          </div>
+          <p>
+            If someone asks about visitor parking and the approved files do not
+            cover it, the assistant should say it has no supporting source and
+            direct the person to a colleague. That behaviour needs testing in the pilot.
+          </p>
+        </section>
+
         <section id="who-for" aria-labelledby="who-for-heading">
           <div class="section-intro">
             <p class="eyebrow">Who it helps</p>
@@ -226,9 +287,9 @@
             <article class="sector-card">
               <h3>Accountants and bookkeepers</h3>
               <p>
-                Search internal procedures, client service templates, tax
-                checklists and training notes without exposing confidential
-                files.
+                Search internal procedures, client service templates and
+                training notes within an agreed setup with appropriate access
+                controls and processing arrangements.
               </p>
             </article>
             <article class="sector-card">
@@ -267,6 +328,12 @@
               than relying only on general AI knowledge.
             </p>
             <p>
+              Retrieval does not itself make a system private. Privacy depends
+              on where the search and AI model run, what information is sent to
+              providers, who has access and how the system is maintained.
+              These choices need to cover the whole workflow.
+            </p>
+            <p>
               RAG is useful when your business wants answers grounded in its
               own policies, procedures, manuals, reports or internal knowledge.
               It is still important for people to review answers before using
@@ -286,10 +353,11 @@
               well-defined tasks or very specific language patterns.
             </p>
             <p>
-              For many Irish SMEs, a private document assistant should be
-              tested before fine-tuning is considered. It is usually simpler to
-              start with approved documents, clear access rules and staff
-              training.
+              Fine-tuning does not replace a current document collection or
+              provide source references on its own. For a policy-search task,
+              testing retrieval over approved files is usually the more useful
+              starting point. Fine-tuning can be considered later if evaluation
+              identifies a specific behaviour that needs improvement.
             </p>
           </div>
         </section>
@@ -297,7 +365,7 @@
         <section id="delivery" aria-labelledby="delivery-heading">
           <div class="section-intro">
             <p class="eyebrow">What gets delivered</p>
-            <h2 id="delivery-heading">A controlled first version, not a vague AI project</h2>
+            <h2 id="delivery-heading">Define a small pilot that staff can check</h2>
           </div>
           <ol class="process-list">
             <li>
@@ -312,8 +380,8 @@
               <span>2</span>
               <h3>Document review</h3>
               <p>
-                We identify approved files for the pilot and discuss access,
-                privacy and retention needs.
+                We identify approved files and the people who may use them,
+                then agree processing, access and retention needs.
               </p>
             </li>
             <li>
@@ -328,11 +396,27 @@
               <span>4</span>
               <h3>Testing and handover</h3>
               <p>
-                Staff test real questions, learn how to check sources and get
-                clear guidance on safe use.
+                Staff test agreed questions, missing-information cases and
+                source references, then receive guidance on review and updates.
               </p>
             </li>
           </ol>
+          <div class="section-intro">
+            <h3>What to establish before a quote</h3>
+            <p>
+              We need to understand the file formats, approximate volume and
+              condition of the documents. Scanned pages may need text extraction
+              and checking. Tables, diagrams and poor scans need specific tests
+              rather than an assumption that every file will work.
+            </p>
+            <p>
+              The pilot scope should name the document owner, update process,
+              access rules and example questions. It should also define when
+              the assistant must say that the sources do not support an answer.
+              Accuracy on a small approved set does not establish accuracy on
+              every future document or question.
+            </p>
+          </div>
         </section>
 
         <section id="audit-link" aria-labelledby="audit-link-heading">
@@ -425,7 +509,7 @@
     <footer class="main-footer">
       <div class="footer-grid">
         <div>
-          <h2>Gen AI Solutions</h2>
+          <h2><img class="footer-logo" src="/images/brand/logo-dark.svg" alt="Gen AI Solutions" width="1307" height="256" loading="lazy" decoding="async" /></h2>
           <p>Practical IT services and AI for Irish businesses. Servers, websites, business email, private and online AI.</p>
           <p>Based in Tralee, Co. Kerry. Working across Ireland.</p>
         </div>
@@ -442,6 +526,7 @@
           <p><a href="/business-email-it-support.html">Business email and IT</a></p>
           <p><a href="/services.html#private-ai">Private and online AI</a></p>
           <p><a href="/ai-resources.html">AI resources</a></p>
+          <p><a href="/search.html">Search the site</a></p>
           <p><a href="/privacy-policy.html">Privacy policy</a></p>
           <p><a href="/terms.html">Terms and engagement</a></p>
         </div>
@@ -456,6 +541,6 @@
       <p class="copyright">&copy; 2026 Gen AI Solutions. All rights reserved.</p>
     </footer>
 
-    <script src="/js/script.js?v=14" defer></script>
+    <script src="/js/script.js?v=15" defer></script>
   </body>
 </html>

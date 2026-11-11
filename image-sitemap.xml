@@ -4,33 +4,18 @@
   <url>
     <loc>https://gen-ai-solutions.com/</loc>
     <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/social-preview.png</image:loc>
+      <image:loc>https://gen-ai-solutions.com/images/social-preview-v2.png</image:loc>
       <image:title>Gen AI Solutions Open Graph Image</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/logo.png</image:loc>
+      <image:loc>https://gen-ai-solutions.com/images/brand/icon512.png</image:loc>
       <image:title>Gen AI Solutions Logo</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://gen-ai-solutions.com/services.html</loc>
-    <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/internal-knowledge-base.png</image:loc>
-      <image:title>Internal Knowledge Base</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/medical-transcription.png</image:loc>
-      <image:title>Medical Transcription</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/self-hosted-media.png</image:loc>
-      <image:title>Self Hosted Media</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://gen-ai-solutions.com/kerry-generative-ai.html</loc>
     <image:image>
-      <image:loc>https://gen-ai-solutions.com/images/logo.png</image:loc>
+      <image:loc>https://gen-ai-solutions.com/images/brand/icon512.png</image:loc>
       <image:title>Gen AI Solutions Logo</image:title>
     </image:image>
   </url>

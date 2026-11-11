@@ -18,6 +18,15 @@
 !js/script.js
 !images/
 !images/*.png
+!images/social-preview-v2.svg
+!images/brand/
+!images/brand/logo.svg
+!images/brand/logo-dark.svg
+!images/brand/mark.svg
+!images/brand/favicon32.png
+!images/brand/icon192.png
+!images/brand/icon512.png
+!images/brand/apple-touch-icon180.png
 !assets/
 !assets/images/
 !assets/images/*.svg
