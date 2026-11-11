@@ -159,6 +159,16 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
+    // Return to the site visitors used, including Railway and a new domain.
+    // Without JavaScript, FormSubmit supplies its own confirmation page.
+    if (["https:", "http:"].includes(window.location.protocol)) {
+      const nextInput = document.createElement("input");
+      nextInput.type = "hidden";
+      nextInput.name = "_next";
+      nextInput.value = new URL("/thank-you.html", window.location.origin).href;
+      contactForm.appendChild(nextInput);
+    }
+
     try {
       const serviceLabels = {
         "ai-privacy-readiness-audit": "AI Privacy and Readiness Audit",
