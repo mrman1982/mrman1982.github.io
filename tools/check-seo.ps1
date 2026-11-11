@@ -51,7 +51,7 @@ foreach ($file in $htmlFiles) {
     }
   }
 
-  if ($html -notmatch '<script src="/js/script.js" defer></script>') {
+  if ($html -notmatch '<script src="/js/script\.js(?:\?v=[A-Za-z0-9.-]+)?" defer></script>') {
     Add-Failure "$($file.Name): missing shared script include"
   }
 }

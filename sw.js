@@ -1,5 +1,6 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v13"; // bump to force clients to fetch latest CSS/HTML
+// Keep the CSS/JS URL versions in HTML and PRECACHE_URLS aligned with releases.
+const CACHE_VERSION = "v14";
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 
@@ -7,8 +8,8 @@ const RUNTIME = `runtime-${CACHE_VERSION}`;
 const PRECACHE_URLS = [
   "/",
   "/index.html",
-  "/css/style.css",
-  "/js/script.js",
+  "/css/style.css?v=14",
+  "/js/script.js?v=14",
   "/images/logo.png",
   "/services.html",
   "/infrastructure-server-setup.html",

@@ -11,6 +11,11 @@ read by the browser to restore the chosen theme, not sent to an analytics
 service. The service worker caches public site files for repeat and offline
 visits. These browser features do not track conversions.
 
+HTML requests versioned CSS and JavaScript URLs so returning visitors do not
+run the earlier analytics loader from an old service-worker cache. Update those
+URL versions and the matching service-worker precache entries together when
+releasing changes to shared assets.
+
 Website delivery still requires normal requests to the host and network
 providers. This is separate from a visitor analytics service. Public pages use
 local assets and device fonts, with no external icon-font dependency. Contact enquiries are submitted
