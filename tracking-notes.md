@@ -1,29 +1,24 @@
 # Tracking Notes
 
-Google Analytics 4 is loaded centrally from `js/script.js` using measurement ID
-`G-L7W0E1GDX0`.
+Google Analytics loading and conversion-event sending were removed from
+`js/script.js` on 11 November 2026. The site does not initialise `gtag` or
+`dataLayer`, send analytics events, or create analytics or advertising cookies.
+Existing `data-track` attributes are inert markup, with no event listeners or
+network requests attached to them.
 
-The site keeps lightweight `data-track` attributes and JavaScript that pushes
-conversion events to `dataLayer` and `gtag`. The analytics loader respects
-browser Do Not Track signals and does not load GA4 when Do Not Track is enabled.
+The light/dark theme preference is stored locally under `genai-theme`. It is
+read by the browser to restore the chosen theme, not sent to an analytics
+service. The service worker caches public site files for repeat and offline
+visits. These browser features do not track conversions.
 
-Advertising storage, ad user data and ad personalisation signals are denied in
-the GA4 consent defaults. Do not add retargeting or advertising pixels without a
-separate privacy review.
+Website delivery still requires normal requests to the host and network
+providers. This is separate from a visitor analytics service. Public pages use
+local assets and device fonts, with no external icon-font dependency. Contact enquiries are submitted
+to FormSubmit and forwarded to the configured Zoho Mail address. Do not describe
+the entire site as making no third-party connections.
 
-Tracked or recommended events:
-
-- Contact form submit.
-- Assessment request click.
-- Email click.
-- Phone or WhatsApp click if a real public number is added later.
-- Lead magnet download.
-- Demo video view.
-- Booking link click if a real booking link is added later.
-
-Do not capture sensitive form content in analytics. Event payloads should avoid
-message text, document names, client names, medical details, legal details,
-financial records, staff data or any other confidential business information.
-
-If more analytics is added later, prefer a simple privacy-friendly setup with
-clear conversion events and no retargeting by default.
+The privacy policy describes the current browser preference, website delivery
+and enquiry processing. Do not add analytics, advertising pixels or conversion
+tracking without an explicit decision about purpose, data collection and
+visitor controls. Never include enquiry text or confidential project details
+in an analytics payload.

@@ -1,6 +1,6 @@
 # Pricing and scope — Gen AI Solutions
 
-Gen AI Solutions provides practical IT services and private AI for Irish businesses. Based in Tralee, Co. Kerry, serving Ireland.
+Gen AI Solutions provides practical IT services and both private and online AI for Irish businesses. Based in Tralee, Co. Kerry, serving Ireland.
 
 Contact support@gen-ai-solutions.com or [request a 20-minute consultation](https://gen-ai-solutions.com/contact.html). A time is arranged by reply.
 
@@ -20,7 +20,9 @@ Scope can include site updates, repairs, hosting and domain configuration, perfo
 
 Scope can include domain email, DNS, mail clients, devices and business software. Existing accounts and migration needs are reviewed before a change is proposed. Account subscriptions and third-party licences are agreed separately where relevant.
 
-## Private AI and training
+## AI setup, automation and training
+
+Online AI work can include tool selection, account setup, integrations, workflow automation and staff training. Provider subscriptions, usage charges, access requirements and data handling are reviewed as part of the scope.
 
 An AI Privacy and Readiness Audit reviews use cases, sensitive data, workflows and practical next steps. It does not provide legal advice or compliance certification.
 

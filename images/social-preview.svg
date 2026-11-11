@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Gen AI Solutions — practical IT and AI for Irish businesses</title>
+<desc id="desc">Servers, websites, business email, and private and online AI. Based in Tralee, working across Ireland.</desc>
+<rect width="1200" height="630" fill="#fcfbf8"/>
+<rect x="72" y="72" width="8" height="30" rx="4" fill="#5d3b91"/>
+<g font-family="Segoe UI, Arial, sans-serif" fill="#292827">
+<text x="100" y="100" font-size="29" font-weight="600">Gen AI Solutions</text>
+<text x="1128" y="96" text-anchor="end" font-size="15" fill="#5d3b91" letter-spacing="1.2">PRACTICAL TECHNOLOGY. CLEAR ADVICE.</text>
+<text x="72" y="245" font-size="72" font-weight="600" letter-spacing="-2">Practical IT and AI</text>
+<text x="72" y="333" font-size="72" font-weight="600" letter-spacing="-2">for Irish businesses</text>
+<text x="72" y="426" font-size="26" fill="#64615d">Servers · Websites · Business email · Private &amp; online AI</text>
+<rect x="920" y="184" width="208" height="208" rx="24" fill="#f0e9ff"/>
+<path d="M970 238H1078V338H970Z" stroke="#cbb7fb" stroke-width="3" fill="none"/>
+<g fill="#ffffff" stroke="#dcd7d3">
+<rect x="938" y="202" width="72" height="72" rx="14"/>
+<rect x="1038" y="202" width="72" height="72" rx="14"/>
+<rect x="938" y="302" width="72" height="72" rx="14"/>
+<rect x="1038" y="302" width="72" height="72" rx="14" fill="#5d3b91" stroke="#5d3b91"/>
+</g>
+<g font-size="20" font-weight="600" text-anchor="middle">
+<text x="974" y="245">IT</text><text x="1074" y="245">Web</text>
+<text x="974" y="345">Email</text><text x="1074" y="345" fill="#ffffff">AI</text>
+</g>
+<path d="M72 511H1128" stroke="#dcd7d3"/>
+<text x="72" y="566" font-size="24" font-weight="600" fill="#5d3b91">gen-ai-solutions.com</text>
+<text x="1128" y="564" font-size="18" text-anchor="end" fill="#64615d">Based in Tralee. Working across Ireland.</text>
+</g>
+</svg>

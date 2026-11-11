@@ -1,10 +1,10 @@
 # Gen AI Solutions
 
-> Practical IT and private AI for Irish businesses.
+> Practical IT and AI for Irish businesses.
 
-Gen AI Solutions is based in Tralee, Co. Kerry and serves businesses across Ireland. Services cover infrastructure and server setup, websites and maintenance, business email and everyday IT, and private AI with staff training.
+Gen AI Solutions is based in Tralee, Co. Kerry and serves businesses across Ireland. Services cover infrastructure and server setup, websites and maintenance, business email and everyday IT, and both private and online AI with integrations, automation and staff training.
 
-Private, offline, self-hosted and open-source AI remains a core service for organisations that handle sensitive information. Data handling depends on the agreed setup. AI outputs need human review. No legal advice or guaranteed compliance is offered.
+AI work can use online services, local tools, self-hosted systems or a combination, selected around the task and data requirements. Private, offline and open-source options are available for sensitive information. Data handling depends on the agreed setup. AI outputs need human review. No legal advice or guaranteed compliance is offered.
 
 ## Key pages
 
@@ -13,10 +13,11 @@ Private, offline, self-hosted and open-source AI remains a core service for orga
 - [Infrastructure and server setup](https://gen-ai-solutions.com/infrastructure-server-setup.html)
 - [Websites and maintenance](https://gen-ai-solutions.com/website-maintenance.html)
 - [Business email and IT support](https://gen-ai-solutions.com/business-email-it-support.html)
-- [Private AI and training](https://gen-ai-solutions.com/services.html#private-ai)
+- [AI services and training](https://gen-ai-solutions.com/services.html#private-ai)
+- [Online AI and automation](https://gen-ai-solutions.com/services.html#online-ai)
 - [AI Privacy and Readiness Audit](https://gen-ai-solutions.com/ai-privacy-readiness-audit.html)
 - [Private Document Assistant](https://gen-ai-solutions.com/rag-fine-tuning-explained.html)
-- [IT services and private AI in Kerry](https://gen-ai-solutions.com/kerry-generative-ai.html)
+- [IT services and AI in Kerry](https://gen-ai-solutions.com/kerry-generative-ai.html)
 - [AI Resources](https://gen-ai-solutions.com/ai-resources.html)
 - [About](https://gen-ai-solutions.com/about.html)
 - [Contact](https://gen-ai-solutions.com/contact.html)
@@ -32,7 +33,7 @@ Website work can include updates, broken-page repairs, hosting and domain config
 
 Business email work can include domain email, DNS, mail clients, device configuration and review before a proposed migration. Third-party subscriptions and licences are agreed separately.
 
-Private AI projects include local ChatGPT-style assistants, question answering across approved documents with source references, offline transcription and meeting notes, AI privacy reviews and staff training. Sensitive data can stay on the organisation's hardware or controlled infrastructure when that is how the agreed system is designed.
+AI projects include online tool setup, integrations and workflow automation, local assistants, question answering across approved documents with source references, transcription, AI readiness reviews and staff training. Sensitive data can stay on the organisation's hardware or controlled infrastructure when that is how the agreed system is designed. Online providers and data sharing are reviewed before use.
 
 ## Enquiries and pricing
 
@@ -40,4 +41,4 @@ Email support@gen-ai-solutions.com or request a 20-minute consultation through t
 
 Please do not send sensitive files through this form. We can arrange a secure review process.
 
-The general contact form uses external FormSubmit processing and currently forwards enquiries to the existing Hotmail inbox. It is not an offline data workflow. The website also uses its existing Google Analytics 4 configuration, as described in the privacy policy.
+The general contact form uses external FormSubmit processing and forwards enquiries to support@gen-ai-solutions.com in Zoho Mail. It is not an offline data workflow. The website does not load Google Analytics or send visitor analytics events. It stores a light/dark theme preference locally in the visitor's browser, as described in the privacy policy.

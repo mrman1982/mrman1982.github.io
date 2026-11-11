@@ -89,14 +89,8 @@ if (-not (Test-Path -LiteralPath $scriptPath)) {
   Add-Failure "js/script.js: missing"
 } else {
   $script = Read-Text $scriptPath
-  if ($script -notmatch 'GA_MEASUREMENT_ID\s*=\s*"G-[A-Z0-9]+"') {
-    Add-Failure "js/script.js: missing GA4 measurement ID"
-  }
-  if ($script -notmatch "googletagmanager\.com/gtag/js") {
-    Add-Failure "js/script.js: missing GA4 loader"
-  }
-  if ($script -notmatch "dataLayer") {
-    Add-Failure "js/script.js: missing dataLayer event support"
+  if ($script -match 'googletagmanager\.com|google-analytics\.com|gtag\s*\(') {
+    Add-Failure "js/script.js: visitor analytics must not load by default"
   }
 }
 
@@ -127,4 +121,4 @@ if ($failures.Count -gt 0) {
 }
 
 Write-Host "SEO audit passed." -ForegroundColor Green
-Write-Host "Checked $($htmlFiles.Count) HTML files, robots.txt, sitemap.xml, analytics wiring, verification tags, llms.txt, and pricing.md."
+Write-Host "Checked $($htmlFiles.Count) HTML files, robots.txt, sitemap.xml, privacy-aware script loading, verification tags, llms.txt, and pricing.md."

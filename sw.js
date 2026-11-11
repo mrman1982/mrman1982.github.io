@@ -1,5 +1,5 @@
 // Basic service worker for offline caching and faster repeat visits
-const CACHE_VERSION = "v12"; // bump to force clients to fetch latest CSS/HTML
+const CACHE_VERSION = "v13"; // bump to force clients to fetch latest CSS/HTML
 const PRECACHE = `precache-${CACHE_VERSION}`;
 const RUNTIME = `runtime-${CACHE_VERSION}`;
 

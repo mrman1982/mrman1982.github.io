@@ -11,45 +11,6 @@ document.documentElement.classList.add("js-enabled");
   }
 })();
 
-(() => {
-  const GA_MEASUREMENT_ID = "G-L7W0E1GDX0";
-
-  const doNotTrack =
-    navigator.doNotTrack ||
-    window.doNotTrack ||
-    navigator.msDoNotTrack ||
-    "0";
-
-  if (!GA_MEASUREMENT_ID || doNotTrack === "1" || doNotTrack === "yes") {
-    return;
-  }
-
-  window.dataLayer = window.dataLayer || [];
-  window.gtag =
-    window.gtag ||
-    function gtag() {
-      window.dataLayer.push(arguments);
-    };
-
-  window.gtag("consent", "default", {
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-    analytics_storage: "granted",
-  });
-  window.gtag("js", new Date());
-  window.gtag("config", GA_MEASUREMENT_ID, {
-    anonymize_ip: true,
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false,
-  });
-
-  const analyticsScript = document.createElement("script");
-  analyticsScript.async = true;
-  analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-  document.head.appendChild(analyticsScript);
-})();
-
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");
@@ -107,6 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.remove("no-scroll");
 
   if (navToggle && mainNav) {
+    const closeMenu = (restoreFocus = false) => {
+      mainNav.classList.remove("active");
+      navToggle.classList.remove("is-active");
+      document.body.classList.remove("no-scroll");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Open menu");
+      if (restoreFocus) {
+        navToggle.focus();
+      }
+    };
+
     const toggleMenu = () => {
       const open = !mainNav.classList.contains("active");
       mainNav.classList.toggle("active", open);
@@ -121,36 +93,23 @@ document.addEventListener("DOMContentLoaded", () => {
     mainNav.addEventListener("click", (e) => {
       const link = e.target.closest("a");
       if (link && mainNav.classList.contains("active")) {
-        mainNav.classList.remove("active");
-        navToggle.classList.remove("is-active");
-        document.body.classList.remove("no-scroll");
-        navToggle.setAttribute("aria-expanded", "false");
-        navToggle.setAttribute("aria-label", "Open menu");
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && mainNav.classList.contains("active")) {
+        closeMenu(true);
+      }
+    });
+
+    const desktopMenu = window.matchMedia("(min-width: 861px)");
+    desktopMenu.addEventListener("change", (event) => {
+      if (event.matches) {
+        closeMenu();
       }
     });
   }
-
-  const trackConversion = (eventName, details = {}) => {
-    if (!eventName) return;
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: eventName,
-      ...details,
-    });
-
-    if (typeof window.gtag === "function") {
-      window.gtag("event", eventName, details);
-    }
-  };
-
-  document.querySelectorAll("[data-track]").forEach((element) => {
-    element.addEventListener("click", () => {
-      trackConversion(element.dataset.track, {
-        link_text: element.textContent.trim(),
-        link_url: element.href || "",
-      });
-    });
-  });
 
   const contactForm = document.querySelector("#contact-form");
   if (contactForm) {
@@ -176,6 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "infrastructure-server-setup": "Infrastructure and server setup",
         "website-maintenance": "Website work and maintenance",
         "business-email-it-support": "Business email and everyday IT",
+        "online-ai": "Online AI, integrations and automation",
         "ai-privacy-readiness-audit": "AI Privacy and Readiness Audit",
         "offline-ai-starter-setup": "Offline AI Starter Setup",
         "private-document-assistant": "Private Document Assistant",
@@ -188,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "infrastructure-server-setup": "service-infrastructure",
         "website-maintenance": "service-website",
         "business-email-it-support": "service-business-email",
+        "online-ai": "service-online-ai",
         "ai-privacy-readiness-audit": "service-ai-audit",
         "offline-ai-starter-setup": "service-local-ai",
         "private-document-assistant": "service-document-search",
@@ -220,13 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (e) {
       console.warn("Service context could not be applied", e);
     }
-
-    contactForm.addEventListener("submit", () => {
-      trackConversion("form_submit", {
-        form_id: contactForm.id,
-        form_name: "IT and private AI enquiry",
-      });
-    });
   }
 
   if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
