@@ -632,6 +632,7 @@ html[data-theme="dark"] .logo .brand-for-dark { display: block; }
 .sector-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+:is(.services-grid, .package-grid, .demo-grid, .sector-grid) + p { margin-top: 1.25rem; }
 
 .sector-grid:has(> :last-child:nth-child(4)) { grid-template-columns: repeat(2,minmax(0,1fr)); }
 
@@ -669,6 +670,8 @@ html[data-theme="dark"] .logo .brand-for-dark { display: block; }
 .sector-card p:last-child {
   margin-bottom: 0;
 }
+.service-card:has(> .card-action) { display: flex; flex-direction: column; }
+.service-card > .card-action { margin-top: auto; padding-top: .75rem; }
 
 .package-card {
   display: flex;
@@ -996,6 +999,7 @@ details p {
 
 /* Contact */
 .contact-layout {
+  align-items: start;
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
@@ -1148,6 +1152,13 @@ details p {
 }
 
 /* Resources, search and legacy sections */
+.task-options { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; margin: 1rem 0 2rem; overflow: hidden; }
+.task-options-heading, .task-option { display: grid; gap: 1.5rem; grid-template-columns: 1.2fr .85fr 1.8fr; padding: 1rem; }
+.task-options-heading { background: var(--surface-alt); color: var(--ink); font-size: .85rem; font-weight: 650; }
+.task-option { align-items: start; border-top: 1px solid var(--border); }
+.task-option h3 { font-size: 1rem; line-height: 1.5; letter-spacing: -.015em; margin: 0; }
+.task-option p { font-size: .95rem; margin: 0; }
+.task-option-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .table-wrap {
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -1663,6 +1674,11 @@ main > .home-section + .home-section { padding-top: 2rem; }
 }
 @media (max-width: 640px) {
   :root { --layout-gutter: 1.25rem; }
+  .task-options { background: transparent; border: 0; border-radius: 0; overflow: visible; }
+  .task-options-heading { display: none; }
+  .task-option { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; gap: 1rem; grid-template-columns: 1fr; margin-bottom: 1rem; padding: 1.25rem; }
+  .task-option h3 { font-size: 1.15rem; line-height: 1.4; }
+  .task-option-label { clip: auto; color: var(--muted); height: auto; font-size: .75rem; letter-spacing: .04em; margin: 0 0 .35rem; overflow: visible; padding: 0; position: static; width: auto; }
   .home-hero-grid { padding-top: 2.5rem; padding-bottom: 2.5rem; }
   .home-hero-copy h1 { font-size: clamp(2.45rem, 9.8vw, 3.5rem); }
   .home-hero .eyebrow { font-size: .63rem; letter-spacing: .08em; }

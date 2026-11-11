@@ -41,14 +41,14 @@
     <link rel="icon" type="image/svg+xml" href="/images/brand/mark.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/brand/apple-touch-icon180.png" />
-    <link rel="preload" href="/css/style.css?v=16" as="style" />
+    <link rel="preload" href="/css/style.css?v=17" as="style" />
     <link
       rel="stylesheet"
-      href="/css/style.css?v=16"
+      href="/css/style.css?v=17"
       media="print"
       onload="this.media='all'"
     />
-    <noscript><link rel="stylesheet" href="/css/style.css?v=16" /></noscript>
+    <noscript><link rel="stylesheet" href="/css/style.css?v=17" /></noscript>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -164,38 +164,32 @@
 
         <section id="compare" aria-labelledby="task-heading">
           <h2 id="task-heading">Start with the task</h2>
-          <div class="table-wrap" role="region" aria-label="AI options by business task" tabindex="0">
-            <table class="compare-table">
-              <thead>
-                <tr>
-                  <th scope="col">What you want to improve</th>
-                  <th scope="col">An option to explore</th>
-                  <th scope="col">What to check first</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Drafting, research and comparing ideas</th>
-                  <td><a href="#assistants">Online assistants</a></td>
-                  <td>Account terms, permitted information and how someone will check the result.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Business email, documents and meetings</th>
-                  <td><a href="#office">AI in your office platform</a></td>
-                  <td>Your subscription, staff permissions and the files the tool can access.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Moving information between systems</th>
-                  <td><a href="#automation">Integrations and automation</a></td>
-                  <td>Triggers, connected accounts, approvals and failure handling.</td>
-                </tr>
-                <tr>
-                  <th scope="row">AI with tighter control over data</th>
-                  <td><a href="#offline">Local or self-hosted AI</a></td>
-                  <td>The complete data path, hardware, maintenance and cloud connections.</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="task-options">
+            <div class="task-options-heading" aria-hidden="true">
+              <span>What you want to improve</span><span>An option to explore</span><span>What to check first</span>
+            </div>
+            <div role="list" aria-label="AI options by business task">
+              <article class="task-option" role="listitem">
+                <h3>Drafting, research and comparing ideas</h3>
+                <div><h4 class="task-option-label">An option to explore</h4><p><a href="#assistants">Online assistants</a></p></div>
+                <div><h4 class="task-option-label">What to check first</h4><p>Account terms, permitted information and how someone will check the result.</p></div>
+              </article>
+              <article class="task-option" role="listitem">
+                <h3>Business email, documents and meetings</h3>
+                <div><h4 class="task-option-label">An option to explore</h4><p><a href="#office">AI in your office platform</a></p></div>
+                <div><h4 class="task-option-label">What to check first</h4><p>Your subscription, staff permissions and the files the tool can access.</p></div>
+              </article>
+              <article class="task-option" role="listitem">
+                <h3>Moving information between systems</h3>
+                <div><h4 class="task-option-label">An option to explore</h4><p><a href="#automation">Integrations and automation</a></p></div>
+                <div><h4 class="task-option-label">What to check first</h4><p>Triggers, connected accounts, approvals and failure handling.</p></div>
+              </article>
+              <article class="task-option" role="listitem">
+                <h3>AI with tighter control over data</h3>
+                <div><h4 class="task-option-label">An option to explore</h4><p><a href="#offline">Local or self-hosted AI</a></p></div>
+                <div><h4 class="task-option-label">What to check first</h4><p>The complete data path, hardware, maintenance and cloud connections.</p></div>
+              </article>
+            </div>
           </div>
           <p>Start with a clear result and a small scope, such as preparing a draft for approval or answering questions from a limited set of approved documents.</p>
         </section>
@@ -208,13 +202,13 @@
               <h3>ChatGPT</h3>
               <p>Explore ChatGPT for developing ideas, researching a topic or turning notes and files into a first draft. Check sources, figures and the finished work before using it.</p>
               <p>Personal and business workspaces have different controls. Review your account's data terms and any connected apps before adding business information.</p>
-              <p><a href="https://learn.chatgpt.com/docs/use-chatgpt">Read the official ChatGPT guide</a> and <a href="https://learn.chatgpt.com/docs/enterprise/chatgpt-work-cloud-security">ChatGPT workspace and cloud security guidance</a>.</p>
+              <p class="card-action"><a href="https://learn.chatgpt.com/docs/use-chatgpt">Read the official ChatGPT guide</a> and <a href="https://learn.chatgpt.com/docs/enterprise/chatgpt-work-cloud-security">ChatGPT workspace and cloud security guidance</a>.</p>
             </article>
             <article class="service-card">
               <h3>Claude</h3>
               <p>Claude supports conversational drafting, research and analysis. Consider a specific task such as comparing documents or preparing a report outline, then check the result against the original material.</p>
               <p>Anthropic distinguishes consumer services from commercial Team and Enterprise services. Review the relevant agreement and connected tools before sharing confidential documents.</p>
-              <p><a href="https://claude.com/resources/guides/claude-cowork-product-guide/product-overview">Explore the official Claude product guide</a> and <a href="https://support.anthropic.com/en/articles/9267385-does-anthropic-act-as-a-data-processor-or-controller">Anthropic's commercial data responsibilities</a>.</p>
+              <p class="card-action"><a href="https://claude.com/resources/guides/claude-cowork-product-guide/product-overview">Explore the official Claude product guide</a> and <a href="https://support.anthropic.com/en/articles/9267385-does-anthropic-act-as-a-data-processor-or-controller">Anthropic's commercial data responsibilities</a>.</p>
             </article>
           </div>
         </section>
@@ -226,51 +220,55 @@
               <h3>Microsoft Copilot for Microsoft 365</h3>
               <p>Consider Copilot if your team uses Microsoft 365 and wants help with documents, email and chats. Work-connected access depends on the product and licence.</p>
               <p>Microsoft explains that access follows existing user permissions. Review shared folders, SharePoint access and guest permissions before introducing another way to find that information.</p>
-              <p><a href="https://learn.microsoft.com/en-us/copilot/plan/copilot-overview">Read Microsoft's Copilot overview</a> and <a href="https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy">Copilot data and privacy guidance</a>.</p>
+              <p class="card-action"><a href="https://learn.microsoft.com/en-us/copilot/plan/copilot-overview">Read Microsoft's Copilot overview</a> and <a href="https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy">Copilot data and privacy guidance</a>.</p>
             </article>
             <article class="service-card">
               <h3>Google Workspace with Gemini</h3>
               <p>Gemini features support work in tools such as Gmail, Docs, Drive and Meet, depending on the edition and feature. Assess it alongside the Workspace tools your team already uses.</p>
               <p>Check administrator settings and the account involved. Workspace privacy commitments apply to qualifying Workspace use. Agree how meeting notes will be checked, shared and retained.</p>
-              <p><a href="https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/google-workspace-with-gemini">Explore Google Workspace with Gemini</a> and <a href="https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub">the Workspace AI privacy hub</a>.</p>
+              <p class="card-action"><a href="https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/google-workspace-with-gemini">Explore Google Workspace with Gemini</a> and <a href="https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub">the Workspace AI privacy hub</a>.</p>
             </article>
           </div>
         </section>
 
         <section id="automation" aria-labelledby="automation-heading">
-          <h2 id="automation-heading">Automation and integrations</h2>
-          <p>An automation connects a trigger to an action, such as creating a task after a form submission. Straightforward rules handle many useful workflows. Add AI where interpreting or drafting information helps, with approval before consequential actions.</p>
+          <div class="section-intro">
+            <div class="section-intro-heading"><h2 id="automation-heading">Automation and integrations</h2></div>
+            <div class="section-intro-copy"><p>An automation connects a trigger to an action, such as creating a task after a form submission. Straightforward rules handle many useful workflows. Add AI where interpreting or drafting information helps, with approval before consequential actions.</p></div>
+          </div>
           <div class="package-grid" style="--card-columns: 2">
             <article class="service-card">
               <h3>Microsoft Power Automate</h3>
               <p>Power Automate cloud flows connect applications and services through events, buttons or schedules. Explore it for repeatable administration, particularly within a Microsoft environment.</p>
               <p>Confirm suitable connectors, licences and running costs. Agree who owns each connection and receives failure alerts, then test with sample information before connecting live records.</p>
-              <p><a href="https://learn.microsoft.com/en-us/power-automate/overview-cloud">Explore Power Automate cloud flows</a>.</p>
+              <p class="card-action"><a href="https://learn.microsoft.com/en-us/power-automate/overview-cloud">Explore Power Automate cloud flows</a>.</p>
             </article>
             <article class="service-card">
               <h3>n8n</h3>
               <p>n8n connects applications and organises workflows with or without AI. Consider it for moving information between forms, spreadsheets and business systems.</p>
               <p>Managed cloud and self-hosted options are available. Self-hosting needs security maintenance, updates, backups and recovery. Connected services determine where data travels. Check the edition and licence for your use.</p>
-              <p><a href="https://n8n.io/integrations/">Explore n8n integrations</a> and <a href="https://docs.n8n.io/choose-how-to-use-n8n">compare n8n cloud and self-hosting</a>.</p>
+              <p class="card-action"><a href="https://n8n.io/integrations/">Explore n8n integrations</a> and <a href="https://docs.n8n.io/choose-how-to-use-n8n">compare n8n cloud and self-hosting</a>.</p>
             </article>
           </div>
         </section>
 
         <section id="offline" aria-labelledby="offline-heading">
-          <h2 id="offline-heading">Local and private AI options</h2>
-          <p>A local model runs on your computer or server. A self-hosted service runs on infrastructure you manage or control. Review the full setup, because local apps can also use cloud models, web search and external connections.</p>
+          <div class="section-intro">
+            <div class="section-intro-heading"><h2 id="offline-heading">Local and private AI options</h2></div>
+            <div class="section-intro-copy"><p>A local model runs on your computer or server. A self-hosted service runs on infrastructure you manage or control. Review the full setup, because local apps can also use cloud models, web search and external connections.</p></div>
+          </div>
           <div class="package-grid" style="--card-columns: 2">
             <article class="service-card">
               <h3>Ollama</h3>
               <p>Ollama runs supported models on your computer or server and can form part of a local assistant or internal workflow.</p>
               <p>It also offers cloud models. Its FAQ explains how to disable cloud features for local-only use. Assess the selected model, hardware and connected applications against your task.</p>
-              <p><a href="https://docs.ollama.com/faq">Read the Ollama FAQ</a> and <a href="https://docs.ollama.com/cloud">understand Ollama's cloud option</a>.</p>
+              <p class="card-action"><a href="https://docs.ollama.com/faq">Read the Ollama FAQ</a> and <a href="https://docs.ollama.com/cloud">understand Ollama's cloud option</a>.</p>
             </article>
             <article class="service-card">
               <h3>LM Studio</h3>
               <p>LM Studio provides a desktop interface for supported local models. Its documentation covers offline chat and document work once the necessary files are downloaded.</p>
               <p>Optional cloud features have different data paths. Check enabled features, connected tools, model licences and hardware before choosing a business setup.</p>
-              <p><a href="https://lmstudio.ai/docs/app/offline">Read about LM Studio offline operation</a> and <a href="https://lmstudio.ai/app-privacy">review its app privacy policy</a>.</p>
+              <p class="card-action"><a href="https://lmstudio.ai/docs/app/offline">Read about LM Studio offline operation</a> and <a href="https://lmstudio.ai/app-privacy">review its app privacy policy</a>.</p>
             </article>
           </div>
           <p><a href="/services.html#offline-ai-setup">Explore local AI assistants</a> or <a href="/services.html#private-document-search">private document search</a>.</p>
@@ -369,6 +367,6 @@
       <p class="copyright">&copy; 2026 Gen AI Solutions. All rights reserved.</p>
     </footer>
 
-    <script src="/js/script.js?v=16" defer></script>
+    <script src="/js/script.js?v=17" defer></script>
   </body>
 </html>
